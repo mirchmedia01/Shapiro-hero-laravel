@@ -1,3 +1,4 @@
+
 # Shapiro The Hero - Official Laravel Application
 
 Full-stack, modular, production-grade Laravel conversion of the **Adam L. Shapiro & Associates, P.C. (Shapiro The Hero)** website.
