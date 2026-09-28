@@ -40,4 +40,8 @@ if [ "$APP_ENV" = "production" ]; then
     php artisan view:cache || true
 fi
 
+# Railway assigns a dynamic $PORT — nginx must listen on it, not hardcoded 80.
+PORT="${PORT:-80}"
+sed -i -e "s/listen 80;/listen ${PORT};/" -e "s/listen \[::\]:80;/listen [::]:${PORT};/" /etc/nginx/http.d/default.conf
+
 exec "$@"
