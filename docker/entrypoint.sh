@@ -8,11 +8,18 @@ if [ ! -f /var/www/html/.env ]; then
     fi
 fi
 
-# Ensure SQLite database file exists if sqlite connection
+# Ensure SQLite database file exists if sqlite connection.
+# DB_DATABASE may point at a Railway volume mount (e.g. /data/database.sqlite)
+# so the DB survives redeploys without shadowing database/migrations/.
 if [ "$DB_CONNECTION" = "sqlite" ] || grep -q "DB_CONNECTION=sqlite" /var/www/html/.env 2>/dev/null; then
-    mkdir -p /var/www/html/database
-    touch /var/www/html/database/database.sqlite
-    chown -R www-data:www-data /var/www/html/database
+    SQLITE_DB="${DB_DATABASE:-/var/www/html/database/database.sqlite}"
+    case "$SQLITE_DB" in
+        /*)
+            mkdir -p "$(dirname "$SQLITE_DB")"
+            touch "$SQLITE_DB"
+            chown -R www-data:www-data "$(dirname "$SQLITE_DB")"
+            ;;
+    esac
 fi
 
 # Ensure storage and bootstrap/cache permissions
