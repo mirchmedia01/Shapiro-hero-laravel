@@ -38,8 +38,8 @@
             </div>
 
             <div>
-                <div class="champion-portrait-wrapper">
-                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" alt="Adam L. Shapiro Personal Injury Attorney" class="champion-portrait-img">
+                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 460px; margin: 0 auto; position: relative;">
+                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro Personal Injury Attorney" class="champion-portrait-img" style="height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%;">
                 </div>
             </div>
         </div>
