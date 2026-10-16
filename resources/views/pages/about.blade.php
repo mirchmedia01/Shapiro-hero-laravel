@@ -38,7 +38,7 @@
             </div>
 
             <div>
-                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 460px; margin: 0 auto; position: relative;">
+                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 420px; margin: 0 auto; position: relative;">
                     <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro Personal Injury Attorney" class="champion-portrait-img" style="height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%;">
                 </div>
             </div>
@@ -64,16 +64,22 @@
                     <p>He took everything he learned defending the giants and turned it against them. When an adjuster sits across from Adam, they are facing someone who studied their playbook and even helped them write it.</p>
                     <p>That is Adam’s advantage. And now it works for you. Only.</p>
                 </div>
-                <div style="margin-top: 2rem;">
-                    <span class="badge badge-gold" style="font-size: 0.875rem; padding: 0.5rem 1rem;">30+ Years of Dual-Perspective Trial Mastery</span>
+                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1.25rem;">
+                    <div>
+                        <span class="badge badge-gold" style="font-size: 0.875rem; padding: 0.5rem 1rem;">30+ Years of Dual-Perspective Trial Mastery</span>
+                    </div>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Schedule Free Consultation &rarr;</a>
+                        <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                    </div>
                 </div>
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
                 <div class="hero-reel-mockup">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata"></video>
+                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
                 </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 440px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
                     <div>
                         <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-primary); margin: 0;">Adam L. Shapiro on Video</h4>
                         <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Advice if you are injured in an accident</p>
@@ -144,6 +150,12 @@
                     </p>
                     <span>&mdash; Adam L. Shapiro, Esq. &bull; Managing Partner</span>
                 </div>
+
+                {{-- Action Buttons --}}
+                <div style="margin-top: 1.75rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-lg">Get Adam On Your Side &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) SHAPIRO</a>
+                </div>
             </div>
 
             {{-- Right Column: Visual Showcase --}}
@@ -192,7 +204,7 @@
             {{-- Pillar 1 --}}
             <div class="pillar-feature-card">
                 <div class="pillar-icon-circle">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <x-icon name="file-text" size="24" />
                 </div>
                 <h4>Contract Clarity</h4>
                 <p>Meticulous scrutiny and negotiation of complex releases, insurance policies, and settlement contracts.</p>
@@ -201,7 +213,7 @@
             {{-- Pillar 2 --}}
             <div class="pillar-feature-card">
                 <div class="pillar-icon-circle">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <x-icon name="shield-check" size="24" />
                 </div>
                 <h4>Title Assurance</h4>
                 <p>Complete due diligence safeguarding client rights, property claims, and statutory entitlements.</p>
@@ -210,7 +222,7 @@
             {{-- Pillar 3 --}}
             <div class="pillar-feature-card">
                 <div class="pillar-icon-circle">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <x-icon name="globe" size="24" />
                 </div>
                 <h4>Bilingual Legal Services</h4>
                 <p>Direct attorney communication in English and Spanish without translators or communication barriers.</p>
@@ -219,7 +231,7 @@
             {{-- Pillar 4 --}}
             <div class="pillar-feature-card">
                 <div class="pillar-icon-circle">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 0 0 1.4 0l6.6-6.6a1 1 0 0 0 0-1.4l-5-5a1 1 0 0 0-1.4 0L13 7"/><path d="m14 14-3 3-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.4 0l2 2"/></svg>
+                    <x-icon name="handshake" size="24" />
                 </div>
                 <h4>Smooth Closings</h4>
                 <p>Seamless execution and prompt disbursement of hard-won settlement recoveries and court awards.</p>
@@ -228,7 +240,7 @@
             {{-- Pillar 5 --}}
             <div class="pillar-feature-card">
                 <div class="pillar-icon-circle">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    <x-icon name="compass" size="24" />
                 </div>
                 <h4>Trusted Guidance</h4>
                 <p>Unvarnished, strategic legal advice directly from Adam Shapiro at every critical juncture of your case.</p>
@@ -252,8 +264,12 @@
                     <p style="font-size: 1.0625rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 1.5rem;">
                         Adam’s firm serves New York’s full community. If English is not your first language, that is not a barrier here. The firm provides full legal services in both English and Spanish. You deserve to understand exactly what is happening with your case, in the language you think in.
                     </p>
-                    <div style="font-size: 1.25rem; font-weight: 800; color: var(--color-accent-light); font-family: var(--font-heading);">
+                    <div style="font-size: 1.25rem; font-weight: 800; color: var(--color-accent-light); font-family: var(--font-heading); margin-bottom: 1.5rem;">
                         Hablamos Espa&ntilde;ol.
+                    </div>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Consulta Gratuita / Free Case Review &rarr;</a>
+                        <a href="tel:+19707427476" class="btn btn-outline-white btn-lg">Llámenos: (970) 742-7476</a>
                     </div>
                 </div>
 
@@ -287,8 +303,8 @@
             {{-- Academic Background Card --}}
             <div class="card" style="height: 100%; padding: 2.25rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(30, 58, 138, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue);">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <div class="card-icon-box card-icon-blue" style="margin-bottom: 0;">
+                        <x-icon name="graduation-cap" size="24" />
                     </div>
                     <div>
                         <h3 class="heading-sm" style="margin: 0;">Academic Background</h3>
@@ -320,8 +336,8 @@
             {{-- Admissions & Field Experience Card --}}
             <div class="card" style="height: 100%; padding: 2.25rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(220, 38, 38, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent-red);">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <div class="card-icon-box card-icon-red" style="margin-bottom: 0;">
+                        <x-icon name="scale" size="24" />
                     </div>
                     <div>
                         <h3 class="heading-sm" style="margin: 0;">Field Experience &amp; Bar Admissions</h3>

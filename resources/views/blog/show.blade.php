@@ -196,7 +196,7 @@
                     {{-- Redesigned Author Profile Box (Solves media_1790187369464.png) --}}
                     <div class="blog-author-box">
                         <div class="blog-author-avatar-wrap">
-                            <img src="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" alt="Adam L. Shapiro" class="blog-author-avatar" onerror="this.onerror=null;this.src='{{ asset('assets/media/branding/shapiro-badge-round.png') }}';">
+                            <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro" class="blog-author-avatar" onerror="this.onerror=null;this.src='{{ asset('assets/media/branding/shapiro-badge-round.png') }}';">
                         </div>
                         <div class="blog-author-info">
                             <div class="blog-author-header">

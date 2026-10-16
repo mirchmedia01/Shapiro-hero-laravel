@@ -58,10 +58,14 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     Most people assume an e-bike accident works the same way as a car accident. It does not. The legal landscape is different, and the insurance picture is significantly more complicated. E-bikes and scooters do not require traditional motor vehicle insurance. When a collision involves a car, the rider may claim the driver’s no-fault insurance or, if the driver is unidentified, through New York’s Motor Vehicle Accident Indemnification Corporation.
                 </p>
-                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md);">
+                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md); margin-bottom: 1.5rem;">
                     <p style="margin: 0; color: var(--color-text); font-weight: 500;">
                         Standard auto policies rarely cover e-scooter injuries. Some homeowners or renters policies provide limited liability. Many injured riders discover they are caught between policies with no clear path to recovery. We know that path. We find it, and we deploy every available claim.
                     </p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free E-Bike Case Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
                 </div>
             </div>
 
@@ -284,16 +288,8 @@
     </div>
 </section>
 
-{{-- Five Boroughs Section --}}
-<section class="section">
-    <div class="container text-center" style="max-width: 820px; margin: 0 auto;">
-        <span class="section-subtitle">Jurisdiction &amp; Reach</span>
-        <h2 class="heading-lg" style="margin-bottom: 1rem;">We Fight Across All Five Boroughs</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin: 0;">
-            Queens including Forest Hills, Flushing, and Astoria. Brooklyn. The Bronx. Manhattan. Staten Island. Long Island. Wherever you were hit in New York, we deploy every available claim and pursue every liable party.
-        </p>
-    </div>
-</section>
+{{-- Five Boroughs and Long Island Section --}}
+@include('partials.jurisdiction-reach')
 
 {{-- Cases We Handle Matrix --}}
 @include('partials.cases-we-handle')

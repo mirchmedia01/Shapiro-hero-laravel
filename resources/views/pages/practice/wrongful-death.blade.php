@@ -58,10 +58,14 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     Four things have to be true: There was a legal duty of care. That duty was breached. The breach caused the death. And the family suffered measurable losses as a result. We build the case on all four. Every time.
                 </p>
-                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md);">
+                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md); margin-bottom: 1.5rem;">
                     <p style="margin: 0; color: var(--color-text); font-weight: 500;">
                         Adam and his team have spent 30 years on both sides of civil litigation in New York. He knows how insurance companies value a human life, the math of it all, and how to destroy their arguments in front of a jury.
                     </p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Compassionate Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
                 </div>
             </div>
 
@@ -314,15 +318,7 @@
 </section>
 
 {{-- Five Boroughs and Long Island Section --}}
-<section class="section section-alt">
-    <div class="container text-center" style="max-width: 820px; margin: 0 auto;">
-        <span class="section-subtitle">Jurisdiction &amp; Reach</span>
-        <h2 class="heading-lg" style="margin-bottom: 1rem;">We Fight Across All Five Boroughs and Beyond</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin: 0;">
-            Queens. Brooklyn. The Bronx. Manhattan. Staten Island. Long Island. Wherever in New York your family suffered this loss, we come for the people responsible.
-        </p>
-    </div>
-</section>
+@include('partials.jurisdiction-reach')
 
 {{-- Cases We Handle Matrix --}}
 @include('partials.cases-we-handle')

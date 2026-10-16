@@ -42,7 +42,7 @@
                 <div>
                     <div class="hero-media-card">
                         <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="High Profile Landmark Cases &amp; Litigation" loading="eager">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem 1.75rem 1.25rem; background: linear-gradient(to top, rgba(10,25,47,0.95) 0%, rgba(10,25,47,0.7) 50%, transparent 100%);">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">Proven Trial Record</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">Featured Across NY Post, Daily News &amp; National TV</div>
                         </div>
@@ -614,13 +614,7 @@
                 </div>
 
                 <div>
-                    <div class="card" style="background: #ffffff; border: 2px solid var(--color-primary-blue); box-shadow: var(--shadow-xl); padding: 2.5rem;">
-                        <span class="badge badge-red" style="margin-bottom: 0.75rem;">Free Case Evaluation</span>
-                        <h3 style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">Get Your Case Evaluated</h3>
-                        <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.75rem;">Speak directly with Attorney Adam L. Shapiro regarding your legal matter.</p>
-                        
-                        <x-contact-form caseType="High Profile Litigation" />
-                    </div>
+                    <x-contact-form caseType="High Profile Litigation" title="Get Your Case Evaluated" subtitle="Speak directly with Attorney Adam L. Shapiro regarding your legal matter." badge="Free Case Evaluation" />
                 </div>
             </div>
         </div>

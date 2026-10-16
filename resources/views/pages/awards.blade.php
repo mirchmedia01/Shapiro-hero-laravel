@@ -148,12 +148,6 @@
                         <div class="award-badge-org">{{ $item['org'] }}</div>
                         <p class="award-badge-desc">{{ $item['desc'] }}</p>
                     </div>
-                    <div class="award-badge-footer">
-                        <span class="award-badge-verified">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                            Verified Credential
-                        </span>
-                    </div>
                 </div>
             @endforeach
         </div>
@@ -201,62 +195,7 @@
             </div>
 
             <div>
-                <div class="card" style="background: #ffffff; border: 2px solid var(--color-border); border-radius: var(--radius-xl); padding: 2.5rem; box-shadow: var(--shadow-lg);">
-                    <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Book A Consultation</h3>
-                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.75rem;">Fill out the form below. An attorney will respond immediately.</p>
-
-                    @if(session('success'))
-                        <div style="background: #dcfce7; border: 1px solid #86efac; color: #166534; padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; font-size: 0.875rem;">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-
-                    <form action="{{ route('contact.submit') }}" method="POST">
-                        @csrf
-                        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-                            <div>
-                                <label for="name" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Full Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="Your full name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
-                            </div>
-
-                            <div class="form-row-two-col">
-                                <div>
-                                    <label for="phone" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" required placeholder="(970) 000-0000" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
-                                </div>
-                                <div>
-                                    <label for="email" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Email Address *</label>
-                                    <input type="email" id="email" name="email" required placeholder="you@example.com" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="case_type" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Type of Accident / Case *</label>
-                                <select id="case_type" name="case_type" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem; background: #ffffff;">
-                                    <option value="" disabled selected>Select case type...</option>
-                                    <option value="Car / Motor Vehicle Accident">Car / Motor Vehicle Accident</option>
-                                    <option value="Slip, Trip & Fall">Slip, Trip & Fall</option>
-                                    <option value="Construction Site Accident">Construction Site Accident</option>
-                                    <option value="Workers' Compensation">Workers' Compensation</option>
-                                    <option value="Medical Malpractice">Medical Malpractice</option>
-                                    <option value="E-Bike / Scooter Accident">E-Bike / Scooter Accident</option>
-                                    <option value="Wrongful Death">Wrongful Death</option>
-                                    <option value="Other Injury">Other Personal Injury</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label for="message" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Case Brief Details *</label>
-                                <textarea id="message" name="message" rows="4" required placeholder="Tell us what happened, date of accident, and injuries sustained..." style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem; resize: vertical;"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-accent btn-lg" style="width: 100%; justify-content: center; box-shadow: 0 8px 20px rgba(220, 38, 38, 0.35);">
-                                <span>Submit For Free Review</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                <x-contact-form title="Book A Free Consultation" subtitle="Fill out the form below. Attorney Adam L. Shapiro will respond immediately." />
             </div>
         </div>
     </div>

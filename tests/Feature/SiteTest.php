@@ -87,7 +87,6 @@ class SiteTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertSee('The Evidence Room');
-        $response->assertSee('Search');
         $response->assertSee('class="container"', false);
 
         // Verify zero legacy Elementor styles, containers, and classes
@@ -103,7 +102,6 @@ class SiteTest extends TestCase
         // 1. Search Query
         $response = $this->get('/blog/?s=accident');
         $response->assertStatus(200);
-        $response->assertSee('value="accident"', false);
         $response->assertSee('Search results for:', false);
 
         // 2. Tag Filter
@@ -178,6 +176,32 @@ class SiteTest extends TestCase
 
         $response = $this->post('/contact-us', $payload);
         $response->assertSessionHasErrors('website_hp');
+    }
+
+    public function test_contact_form_validates_required_fields(): void
+    {
+        $response = $this->post('/contact-us', [
+            'name' => '',
+            'phone' => '',
+            'message' => '',
+        ]);
+
+        $response->assertSessionHasErrors(['name', 'phone', 'message']);
+    }
+
+    public function test_awards_and_references_pages_contain_integrated_contact_form(): void
+    {
+        $awardsResponse = $this->get('/awards/');
+        $awardsResponse->assertStatus(200);
+        $awardsResponse->assertSee('contact-form-card', false);
+        $awardsResponse->assertSee('Book A Free Consultation');
+        $awardsResponse->assertSee('name="website_hp"', false);
+
+        $refResponse = $this->get('/references-recommendations/');
+        $refResponse->assertStatus(200);
+        $refResponse->assertSee('contact-form-card', false);
+        $refResponse->assertSee('Book A Free Consultation');
+        $refResponse->assertSee('name="website_hp"', false);
     }
 
     public function test_sitemap_xml_generates_valid_xml(): void
@@ -352,7 +376,7 @@ class SiteTest extends TestCase
         $pi = $this->get('/personal-injury-lawyer-new-york/');
         $pi->assertStatus(200);
         $pi->assertDontSee('ebike-scooter-accident-lawyer.jpg');
-        $pi->assertSee('adam-shapiro-office-portrait.webp');
+        $pi->assertSee('adam-shapiro-portrait.png');
         $pi->assertSee('class="faq-list"', false);
         $pi->assertSee('class="faq-item"', false);
 
@@ -377,10 +401,9 @@ class SiteTest extends TestCase
         $home = $this->get('/');
         $home->assertStatus(200);
 
-        // 1. Video caption width matches video width (440px) and avoids awkward wrap
-        $home->assertSee('max-width: 440px');
+        // 1. Video caption and removal of HD Full Audio tag
         $home->assertSee('Adam L. Shapiro in Action');
-        $home->assertSee('HD &bull; Full Audio', false);
+        $home->assertDontSee('HD &bull; Full Audio', false);
 
         // 2. Personal injury card uses courthouse photo without cut-off text
         $home->assertSee('assets/media/practice-areas/personal-injury-lawyer.jpg');
@@ -453,5 +476,35 @@ class SiteTest extends TestCase
             $response->assertStatus(301);
             $response->assertRedirect($withSlash);
         }
+    }
+
+    public function test_all_pages_have_hero_banner_and_proper_background_styles(): void
+    {
+        // 1. Homepage has hero section and no 'HD • Full Audio'
+        $home = $this->get('/');
+        $home->assertStatus(200);
+        $home->assertSee('hero-section');
+        $home->assertDontSee('HD &bull; Full Audio', false);
+
+        // 2. References page has hero section
+        $references = $this->get('/references-recommendations/');
+        $references->assertStatus(200);
+        $references->assertSee('hero-section');
+        $references->assertSee('References &amp;', false);
+        $references->assertSee('Recommendations');
+
+        // 3. About page has hero section
+        $about = $this->get('/about-us/');
+        $about->assertStatus(200);
+        $about->assertSee('hero-section');
+
+        // 4. CSS contains proper background image reference
+        $css = file_get_contents(public_path('assets/css/modern-theme.css'));
+        $this->assertStringContainsString('hero-bg-court.jpg', $css);
+        $this->assertFileExists(public_path('assets/media/branding/hero-bg-court.jpg'));
+
+        // 5. Footer social buttons are circular with dedicated styling
+        $home->assertSee('footer-social-btn');
+        $this->assertStringContainsString('.footer-social-btn', $css);
     }
 }

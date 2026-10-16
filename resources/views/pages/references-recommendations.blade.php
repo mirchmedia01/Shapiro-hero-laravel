@@ -7,32 +7,47 @@
 {{-- =========================================================================
      1. HERO SECTION
      ========================================================================= --}}
-<section style="position: relative; overflow: hidden; background: #0b1b3d;">
-    <div style="width: 100%; max-height: 480px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img src="{{ asset('assets/media/branding/life-changes-banner.png') }}" alt="When Life Changes - Shapiro The Hero Law Office" style="width: 100%; height: auto; object-fit: cover;" fetchpriority="high">
+<section class="hero-section">
+    <div class="container">
+        <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1.25rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ef4444;"></span>
+                <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #fca5a5;">Verified Client Endorsements</span>
+            </div>
+
+            <h1 class="heading-xl" style="color: #ffffff; margin-bottom: 1.5rem;">
+                References &amp; <span style="color: var(--color-accent-light);">Recommendations</span>
+            </h1>
+
+            <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 2.25rem;">
+                When life changes in an instant, we are here. Read direct references and recommendations from clients, colleagues, and families represented by Attorney Adam L. Shapiro across over 30 years of personal injury advocacy in New York and Florida.
+            </p>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#testimonials-list" class="btn btn-accent btn-lg">
+                    <span>Read Verified Reviews</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14m-7-7 7 7 7-7"/></svg>
+                </a>
+                <a href="{{ route('contact') }}" class="btn btn-outline-white btn-lg">
+                    <span>Free Case Evaluation</span>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
 {{-- =========================================================================
      2. REFERENCES & RECOMMENDATIONS INTRO & LIST
      ========================================================================= --}}
-<section class="section" style="background: var(--color-bg); padding: 4rem 0;">
+<section class="section" id="testimonials-list" style="background: var(--color-bg); padding: 4rem 0;">
     <div class="container" style="max-width: 960px;">
-        <div style="text-align: center; margin-bottom: 3.5rem;">
-            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.2); padding: 0.4rem 1.25rem; border-radius: var(--radius-full); margin-bottom: 1.25rem;">
-                <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary);">Verified Client Endorsements</span>
-            </div>
-
-            <h1 class="heading-xl" style="color: var(--color-primary); margin-bottom: 1.5rem;">
-                References &amp; <span style="color: var(--color-accent-blue, #1e3a8a);">Recommendations</span>
-            </h1>
-
+        <div style="text-align: center; margin-bottom: 3rem;">
             <div style="margin: 0 auto 1.5rem; display: flex; justify-content: center;">
                 <img src="{{ asset('assets/media/branding/linkedin-badge.jpg') }}" alt="LinkedIn Recommendation Badge" style="max-width: 260px; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm);">
             </div>
 
             <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text-muted); max-width: 800px; margin: 0 auto;">
-                Read direct references and recommendations from clients, colleagues, and families represented by Attorney Adam L. Shapiro across over 30 years of personal injury advocacy in New York and Florida.
+                Unedited reviews, recommendations, and firsthand accounts from injury victims and families whose futures we fought for and protected in New York.
             </p>
         </div>
 
@@ -166,8 +181,8 @@
                 </div>
 
                 <div style="background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; align-items: center; gap: 1.25rem;">
-                    <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(220, 38, 38, 0.1); color: var(--color-accent-red); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <div class="card-icon-box card-icon-red" style="margin-bottom: 0;">
+                        <x-icon name="phone-call" size="24" />
                     </div>
                     <div>
                         <div style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase;">24/7 Rapid Response Line</div>
@@ -177,62 +192,7 @@
             </div>
 
             <div>
-                <div class="card" style="background: #ffffff; border: 2px solid var(--color-border); border-radius: var(--radius-xl); padding: 2.25rem 1.75rem; box-shadow: var(--shadow-lg);">
-                    <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Book A Free Consultation</h3>
-                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.75rem;">Fill out the form below. An attorney will respond immediately.</p>
-
-                    @if(session('success'))
-                        <div style="background: #dcfce7; border: 1px solid #86efac; color: #166534; padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; font-size: 0.875rem;">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-
-                    <form action="{{ route('contact.submit') }}" method="POST">
-                        @csrf
-                        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-                            <div>
-                                <label for="name" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Full Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="Your full name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
-                            </div>
-
-                            <div class="form-row-two-col">
-                                <div>
-                                    <label for="phone" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" required placeholder="(970) 000-0000" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
-                                </div>
-                                <div>
-                                    <label for="email" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Email Address *</label>
-                                    <input type="email" id="email" name="email" required placeholder="you@example.com" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="case_type" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Type of Accident / Case *</label>
-                                <select id="case_type" name="case_type" required style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem; background: #ffffff;">
-                                    <option value="" disabled selected>Select case type...</option>
-                                    <option value="Car / Motor Vehicle Accident">Car / Motor Vehicle Accident</option>
-                                    <option value="Slip, Trip & Fall">Slip, Trip & Fall</option>
-                                    <option value="Construction Site Accident">Construction Site Accident</option>
-                                    <option value="Workers' Compensation">Workers' Compensation</option>
-                                    <option value="Medical Malpractice">Medical Malpractice</option>
-                                    <option value="E-Bike / Scooter Accident">E-Bike / Scooter Accident</option>
-                                    <option value="Wrongful Death">Wrongful Death</option>
-                                    <option value="Other Injury">Other Personal Injury</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label for="message" style="display: block; font-size: 0.875rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Case Brief Details *</label>
-                                <textarea id="message" name="message" rows="4" required placeholder="Tell us what happened, date of accident, and injuries sustained..." style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem; resize: vertical;"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-accent btn-lg" style="width: 100%; justify-content: center; box-shadow: 0 8px 20px rgba(220, 38, 38, 0.35);">
-                                <span>Submit For Free Review</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                <x-contact-form title="Book A Free Consultation" subtitle="Fill out the form below. Attorney Adam L. Shapiro will respond immediately." />
             </div>
         </div>
     </div>

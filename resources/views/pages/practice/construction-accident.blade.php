@@ -173,9 +173,13 @@
                     <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1rem;">
                         It does not prevent you from suing the general contractor, a subcontractor, a property owner, or an equipment manufacturer whose negligence contributed to your accident.
                     </p>
-                    <p style="color: #cbd5e1; line-height: 1.7; margin: 0;">
+                    <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1.5rem;">
                         A third-party personal injury lawsuit runs parallel to your workers’ comp claim and recovers damages workers’ comp will never pay. We pursue both paths simultaneously from the first consultation. You should not have to choose between them.
                     </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Construction Case Review &rarr;</a>
+                        <a href="tel:+19707427476" class="btn btn-outline-white btn-md">Call (970) SHAPIRO</a>
+                    </div>
                 </div>
                 <div style="background: rgba(255,255,255,0.08); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15);">
                     <h4 style="color: var(--color-gold); font-size: 1.2rem; margin-bottom: 0.75rem;">Municipal Site 90-Day Deadline</h4>
@@ -283,15 +287,7 @@
 </section>
 
 {{-- Five Boroughs and Long Island Section --}}
-<section class="section">
-    <div class="container text-center" style="max-width: 820px; margin: 0 auto;">
-        <span class="section-subtitle">Jurisdiction &amp; Reach</span>
-        <h2 class="heading-lg" style="margin-bottom: 1rem;">We Fight Across All Five Boroughs and Long Island</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin: 0;">
-            Queens including Forest Hills, Flushing, and Astoria. Brooklyn including Downtown, Crown Heights, and Flatbush. The Bronx. Manhattan. Staten Island. Nassau County and Long Island. Wherever you were injured on a New York construction site, we come for the people responsible.
-        </p>
-    </div>
-</section>
+@include('partials.jurisdiction-reach')
 
 {{-- Cases We Handle Matrix --}}
 @include('partials.cases-we-handle')

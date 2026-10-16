@@ -52,10 +52,14 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     Property owners and their insurance adjusters move rapidly following an accident. They frequently attempt to blame the victim for not paying attention or claim they had "no notice" of the dangerous hazard.
                 </p>
-                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md);">
+                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md); margin-bottom: 1.5rem;">
                     <p style="margin: 0; color: var(--color-text); font-weight: 500;">
                         We have been litigating premises liability cases across New York City since 1994. Adam knows every single defense strategy property owners use because he spent years helping build them. Now he tears them apart on behalf of injured New Yorkers.
                     </p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Slip &amp; Fall Case Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
                 </div>
             </div>
 

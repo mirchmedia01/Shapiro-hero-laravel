@@ -58,10 +58,14 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
                     Medical malpractice occurs when a healthcare provider deviates from the standard of care that a reasonably competent provider would follow in the same situation. The bad result alone is not enough. You have to prove the provider did something wrong, or failed to do something they should have done, and that failure directly caused your injury.
                 </p>
-                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md);">
+                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md); margin-bottom: 1.5rem;">
                     <p style="margin: 0; color: var(--color-text); font-weight: 500;">
                         Proving that connection requires expert testimony. It requires someone in the same medical field to review the records and say, on the record, that the standard of care was breached. We build every case with licensed medical experts from the start. We review every record. We find where the standard of care broke down and who is responsible for it. Then we fight for everything you are owed.
                     </p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Malpractice Evaluation &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
                 </div>
             </div>
 
@@ -358,15 +362,7 @@
 </section>
 
 {{-- Five Boroughs and Long Island Section --}}
-<section class="section section-alt">
-    <div class="container text-center" style="max-width: 820px; margin: 0 auto;">
-        <span class="section-subtitle">Jurisdiction &amp; Reach</span>
-        <h2 class="heading-lg" style="margin-bottom: 1rem;">We Fight Across All Five Boroughs and Long Island</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin: 0;">
-            Queens including Forest Hills, Flushing, and Jamaica. Brooklyn. The Bronx. Manhattan. Staten Island. Nassau County and Long Island. Wherever the negligence occurred in New York, we come for the people responsible.
-        </p>
-    </div>
-</section>
+@include('partials.jurisdiction-reach')
 
 {{-- Cases We Handle Matrix --}}
 @include('partials.cases-we-handle')

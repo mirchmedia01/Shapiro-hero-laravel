@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     {{-- Modern Pure Laravel Stylesheet (Zero Elementor Dependencies) --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/modern-theme.css') }}" media="all" />
+    <link rel="stylesheet" href="{{ asset('assets/css/modern-theme.css') }}?v={{ file_exists(public_path('assets/css/modern-theme.css')) ? filemtime(public_path('assets/css/modern-theme.css')) : time() }}" media="all" />
 
     @stack('styles')
 </head>

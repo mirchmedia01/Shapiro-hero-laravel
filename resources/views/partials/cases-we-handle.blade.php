@@ -15,8 +15,8 @@
             {{-- Category 1 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
-                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 10.8 2 11 2 11.2V16c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    <div class="card-icon-box card-icon-blue">
+                        <x-icon name="car" size="24" />
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem; font-family: var(--font-heading);">Vehicle Accidents</h3>
                     <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-muted); margin-bottom: 1.25rem;">
@@ -31,8 +31,8 @@
             {{-- Category 2 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
-                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 20h20"/><path d="m5 10 4-5 4 5"/><path d="m15 10 4 5"/><path d="M9 10v10"/><path d="M15 15v5"/></svg>
+                    <div class="card-icon-box card-icon-blue">
+                        <x-icon name="hard-hat" size="24" />
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem; font-family: var(--font-heading);">Workplace &amp; Construction Injuries</h3>
                     <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-muted); margin-bottom: 1.25rem;">
@@ -47,8 +47,8 @@
             {{-- Category 3 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
-                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 21h18M5 21V7l8-4v18M13 21V3l6 4v14"/></svg>
+                    <div class="card-icon-box card-icon-blue">
+                        <x-icon name="alert-triangle" size="24" />
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem; font-family: var(--font-heading);">Premises Liability</h3>
                     <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-muted); margin-bottom: 1.25rem;">
@@ -63,8 +63,8 @@
             {{-- Category 4 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
-                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <div class="card-icon-box card-icon-blue">
+                        <x-icon name="activity" size="24" />
                     </div>
                     <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem; font-family: var(--font-heading);">Catastrophic &amp; Specialized Cases</h3>
                     <p style="font-size: 0.875rem; line-height: 1.7; color: var(--color-text-muted); margin-bottom: 1.25rem;">

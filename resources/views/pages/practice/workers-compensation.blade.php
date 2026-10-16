@@ -146,10 +146,14 @@
                     </div>
                 </div>
 
-                <div style="background: #ffffff; padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent);">
+                <div style="background: #ffffff; padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent); margin-bottom: 1.5rem;">
                     <p style="margin: 0; font-size: 0.9rem; color: var(--color-text); font-weight: 600;">
                         Employer Retaliation Is Illegal: Under New York law, it is strictly unlawful for your employer to fire, demote, or cut hours because you filed a claim. If they retaliate, we take direct legal action against them.
                     </p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Workers' Comp Consultation &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
                 </div>
             </div>
 

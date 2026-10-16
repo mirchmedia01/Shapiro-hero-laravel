@@ -36,7 +36,7 @@
                 <div>
                     <div class="hero-media-card">
                         <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="The Evidence Room - Legal Insights" loading="eager">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem 1.75rem 1.25rem; background: linear-gradient(to top, rgba(10,25,47,0.95) 0%, rgba(10,25,47,0.7) 50%, transparent 100%);">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">The Evidence Room</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">New York Personal Injury &amp; Trial Law Insights</div>
                         </div>
@@ -46,59 +46,25 @@
         </div>
     </section>
 
-    {{-- Search & Topic Filter Section --}}
-    <section class="section section-alt" style="padding-top: 3rem; padding-bottom: 2rem;" id="articles">
-        <div class="container">
-            <div style="max-width: 860px; margin: 0 auto; text-align: center;">
-                {{-- Search Box --}}
-                <form action="{{ route('blog.index') }}" method="GET" class="blog-search-box">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" style="align-self: center; flex-shrink: 0;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <input type="text" name="s" value="{{ $search ?? '' }}" placeholder="Search articles, case types, legal advice..." class="blog-search-input" aria-label="Search articles">
-                    @if(!empty($search))
-                        <a href="{{ route('blog.index') }}" style="align-self: center; color: #94a3b8; font-size: 1.1rem; padding: 0 0.5rem; text-decoration: none;" title="Clear search">&times;</a>
-                    @endif
-                    <button type="submit" class="btn btn-primary btn-sm" style="border-radius: var(--radius-full); padding: 0.65rem 1.5rem;">
-                        Search
-                    </button>
-                </form>
-
-                {{-- Topic Pills --}}
-                @if(isset($tags) && $tags->count() > 0)
-                    <div class="blog-tags-nav">
-                        <a href="{{ route('blog.index') }}" class="topic-pill {{ !isset($tag) && empty($search) ? 'active' : '' }}">
-                            All Topics
-                        </a>
-                        @foreach($tags->take(12) as $t)
-                            <a href="{{ route('blog.tag', $t->slug) }}" class="topic-pill {{ isset($tag) && $tag->id === $t->id ? 'active' : '' }}">
-                                {{ $t->name }} ({{ $t->posts_count }})
-                            </a>
-                        @endforeach
-                    </div>
-                @endif
-
-                {{-- Filter Result Notification --}}
-                @if(isset($tag))
-                    <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); padding: 0.75rem 1.25rem; display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 0.9375rem; color: var(--color-primary-blue); font-weight: 600;">
-                            Showing articles tagged: <strong>{{ $tag->name }}</strong>
-                        </span>
-                        <a href="{{ route('blog.index') }}" style="color: var(--color-accent-red); font-weight: 700; text-decoration: none; font-size: 0.875rem;">&times; Clear filter</a>
-                    </div>
-                @elseif(!empty($search))
-                    <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); padding: 0.75rem 1.25rem; display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="font-size: 0.9375rem; color: var(--color-primary-blue); font-weight: 600;">
-                            Search results for: "<strong>{{ $search }}</strong>" ({{ $posts->total() }} articles found)
-                        </span>
-                        <a href="{{ route('blog.index') }}" style="color: var(--color-accent-red); font-weight: 700; text-decoration: none; font-size: 0.875rem;">&times; View all</a>
-                    </div>
-                @endif
-            </div>
-        </div>
-    </section>
-
     {{-- Articles Grid --}}
-    <section class="section" style="padding-top: 2rem;">
+    <section class="section" style="padding-top: 3.5rem;" id="articles">
         <div class="container">
+            {{-- Filter Result Notification (if accessed via search or tag query) --}}
+            @if(isset($tag))
+                <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); padding: 0.75rem 1.25rem; display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <span style="font-size: 0.9375rem; color: var(--color-primary-blue); font-weight: 600;">
+                        Showing articles tagged: <strong>{{ $tag->name }}</strong>
+                    </span>
+                    <a href="{{ route('blog.index') }}" style="color: var(--color-accent-red); font-weight: 700; text-decoration: none; font-size: 0.875rem;">&times; Clear filter</a>
+                </div>
+            @elseif(!empty($search))
+                <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-md); padding: 0.75rem 1.25rem; display: inline-flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <span style="font-size: 0.9375rem; color: var(--color-primary-blue); font-weight: 600;">
+                        Search results for: "<strong>{{ $search }}</strong>" ({{ $posts->total() }} articles found)
+                    </span>
+                    <a href="{{ route('blog.index') }}" style="color: var(--color-accent-red); font-weight: 700; text-decoration: none; font-size: 0.875rem;">&times; View all</a>
+                </div>
+            @endif
             @if($posts->count() > 0)
                 <div class="grid grid-3" style="gap: 2rem;">
                     @foreach($posts as $post)

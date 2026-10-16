@@ -41,8 +41,8 @@
 
                 <div>
                     <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" alt="Join Shapiro The Hero Law Firm" loading="eager">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem 1.75rem 1.25rem; background: linear-gradient(to top, rgba(10,25,47,0.95) 0%, rgba(10,25,47,0.7) 50%, transparent 100%);">
+                        <img src="{{ asset('assets/media/about/ny-law-office-heritage.jpg') }}" alt="Direct Mentorship with Trial Veteran Adam L. Shapiro" loading="eager">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">Direct Mentorship</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">Work Directly Alongside 30+ Year Trial Veteran Adam L. Shapiro</div>
                         </div>
@@ -65,8 +65,8 @@
 
             <div class="grid grid-3" style="gap: 2rem;">
                 <div class="card" style="text-align: center; align-items: center; border-top: 4px solid var(--color-accent-red);">
-                    <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(220, 38, 38, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent-red); margin-bottom: 1.25rem;">
-                        <x-icon name="shield" size="28" />
+                    <div class="card-icon-box-lg card-icon-red">
+                        <x-icon name="gavel" size="28" />
                     </div>
                     <h3 class="heading-sm" style="margin-bottom: 0.75rem; color: var(--color-primary);">High Impact Cases</h3>
                     <p style="font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7;">
@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="card" style="text-align: center; align-items: center; border-top: 4px solid var(--color-primary-blue);">
-                    <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(30, 58, 138, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue); margin-bottom: 1.25rem;">
+                    <div class="card-icon-box-lg card-icon-blue">
                         <x-icon name="users" size="28" />
                     </div>
                     <h3 class="heading-sm" style="margin-bottom: 0.75rem; color: var(--color-primary);">Elite Legal Team</h3>
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="card" style="text-align: center; align-items: center; border-top: 4px solid var(--color-accent);">
-                    <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(217, 119, 6, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent); margin-bottom: 1.25rem;">
+                    <div class="card-icon-box-lg card-icon-gold">
                         <x-icon name="rocket" size="28" />
                     </div>
                     <h3 class="heading-sm" style="margin-bottom: 0.75rem; color: var(--color-primary);">Direct Mentorship &amp; Growth</h3>
@@ -218,7 +218,7 @@
 
             <div class="grid grid-4" style="gap: 1.5rem;">
                 <div class="card" style="padding: 1.75rem;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(217, 119, 6, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent); margin-bottom: 1rem;">
+                    <div class="card-icon-box card-icon-gold">
                         <x-icon name="dollar" size="24" />
                     </div>
                     <h4 style="font-size: 1.125rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem;">Generous Compensation</h4>
@@ -226,7 +226,7 @@
                 </div>
 
                 <div class="card" style="padding: 1.75rem;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(30, 58, 138, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue); margin-bottom: 1rem;">
+                    <div class="card-icon-box card-icon-blue">
                         <x-icon name="hospital" size="24" />
                     </div>
                     <h4 style="font-size: 1.125rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem;">Health &amp; Wellness</h4>
@@ -234,7 +234,7 @@
                 </div>
 
                 <div class="card" style="padding: 1.75rem;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(30, 58, 138, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue); margin-bottom: 1rem;">
+                    <div class="card-icon-box card-icon-blue">
                         <x-icon name="train" size="24" />
                     </div>
                     <h4 style="font-size: 1.125rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem;">Prime Location</h4>
@@ -242,8 +242,8 @@
                 </div>
 
                 <div class="card" style="padding: 1.75rem;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(220, 38, 38, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent-red); margin-bottom: 1rem;">
-                        <x-icon name="scale" size="24" />
+                    <div class="card-icon-box card-icon-red">
+                        <x-icon name="graduation-cap" size="24" />
                     </div>
                     <h4 style="font-size: 1.125rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.5rem;">Direct Mentorship</h4>
                     <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0;">Learn directly from 30+ year trial veteran Adam L. Shapiro.</p>

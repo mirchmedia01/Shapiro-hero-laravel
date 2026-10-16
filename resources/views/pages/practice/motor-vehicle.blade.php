@@ -45,7 +45,7 @@
         <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="Car Accident Claims in New York" style="width: 100%; height: 380px; object-fit: cover;">
+                    <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="Car Accident Claims in New York" style="width: 100%; aspect-ratio: 16 / 11; max-height: 400px; height: auto; object-fit: cover; display: block;">
                 </div>
             </div>
             <div>
@@ -57,9 +57,13 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     Insurance adjusters are trained to minimize payouts. They call fast, sound sympathetic, and put a number on the table that sounds reasonable but sits far below what your case is truly worth. Adam knows this firsthand because he spent years on the defense side watching it happen. Then he crossed the aisle to fight for injured victims.
                 </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7;">
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
                     When you hire us, we take over all communications with insurers immediately. We secure police reports, preserve surveillance footage and dashcam data, work with premier medical experts, and negotiate from strength. If they refuse to pay fairly, we take it to trial.
                 </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Auto Crash Case Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                </div>
             </div>
         </div>
     </div>
@@ -201,14 +205,18 @@
                         <li><strong>30 Days:</strong> Required deadline to file for New York No-Fault medical and lost wage benefits.</li>
                     </ul>
                 </div>
-                <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     <strong>Serving All Five Boroughs:</strong> Queens (Forest Hills, Flushing, Jamaica, Astoria), Brooklyn, The Bronx, Manhattan, Staten Island, and Long Island.
                 </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-lg">Check Your Claim Deadline &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) SHAPIRO</a>
+                </div>
             </div>
 
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl);">
-                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Crash Representation" style="width: 100%; height: 380px; object-fit: cover;">
+                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Crash Representation" style="width: 100%; aspect-ratio: 16 / 11; max-height: 400px; height: auto; object-fit: cover; display: block;">
                 </div>
             </div>
         </div>
