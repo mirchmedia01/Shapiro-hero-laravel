@@ -16,12 +16,12 @@
                 <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 1.5rem;">
                     Insurance companies move fast after a crash. We move faster. If you were injured in a car, truck, motorcycle, rideshare, or any motor vehicle collision in New York, we fight to recover every dollar you are owed.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <div class="btn-action-row">
                     <a href="tel:+19707427476" class="btn btn-accent btn-lg">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        Get Your Free War Plan
+                        Get Free Case Review
                     </a>
-                    <a href="#consultation" class="btn btn-outline-white btn-lg">Free Case Review</a>
+                    <a href="#consultation" class="btn btn-outline-white btn-lg">Schedule Consultation</a>
                 </div>
                 <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.875rem; color: #94a3b8;">
                     <span>✓ Free Consultation</span>
@@ -45,7 +45,7 @@
         <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="Car Accident Claims in New York" style="width: 100%; aspect-ratio: 16 / 11; max-height: 400px; height: auto; object-fit: cover; display: block;">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-car-accident-claims.jpg') }}" alt="Car Accident Claims in New York" style="width: 100%; aspect-ratio: 16 / 11; max-height: 480px; height: 100%; object-fit: cover; display: block;">
                 </div>
             </div>
             <div>
@@ -60,9 +60,9 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
                     When you hire us, we take over all communications with insurers immediately. We secure police reports, preserve surveillance footage and dashcam data, work with premier medical experts, and negotiate from strength. If they refuse to pay fairly, we take it to trial.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Auto Crash Case Review &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                <div class="btn-action-row">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Crash Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
                 </div>
             </div>
         </div>
@@ -139,46 +139,43 @@
 
             <div>
                 <span class="section-subtitle">Commercial &amp; Complex Collisions</span>
-                <h3 class="heading-md" style="margin-bottom: 1.25rem;">Truck Accident Claims — Federal Regulations &amp; Employer Liability</h3>
+                <h3 class="heading-md" style="margin-bottom: 1.25rem;">Truck Accident Claims — Federal Regulations &amp; Fleet Liability</h3>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Truck accident cases carry immense complexity and often significantly higher compensation than standard automobile claims.
+                    Commercial truck accidents involve severe injuries and complex federal FMCSA regulations. Unlike standard passenger car claims, liability often extends across multiple entities: the driver, the trucking company, the cargo loader, and equipment manufacturers.
                 </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
-                    Commercial trucking is governed by federal FMCSA regulations covering driver duty hours, mandatory vehicle inspections, weight limits, and commercial licensing. When a trucking company violates these safety rules and causes an accident, multiple parties can be held liable simultaneously: the driver, the employer, the cargo loader, and equipment manufacturers.
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                    Commercial carriers carry commercial policies from $1M to $10M+. We act immediately to secure vital telemetry, driver electronic logs, and maintenance records before they can be altered or erased.
                 </p>
-                <div style="background: var(--color-primary); color: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg);">
-                    <h4 style="color: var(--color-gold); font-size: 1.15rem; margin-bottom: 0.5rem;">Electronic Black Box Data</h4>
-                    <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin: 0 0 1rem 0;">
-                        We obtain black box electronic control module data, driver electronic logs, and maintenance records before they can be altered or destroyed.
-                    </p>
-                    <a href="tel:+19707427476" class="btn btn-accent btn-sm">Preserve Truck Evidence Now</a>
+                <div class="btn-action-row">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Truck Claim Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
                 </div>
             </div>
         </div>
 
-        {{-- Specialized Areas (Motorcycle, Rideshare, Hit and Run, Uninsured) --}}
-        <div class="grid grid-3" style="gap: 2rem;">
-            <div class="card" style="padding: 2rem;">
+        {{-- Specialized Areas (Motorcycle, Rideshare, Hit and Run) in One Clean Row --}}
+        <div class="grid grid-3" style="gap: 1.5rem;">
+            <div class="card" style="padding: 1.75rem;">
                 <span class="badge badge-red" style="margin-bottom: 0.75rem; align-self: flex-start;">Rider Defense</span>
                 <h4 class="card-title">Motorcycle Accidents</h4>
-                <p class="card-text">
-                    Riders face severe bias after accidents from insurers and juries. We directly dismantle the reflex assumption that the motorcyclist was speeding or reckless, holding negligent drivers responsible for catastrophic injuries.
+                <p class="card-text" style="line-height: 1.6; margin-bottom: 0;">
+                    Riders face unfair bias from insurers and juries. We dismantle the assumption that the motorcyclist was reckless, proving fault and recovering full compensation for serious trauma.
                 </p>
             </div>
 
-            <div class="card" style="padding: 2rem;">
+            <div class="card" style="padding: 1.75rem;">
                 <span class="badge badge-gold" style="margin-bottom: 0.75rem; align-self: flex-start;">Uber &amp; Lyft</span>
                 <h4 class="card-title">Rideshare Collisions</h4>
-                <p class="card-text">
-                    Liability shifts depending on the driver's app status — waiting for a fare ($50k/$100k) or actively carrying a passenger ($1M commercial policy). We ensure you tap the maximum tier of rideshare corporate coverage.
+                <p class="card-text" style="line-height: 1.6; margin-bottom: 0;">
+                    Coverage depends on driver app status — whether waiting for a fare or transporting passengers under a $1M corporate policy. We maximize recovery under every applicable tier.
                 </p>
             </div>
 
-            <div class="card" style="padding: 2rem;">
+            <div class="card" style="padding: 1.75rem;">
                 <span class="badge badge-blue" style="margin-bottom: 0.75rem; align-self: flex-start;">Uninsured / Hit &amp; Run</span>
-                <h4 class="card-title">Hit and Run Accidents — Your Rights Without the Other Driver</h4>
-                <p class="card-text">
-                    If the driver fled or carried zero insurance, your case is not lost. We pursue recovery through your own uninsured motorist coverage and New York's Motor Vehicle Accident Indemnification Corporation (MVAIC).
+                <h4 class="card-title">Hit &amp; Run Accidents</h4>
+                <p class="card-text" style="line-height: 1.6; margin-bottom: 0;">
+                    If the at-fault driver fled or had no insurance, your claim is not lost. We pursue recovery through your uninsured motorist coverage and New York's MVAIC fund.
                 </p>
             </div>
         </div>
@@ -208,15 +205,15 @@
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     <strong>Serving All Five Boroughs:</strong> Queens (Forest Hills, Flushing, Jamaica, Astoria), Brooklyn, The Bronx, Manhattan, Staten Island, and Long Island.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-primary btn-lg">Check Your Claim Deadline &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) SHAPIRO</a>
+                <div class="btn-action-row" style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0.75rem; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-md" style="white-space: nowrap;">Check Claim Deadline &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md" style="white-space: nowrap;">Call (970) SHAPIRO</a>
                 </div>
             </div>
 
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl);">
-                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Crash Representation" style="width: 100%; aspect-ratio: 16 / 11; max-height: 400px; height: auto; object-fit: cover; display: block;">
+                    <img src="{{ asset('assets/media/practice-areas/crash-scene-investigation.jpg') }}" alt="Motor Vehicle Crash Representation" style="width: 100%; aspect-ratio: 16 / 11; max-height: 480px; height: 100%; object-fit: cover; display: block;">
                 </div>
             </div>
         </div>
@@ -298,14 +295,16 @@
                 </p>
                 <div style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); margin-bottom: 2rem; border-left: 4px solid var(--color-accent); box-shadow: var(--shadow-sm);">
                     <div style="font-weight: 700; color: var(--color-primary); font-size: 1.15rem; margin-bottom: 0.5rem;">Direct Access to Adam Shapiro</div>
-                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.95rem;">
-                        Adam is reachable from the very first call. We review your accident details and formulate a customized War Plan for your case.
+                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6;">
+                        Adam is reachable from the very first call. We review your accident details and formulate a customized legal strategy for your case.
                     </p>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="tel:+19707427476" class="btn btn-accent btn-lg" style="text-align: center;">
-                        Call (970) 742-7476 — FREE. NOW.
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="tel:+19707427476" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; text-decoration: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Call (970) SHAPIRO / 970 742-7476</span>
                     </a>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center;">Available 24/7 &bull; Direct Attorney Access &bull; No Win No Fee</span>
                 </div>
             </div>
 

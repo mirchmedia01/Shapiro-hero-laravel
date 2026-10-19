@@ -57,22 +57,15 @@
 
             {{-- Right Column: Featured Video Reel --}}
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(11, 27, 61, 0.9); backdrop-filter: blur(8px); border: 1.5px solid rgba(255, 255, 255, 0.22); padding: 0.35rem 0.85rem 0.35rem 0.55rem; border-radius: 9999px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); margin-bottom: 0.85rem;">
-                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #D62828; color: #ffffff;">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                    </span>
-                    <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">The Shapiro Shield &bull; Official Reel</span>
-                </div>
                 <div class="hero-reel-mockup" id="hero-reel-container">
-                    <video id="hero-main-video" src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
-                    <div class="hero-video-play-overlay" id="hero-video-play-btn" title="Click to Play Video">
+                    <video id="hero-main-video" src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls autoplay muted loop playsinline preload="auto"></video>
+                    <div class="hero-video-play-overlay is-hidden" id="hero-video-play-btn" title="Click to Play Video">
                         <div class="hero-video-play-icon">
                             <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.5rem;">
-                    <span class="badge badge-gold" style="white-space: nowrap; flex-shrink: 0;">Verified</span>
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem;">
                     <span style="font-size: 0.875rem; color: #cbd5e1; white-space: nowrap;">Adam L. Shapiro in Action</span>
                 </div>
             </div>
@@ -158,7 +151,6 @@
                     <img src="{{ asset('assets/media/practice-areas/personal-injury-lawyer.jpg') }}" alt="Personal Injury Lawyer NYC" class="practice-card-image" loading="lazy">
                 </div>
                 <div class="practice-card-body">
-                    <span class="badge badge-blue" style="margin-bottom: 0.5rem; align-self: flex-start;">Primary Practice</span>
                     <h3 class="practice-card-title">Personal Injury</h3>
                     <p style="font-size: 0.9rem; line-height: 1.65; color: var(--color-text-muted); margin-bottom: 0.75rem;">
                         Someone’s negligence put you in a hospital bed. Now their insurance company is working to minimize what they pay you. We fight for injury victims across New York and Florida, from catastrophic accidents to serious injuries that change lives permanently.
@@ -167,7 +159,7 @@
                         We move fast. We build strong. We recover every dollar available to you.
                     </p>
                     <a href="{{ route('practice.personal-injury') }}" class="practice-card-link">
-                        <span>LEARN MORE &rarr;</span>
+                        <span>LEARN MORE</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -179,7 +171,6 @@
                     <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="E-Bike & Scooter Accident Attorney" class="practice-card-image" loading="lazy">
                 </div>
                 <div class="practice-card-body">
-                    <span class="badge badge-gold" style="margin-bottom: 0.5rem; align-self: flex-start;">Modern Transit</span>
                     <h3 class="practice-card-title">E-Bike &amp; Electric Scooter Accidents</h3>
                     <p style="font-size: 0.9rem; line-height: 1.65; color: var(--color-text-muted); margin-bottom: 0.75rem;">
                         Most NYC cycling fatalities involve e-bikes, and these crashes cause traumatic brain injuries, fractures, and spinal damage. No-fault insurance does not automatically apply the way it does with cars. Liability can fall on a negligent driver, a rental company, or a product manufacturer.
@@ -188,7 +179,7 @@
                         We find every liable party and deploy every available claim.
                     </p>
                     <a href="{{ route('practice.ebike-scooter') }}" class="practice-card-link">
-                        <span>LEARN MORE &rarr;</span>
+                        <span>LEARN MORE</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -200,7 +191,6 @@
                     <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Slip and Fall Attorney NYC" class="practice-card-image" loading="lazy">
                 </div>
                 <div class="practice-card-body">
-                    <span class="badge badge-red" style="margin-bottom: 0.5rem; align-self: flex-start;">Premises Liability</span>
                     <h3 class="practice-card-title">Slip/Trip &amp; Fall</h3>
                     <p style="font-size: 0.9rem; line-height: 1.65; color: var(--color-text-muted); margin-bottom: 0.75rem;">
                         Wet floors. Broken stairs. Cracked sidewalks. The property owner’s insurer will try to make it your fault. We crush that argument.
@@ -209,7 +199,7 @@
                         Critical rule: if a city or municipal property caused your injury, a Notice of Claim must be filed within 90 days. Miss that window and the case is gone. We move fast.
                     </p>
                     <a href="{{ route('practice.slip-trip-fall') }}" class="practice-card-link">
-                        <span>LEARN MORE &rarr;</span>
+                        <span>LEARN MORE</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -221,13 +211,12 @@
                     <img src="{{ asset('assets/media/practice-areas/workers-compensation-lawyer.jpg') }}" alt="Workers Compensation Lawyer New York" class="practice-card-image" loading="lazy">
                 </div>
                 <div class="practice-card-body">
-                    <span class="badge badge-blue" style="margin-bottom: 0.5rem; align-self: flex-start;">Workplace Claims</span>
                     <h3 class="practice-card-title">Workers’ Compensation in New York</h3>
                     <p style="font-size: 0.9rem; line-height: 1.65; color: var(--color-text-muted); margin-bottom: 1.25rem;">
                         Your employer’s workers’ comp insurer is not neutral. Their job is to close your claim cheap. We handle full compensation proceedings and investigate whether a third party carries separate personal injury liability. That can mean two claims running at once, maximizing everything you recover.
                     </p>
                     <a href="{{ route('practice.workers-compensation') }}" class="practice-card-link">
-                        <span>LEARN MORE &rarr;</span>
+                        <span>LEARN MORE</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -239,13 +228,12 @@
                     <img src="{{ asset('assets/media/practice-areas/medical-malpractice-attorney.png') }}" alt="Medical Malpractice and Surgical Errors" class="practice-card-image" loading="lazy">
                 </div>
                 <div class="practice-card-body">
-                    <span class="badge badge-red" style="margin-bottom: 0.5rem; align-self: flex-start;">Complex Litigation</span>
                     <h3 class="practice-card-title">Medical Malpractice &amp; Surgical Errors</h3>
                     <p style="font-size: 0.9rem; line-height: 1.65; color: var(--color-text-muted); margin-bottom: 1.25rem;">
                         Surgical errors. Misdiagnoses. Birth injuries. Medication mistakes. These cases require medical experts and a team that will not back down when the hospital’s legal department shows up. Adam spent years inside the machine. He knows how institutional defendants fight these claims.
                     </p>
                     <a href="{{ route('practice.medical-malpractice') }}" class="practice-card-link">
-                        <span>LEARN MORE &rarr;</span>
+                        <span>LEARN MORE</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -257,7 +245,6 @@
                     <img src="{{ asset('assets/media/practice-areas/wrongful-death-lawyer.jpg') }}" alt="Wrongful Death Claims Attorney" class="practice-card-image" loading="lazy">
                 </div>
                 <div class="practice-card-body">
-                    <span class="badge badge-gold" style="margin-bottom: 0.5rem; align-self: flex-start;">Compassionate</span>
                     <h3 class="practice-card-title">Wrongful Death Claims</h3>
                     <p style="font-size: 0.9rem; line-height: 1.65; color: var(--color-text-muted); margin-bottom: 0.75rem;">
                         When negligence takes a life, the family left behind deserves a fighter. We pursue funeral expenses, lost financial support, and the full economic impact the family will carry for years.
@@ -266,7 +253,7 @@
                         New York’s wrongful death statute of limitations is two years from the date of death. The clock is running.
                     </p>
                     <a href="{{ route('practice.wrongful-death') }}" class="practice-card-link">
-                        <span>LEARN MORE &rarr;</span>
+                        <span>LEARN MORE</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -909,8 +896,8 @@
                     <div>
                         <div class="client-card-header">
                             <div class="client-card-user">
-                                <div class="client-avatar-wrap" style="background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);">
-                                    <span class="client-avatar-initials">AA</span>
+                                <div class="client-avatar-wrap">
+                                    <img src="{{ asset('assets/media/clients/apnan-ahmed.jpg') }}" alt="APNAN AHMED review avatar" loading="lazy">
                                 </div>
                                 <div class="client-author-info">
                                     <h3 class="client-card-author">APNAN AHMED</h3>
@@ -949,8 +936,8 @@
                         <div class="client-card-header">
                             <div class="client-card-user">
                                 <div class="client-avatar-wrap">
-                                    <span class="client-avatar-initials">JA</span>
-                                    <img src="{{ asset('assets/media/clients/client-avatar-vt.png') }}" alt="James Anderson review avatar" style="display:none;" loading="lazy">
+                                    <img src="{{ asset('assets/media/clients/james-anderson.jpg') }}" alt="James Anderson review avatar" loading="lazy">
+                                    <img src="{{ asset('assets/media/clients/client-avatar-vt.png') }}" alt="" style="display:none;" loading="lazy">
                                 </div>
                                 <div class="client-author-info">
                                     <h3 class="client-card-author">James Anderson</h3>
@@ -988,8 +975,8 @@
                     <div>
                         <div class="client-card-header">
                             <div class="client-card-user">
-                                <div class="client-avatar-wrap" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
-                                    <span class="client-avatar-initials">ER</span>
+                                <div class="client-avatar-wrap">
+                                    <img src="{{ asset('assets/media/clients/eric-rosenbaum.jpg') }}" alt="Eric Rosenbaum review avatar" loading="lazy">
                                 </div>
                                 <div class="client-author-info">
                                     <h3 class="client-card-author">Eric Rosenbaum</h3>
@@ -1027,8 +1014,8 @@
                     <div>
                         <div class="client-card-header">
                             <div class="client-card-user">
-                                <div class="client-avatar-wrap" style="background: linear-gradient(135deg, #065f46 0%, #047857 100%);">
-                                    <span class="client-avatar-initials">PK</span>
+                                <div class="client-avatar-wrap">
+                                    <img src="{{ asset('assets/media/clients/philip-k.jpg') }}" alt="Philip K. review avatar" loading="lazy">
                                 </div>
                                 <div class="client-author-info">
                                     <h3 class="client-card-author">Philip K.</h3>
@@ -1066,8 +1053,8 @@
                     <div>
                         <div class="client-card-header">
                             <div class="client-card-user">
-                                <div class="client-avatar-wrap" style="background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);">
-                                    <span class="client-avatar-initials">MG</span>
+                                <div class="client-avatar-wrap">
+                                    <img src="{{ asset('assets/media/clients/maria-gonzalez.jpg') }}" alt="Maria Gonzalez review avatar" loading="lazy">
                                 </div>
                                 <div class="client-author-info">
                                     <h3 class="client-card-author">Maria Gonzalez</h3>
@@ -1347,9 +1334,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Hero Main Video Controls (On/Off Play/Pause)
+    // Hero Main Video Controls (On/Off Play/Pause & Autoplay)
     const heroVideo = document.getElementById('hero-main-video');
     const heroPlayBtn = document.getElementById('hero-video-play-btn');
+
+    if (heroVideo) {
+        heroVideo.muted = true;
+        const playPromise = heroVideo.play();
+        if (playPromise !== undefined) {
+            playPromise.then(function () {
+                if (heroPlayBtn) heroPlayBtn.classList.add('is-hidden');
+            }).catch(function (err) {
+                console.log('Hero video autoplay deferred or blocked:', err);
+            });
+        }
+    }
 
     if (heroVideo && heroPlayBtn) {
         heroPlayBtn.addEventListener('click', function (e) {

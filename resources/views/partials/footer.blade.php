@@ -84,7 +84,7 @@
         <div class="footer-top-grid">
             {{-- Col 1: About & Identity --}}
             <div>
-                <img src="{{ asset('assets/media/branding/shapiro-logo.png') }}" alt="Shapiro Law Office Logo" width="220" style="margin-bottom: 1.25rem;">
+                <img src="{{ asset('assets/media/branding/shapiro-logo.png') }}" alt="Shapiro Law Office Logo" width="286" style="margin-bottom: 1.25rem;">
                 <p style="font-size: 0.875rem; line-height: 1.7; color: #94a3b8; margin-bottom: 1rem;">
                     <strong>Shapiro Law Office</strong> – Experienced. Accessible. Results-Driven. Serving New York and New Jersey clients in personal injury, motor vehicle accidents, and wrongful death with trusted, aggressive representation. No recovery, no fee.
                 </p>

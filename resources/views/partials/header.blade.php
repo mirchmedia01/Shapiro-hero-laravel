@@ -27,7 +27,7 @@
     <div class="container">
         <nav class="nav-inner" aria-label="Main Navigation">
             <a href="{{ route('home') }}" class="brand-logo" aria-label="Shapiro The Hero Homepage">
-                <img src="{{ asset('assets/media/branding/shapiro-logo.png') }}" alt="Adam L. Shapiro &amp; Associates, P.C. Logo" width="220" height="52" fetchpriority="high">
+                <img src="{{ asset('assets/media/branding/shapiro-logo.png') }}" alt="Adam L. Shapiro &amp; Associates, P.C. Logo" width="286" height="68" fetchpriority="high">
             </a>
 
             {{-- Desktop Nav Links --}}
@@ -79,7 +79,7 @@
     {{-- Mobile Slide Drawer --}}
     <div id="mobile-nav-drawer" class="mobile-drawer">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border);">
-            <img src="{{ asset('assets/media/branding/shapiro-logo.png') }}" alt="Shapiro The Hero" style="height: 40px; width: auto;">
+            <img src="{{ asset('assets/media/branding/shapiro-logo.png') }}" alt="Shapiro The Hero" style="height: 52px; width: auto;">
             <button type="button" onclick="toggleMobileMenu()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-text); padding: 0.5rem;">
                 &times;
             </button>

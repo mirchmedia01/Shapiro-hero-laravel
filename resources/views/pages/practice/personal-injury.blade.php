@@ -19,10 +19,10 @@
                 <p style="font-size: 1.05rem; line-height: 1.7; color: #e2e8f0; margin-bottom: 2rem;">
                     Adam Shapiro and his team have represented injury victims across New York City since 1994. Before that, Adam spent years defending insurance companies and corporations on the other side. He knows their playbook — every single page of it.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <div class="btn-action-row">
                     <a href="tel:+19707427476" class="btn btn-accent btn-lg">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        Get Your Free War Plan
+                        Get Free Case Review
                     </a>
                     <a href="#consultation" class="btn btn-outline-white btn-lg">Schedule Consultation</a>
                 </div>
@@ -48,7 +48,7 @@
         <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Personal Injury Claims in New York" style="width: 100%; height: 380px; object-fit: cover;">
+                    <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Personal Injury Claims in New York" style="width: 100%; height: 480px; object-fit: cover;">
                 </div>
             </div>
             <div>
@@ -64,9 +64,9 @@
                     <strong style="color: var(--color-primary); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">That is where we come in.</strong>
                     <p style="margin: 0; font-size: 0.95rem; color: var(--color-text);">We protect your rights from day one, ensuring no insurer takes advantage of your situation while you heal.</p>
                 </div>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Injury Consultation &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                <div class="btn-action-row">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Injury Consultation &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
                 </div>
             </div>
         </div>
@@ -175,15 +175,15 @@
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     Each case type has its own legal nuances, statutory deadlines, and tactical requirements. We have mastered every single one.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Discuss Your Specific Case &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) SHAPIRO</a>
+                <div class="btn-action-row">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Discuss Your Case &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) SHAPIRO</a>
                 </div>
             </div>
 
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl);">
-                    <img src="{{ asset('assets/media/practice-areas/construction-accident-lawyer.png') }}" alt="Accident Cases Handled by Shapiro" style="width: 100%; height: 420px; object-fit: cover;">
+                    <img src="{{ asset('assets/media/practice-areas/construction-accident-lawyer.png') }}" alt="Accident Cases Handled by Shapiro" style="width: 100%; height: 500px; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -284,15 +284,15 @@
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     <strong>Serving All Five Boroughs and Long Island:</strong> Queens (Forest Hills, Flushing, Jamaica, Astoria), Brooklyn, Manhattan, The Bronx, Staten Island, and Nassau County.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-primary btn-lg">Put Adam On Your Side &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                <div class="btn-action-row">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-md">Put Adam On Your Side &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
                 </div>
             </div>
 
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); background: #0b1b3d;">
-                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam Shapiro NYC Attorney" style="width: 100%; height: 380px; object-fit: cover; object-position: center 20%; display: block;">
+                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam Shapiro NYC Attorney" style="width: 100%; height: 480px; object-fit: cover; object-position: center 20%; display: block;">
                 </div>
             </div>
         </div>
@@ -396,16 +396,18 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
                     The other side already has a team working on your case. Before you say anything to an insurance adjuster, sign a release, or accept a settlement offer, call us.
                 </p>
-                <div style="background: var(--color-bg-alt); padding: 1.75rem; border-radius: var(--radius-lg); margin-bottom: 2rem; border-left: 4px solid var(--color-accent);">
-                    <div style="font-weight: 700; color: var(--color-primary); font-size: 1.15rem; margin-bottom: 0.5rem;">Free War Plan Consultation</div>
-                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.95rem;">
-                        No fee unless we win. Adam is reachable from your very first call. We review your accident details and lay out your legal options clearly.
+                <div style="background: var(--color-bg-alt); padding: 1.75rem; border-radius: var(--radius-lg); margin-bottom: 1.75rem; border-left: 4px solid var(--color-accent);">
+                    <div style="font-weight: 700; color: var(--color-primary); font-size: 1.15rem; margin-bottom: 0.5rem;">Free Direct Attorney Consultation</div>
+                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6;">
+                        No fee unless we win. Adam is reachable directly from your very first call. We review your accident details and lay out your legal options clearly.
                     </p>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="tel:+19707427476" class="btn btn-accent btn-lg" style="text-align: center;">
-                        Call (970) 742-7476 — FREE. NOW.
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="tel:+19707427476" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; text-decoration: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Call (970) SHAPIRO / 970 742-7476</span>
                     </a>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center;">Available 24/7 &bull; Direct Attorney Access &bull; No Win No Fee</span>
                 </div>
             </div>
 

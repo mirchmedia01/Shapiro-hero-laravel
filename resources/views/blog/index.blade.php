@@ -35,10 +35,10 @@
 
                 <div>
                     <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="The Evidence Room - Legal Insights" loading="eager">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
-                            <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">The Evidence Room</span>
+                        <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="New York Legal Strategy &amp; Trial Insights" loading="eager" style="object-position: center bottom;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(6,14,34,0.92) 0%, rgba(6,14,34,0.65) 60%, transparent 100%);">
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">New York Personal Injury &amp; Trial Law Insights</div>
+                            <div style="color: #cbd5e1; font-size: 0.875rem; margin-top: 0.25rem;">Case Briefs, Trial Strategy &amp; Statutory Analysis</div>
                         </div>
                     </div>
                 </div>

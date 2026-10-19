@@ -401,13 +401,17 @@ class SiteTest extends TestCase
         $home = $this->get('/');
         $home->assertStatus(200);
 
-        // 1. Video caption and removal of HD Full Audio tag
+        // 1. Video caption, autoplay, and badge removal
         $home->assertSee('Adam L. Shapiro in Action');
-        $home->assertDontSee('HD &bull; Full Audio', false);
+        $home->assertDontSee('The Shapiro Shield &bull; Official Reel', false);
+        $home->assertSee('autoplay', false);
+        $home->assertSee('muted', false);
 
-        // 2. Personal injury card uses courthouse photo without cut-off text
+        // 2. Personal injury card uses courthouse photo without cut-off text and single arrow
         $home->assertSee('assets/media/practice-areas/personal-injury-lawyer.jpg');
         $home->assertDontSee('assets/media/practice-areas/personal-injury-banner.png');
+        $home->assertDontSee('<span>LEARN MORE &rarr;</span>', false);
+        $home->assertSee('<span>LEARN MORE</span>', false);
 
         // 3. Services directory practice card also uses the clean courthouse photo
         $services = $this->get('/services/');
@@ -420,6 +424,11 @@ class SiteTest extends TestCase
         $home->assertSee('pre-footer-actions');
         $home->assertSee('pre-footer-phone-link');
         $home->assertSee('(970) SHAPIRO / 970 742-7476');
+
+        // 5. Workers' compensation deadlines card has no yellow border
+        $wc = $this->get(route('practice.workers-compensation'));
+        $wc->assertStatus(200);
+        $wc->assertDontSee('border: 2px solid var(--color-accent-light);', false);
     }
 
     public function test_clients_carousel_and_blog_inner_page_redesign_and_site_links(): void
@@ -437,8 +446,12 @@ class SiteTest extends TestCase
         $home->assertSee('Eric Rosenbaum');
         $home->assertSee('Lance Becker');
         $home->assertSee('APNAN AHMED');
-        $home->assertSee('assets/media/clients/client-avatar-vt.png');
         $home->assertSee('assets/media/clients/lance-becker.png');
+        $home->assertSee('assets/media/clients/apnan-ahmed.jpg');
+        $home->assertSee('assets/media/clients/james-anderson.jpg');
+        $home->assertSee('assets/media/clients/eric-rosenbaum.jpg');
+        $home->assertSee('assets/media/clients/philip-k.jpg');
+        $home->assertSee('assets/media/clients/maria-gonzalez.jpg');
         $home->assertSee('assets/media/clients/google-icon.png');
         $home->assertSee('client-prev-btn');
         $home->assertSee('client-next-btn');
@@ -498,9 +511,9 @@ class SiteTest extends TestCase
         $about->assertStatus(200);
         $about->assertSee('hero-section');
 
-        // 4. CSS contains proper background image reference
+        // 4. CSS contains proper hero styling
         $css = file_get_contents(public_path('assets/css/modern-theme.css'));
-        $this->assertStringContainsString('hero-bg-court.jpg', $css);
+        $this->assertStringContainsString('.hero-section', $css);
         $this->assertFileExists(public_path('assets/media/branding/hero-bg-court.jpg'));
 
         // 5. Footer social buttons are circular with dedicated styling

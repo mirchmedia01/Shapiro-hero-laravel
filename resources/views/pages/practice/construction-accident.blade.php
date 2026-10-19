@@ -22,12 +22,12 @@
                 <p style="font-size: 1.05rem; line-height: 1.7; color: #e2e8f0; margin-bottom: 2rem;">
                     We have been fighting for injured construction workers across New York City since 1994. Adam spent years defending the contractors and insurers on the other side. Now that knowledge works for you. Free consultation. English and Spanish. No fee unless we win.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <div class="btn-action-row">
                     <a href="tel:+19707427476" class="btn btn-accent btn-lg">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        Get Your Free War Plan
+                        Get Free Case Review
                     </a>
-                    <a href="#consultation" class="btn btn-outline-white btn-lg">Free Consultation</a>
+                    <a href="#consultation" class="btn btn-outline-white btn-lg">Schedule Consultation</a>
                 </div>
                 <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.875rem; color: #94a3b8;">
                     <span>✓ Free Consultation</span>
@@ -176,8 +176,8 @@
                     <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1.5rem;">
                         A third-party personal injury lawsuit runs parallel to your workers’ comp claim and recovers damages workers’ comp will never pay. We pursue both paths simultaneously from the first consultation. You should not have to choose between them.
                     </p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Construction Case Review &rarr;</a>
+                    <div class="btn-action-row">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Construction Review &rarr;</a>
                         <a href="tel:+19707427476" class="btn btn-outline-white btn-md">Call (970) SHAPIRO</a>
                     </div>
                 </div>
@@ -267,15 +267,17 @@
                     The contractor’s insurance company starts building their defense the same day your accident happens. Before you give a recorded statement, sign anything, or accept any offer, call us first.
                 </p>
                 <div style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); margin-bottom: 2rem; border-left: 4px solid var(--color-accent); box-shadow: var(--shadow-sm);">
-                    <div style="font-weight: 700; color: var(--color-primary); font-size: 1.15rem; margin-bottom: 0.5rem;">Free War Plan Consultation</div>
-                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.95rem;">
-                        The consultation is free. Adam is reachable from the first call.
+                    <div style="font-weight: 700; color: var(--color-primary); font-size: 1.15rem; margin-bottom: 0.5rem;">Free Direct Attorney Consultation</div>
+                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6;">
+                        The consultation is free. Adam is reachable directly from the first call to evaluate your third-party claims and rights.
                     </p>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="tel:+19707427476" class="btn btn-accent btn-lg" style="text-align: center;">
-                        Call (970) 742-7476 — FREE. NOW.
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="tel:+19707427476" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; text-decoration: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Call (970) SHAPIRO / 970 742-7476</span>
                     </a>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center;">Available 24/7 &bull; Direct Attorney Access &bull; No Win No Fee</span>
                 </div>
             </div>
 

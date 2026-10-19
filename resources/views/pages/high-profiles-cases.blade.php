@@ -41,7 +41,7 @@
 
                 <div>
                     <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="High Profile Landmark Cases &amp; Litigation" loading="eager">
+                        <img src="{{ asset('assets/media/about/ny-trial-courtroom.jpg') }}" alt="High Profile Landmark Cases &amp; Litigation" loading="eager">
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">Proven Trial Record</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">Featured Across NY Post, Daily News &amp; National TV</div>

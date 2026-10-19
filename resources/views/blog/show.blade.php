@@ -152,7 +152,7 @@
                                 <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Adam L. Shapiro" style="width: 36px; height: 36px; border-radius: 50%; object-fit: contain; border: 1.5px solid #0f172a; background: #ffffff;">
                                 <div>
                                     <span style="display: block; font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Written By</span>
-                                    <strong style="color: #0f172a; font-size: 0.9375rem;">{{ $post->author_name ?? 'Adam L. Shapiro' }}</strong>
+                                    <strong style="color: #0f172a; font-size: 0.9375rem;">{{ (!empty($post->author_name) && strtolower($post->author_name) !== 'admin') ? $post->author_name : 'Attorney Adam L. Shapiro' }}</strong>
                                 </div>
                             </div>
 
@@ -238,7 +238,7 @@
                             <span>Call (970) SHAPIRO</span>
                         </a>
                         <a href="{{ route('contact') }}" class="btn btn-outline-white" style="display: block; width: 100%; text-align: center; font-size: 0.9375rem;">
-                            Request Online War Plan &rarr;
+                            Request Online Case Review &rarr;
                         </a>
                     </div>
 

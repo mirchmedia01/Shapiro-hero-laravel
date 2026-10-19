@@ -35,8 +35,7 @@
             {{ \Illuminate\Support\Str::limit(strip_tags($post->excerpt ?: $post->content), 140) }}
         </p>
 
-        <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-border); padding-top: 1rem;">
-            <span style="font-size: 0.8125rem; font-weight: 600; color: var(--color-text);">By {{ $post->author_name ?: 'Adam L. Shapiro' }}</span>
+        <div style="margin-top: auto; display: flex; align-items: center; justify-content: flex-end; border-top: 1px solid var(--color-border); padding-top: 1rem;">
             <a href="{{ route('blog.show', $post->slug) }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); display: inline-flex; align-items: center; gap: 0.35rem;">
                 Read Article &rarr;
             </a>

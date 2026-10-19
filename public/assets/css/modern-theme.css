@@ -32,7 +32,7 @@
     
     /* Layout */
     --container-max-width: 1280px;
-    --header-height: 80px;
+    --header-height: 88px;
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-logo img {
-    height: 52px;
+    height: 68px;
     width: auto;
     object-fit: contain;
     transition: height 0.2s ease;
@@ -728,8 +728,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 640px) {
     .brand-logo img {
-        height: 42px;
-        max-width: 190px;
+        height: 55px;
+        max-width: 250px;
     }
 }
 
@@ -738,8 +738,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.75rem;
     }
     .brand-logo img {
-        height: 36px;
-        max-width: 165px;
+        height: 47px;
+        max-width: 215px;
     }
 }
 
@@ -879,12 +879,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background-color: #060e22;
     background-image: 
-        radial-gradient(circle at 85% 25%, rgba(30, 58, 138, 0.30) 0%, transparent 60%),
-        radial-gradient(circle at 10% 75%, rgba(214, 40, 40, 0.10) 0%, transparent 50%),
-        linear-gradient(135deg, rgba(6, 14, 34, 0.62) 0%, rgba(11, 27, 61, 0.50) 50%, rgba(6, 14, 34, 0.66) 100%),
-        url('../media/branding/hero-bg-court.jpg');
-    background-size: cover;
-    background-position: center 30%;
+        radial-gradient(circle at 85% 20%, rgba(30, 58, 138, 0.35) 0%, transparent 55%),
+        radial-gradient(circle at 10% 80%, rgba(214, 40, 40, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.6) 0%, transparent 80%),
+        linear-gradient(135deg, #050b18 0%, #0b1b3d 50%, #071226 100%);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #ffffff;
     padding: 4rem 0 5rem 0;
@@ -929,7 +928,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
     .hero-grid {
-        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1fr 1fr;
         gap: 3.5rem;
     }
 }
@@ -1026,8 +1025,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.15);
     width: 100%;
-    aspect-ratio: 16 / 11;
-    max-height: 440px;
+    aspect-ratio: 4 / 3;
+    max-height: 520px;
+    min-height: 420px;
     height: auto;
     background: #0b1b3d;
     display: flex;
@@ -1186,8 +1186,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .practice-detail-page .hero-media-card,
 .services-page .hero-media-card {
-    aspect-ratio: 16 / 11;
-    max-height: 460px;
+    aspect-ratio: 4 / 3;
+    max-height: 540px;
+    min-height: 440px;
     height: auto;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
@@ -1197,7 +1198,8 @@ h1, h2, h3, h4, h5, h6 {
     .practice-detail-page .hero-media-card,
     .services-page .hero-media-card {
         aspect-ratio: 16 / 10;
-        max-height: 320px;
+        max-height: 360px;
+        min-height: auto;
         height: auto;
     }
 }
@@ -1206,8 +1208,39 @@ h1, h2, h3, h4, h5, h6 {
     .practice-detail-page .hero-media-card,
     .services-page .hero-media-card {
         aspect-ratio: 16 / 10;
-        max-height: 270px;
+        max-height: 290px;
+        min-height: auto;
         height: auto;
+    }
+}
+
+/* Action Button Row - Keep buttons on one row side-by-side */
+.btn-action-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    flex-wrap: nowrap !important;
+    max-width: 100% !important;
+}
+
+.btn-action-row .btn {
+    white-space: nowrap !important;
+    flex: 0 1 auto !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.9375rem !important;
+}
+
+@media (max-width: 480px) {
+    .btn-action-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        flex-wrap: wrap !important;
+    }
+    .btn-action-row .btn {
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
     }
 }
 
@@ -2331,12 +2364,11 @@ video.video-fluid {
     position: relative;
     background-color: #060e22;
     background-image: 
-        radial-gradient(circle at 85% 25%, rgba(30, 58, 138, 0.30) 0%, transparent 60%),
-        radial-gradient(circle at 10% 75%, rgba(214, 40, 40, 0.10) 0%, transparent 50%),
-        linear-gradient(135deg, rgba(6, 14, 34, 0.62) 0%, rgba(11, 27, 61, 0.50) 50%, rgba(6, 14, 34, 0.66) 100%),
-        url('../media/branding/hero-bg-court.jpg');
-    background-size: cover;
-    background-position: center 30%;
+        radial-gradient(circle at 85% 20%, rgba(30, 58, 138, 0.35) 0%, transparent 55%),
+        radial-gradient(circle at 10% 80%, rgba(214, 40, 40, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.6) 0%, transparent 80%),
+        linear-gradient(135deg, #050b18 0%, #0b1b3d 50%, #071226 100%);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #ffffff;
     padding: 4rem 0 5rem 0;

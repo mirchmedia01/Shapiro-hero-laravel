@@ -40,112 +40,101 @@
                 </div>
 
                 <div>
-                    <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="Contact Shapiro Law Firm" loading="eager">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
-                            <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">24/7 Hotline</span>
-                            <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">Direct Attorney Line: (970) 742-7476</div>
-                            <div style="color: #cbd5e1; font-size: 0.875rem; margin-top: 0.25rem;">Queens &bull; Brooklyn &bull; Manhattan &bull; Bronx &bull; Long Island</div>
-                        </div>
-                    </div>
+                    <x-contact-form />
                 </div>
             </div>
         </div>
     </section>
 
-    {{-- Contact Information & Form Split --}}
-    <section class="section" style="background: var(--color-bg);">
+    {{-- Contact Information & Office Details --}}
+    <section class="section" style="background: var(--color-bg); padding: 4rem 0;">
         <div class="container">
-            <div class="contact-split-grid">
+            <div class="grid grid-3" style="gap: 2rem; align-items: stretch;">
                 
-                {{-- Left Column: Direct Contact & Office Cards --}}
-                <div style="display: flex; flex-direction: column; gap: 1.75rem;">
-                    
-                    {{-- 24/7 Hotline Card --}}
-                    <div class="card card-dark" style="padding: 2.25rem;">
-                        <span class="badge badge-gold" style="margin-bottom: 0.75rem; align-self: flex-start;">24/7 Hotline</span>
-                        <h2 style="font-size: 1.75rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
-                            Direct Emergency Support
-                        </h2>
-                        <p style="color: #cbd5e1; font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                            Accidents happen at all hours. Our legal team is reachable around the clock to provide immediate emergency guidance.
-                        </p>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <a href="tel:+19707427476" style="display: flex; align-items: center; gap: 1rem; color: #ffffff; text-decoration: none; font-size: 1.35rem; font-weight: 800;">
-                                <div class="card-icon-box-sm card-icon-red card-icon-on-dark" style="margin-bottom: 0;">
-                                    <x-icon name="phone-call" size="20" />
-                                </div>
-                                <span>(970) 742-7476</span>
-                            </a>
-                            <a href="mailto:adam@shapirolawoffice.com" style="display: flex; align-items: center; gap: 1rem; color: #cbd5e1; text-decoration: none; font-size: 1rem; font-weight: 600;">
-                                <div class="card-icon-box-sm card-icon-blue card-icon-on-dark" style="margin-bottom: 0;">
-                                    <x-icon name="mail" size="20" />
-                                </div>
-                                <span>adam@shapirolawoffice.com</span>
-                            </a>
-                        </div>
+                {{-- 24/7 Hotline Card --}}
+                <div class="card card-dark" style="padding: 2.25rem; display: flex; flex-direction: column;">
+                    <span class="badge badge-gold" style="margin-bottom: 0.75rem; align-self: flex-start;">24/7 Hotline</span>
+                    <h2 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+                        Direct Emergency Support
+                    </h2>
+                    <p style="color: #cbd5e1; font-size: 0.9375rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+                        Accidents happen at all hours. Our legal team is reachable around the clock to provide immediate emergency guidance.
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: auto;">
+                        <a href="tel:+19707427476" style="display: flex; align-items: center; gap: 0.75rem; color: #ffffff; text-decoration: none; font-size: 1.2rem; font-weight: 800;">
+                            <div class="card-icon-box-sm card-icon-red card-icon-on-dark" style="margin-bottom: 0;">
+                                <x-icon name="phone-call" size="18" />
+                            </div>
+                            <span>(970) 742-7476</span>
+                        </a>
+                        <a href="mailto:adam@shapirolawoffice.com" style="display: flex; align-items: center; gap: 0.75rem; color: #cbd5e1; text-decoration: none; font-size: 0.9375rem; font-weight: 600;">
+                            <div class="card-icon-box-sm card-icon-blue card-icon-on-dark" style="margin-bottom: 0;">
+                                <x-icon name="mail" size="18" />
+                            </div>
+                            <span style="word-break: break-all;">adam@shapirolawoffice.com</span>
+                        </a>
                     </div>
-
-                    {{-- Office Locations Card --}}
-                    <div class="card" style="padding: 2rem;">
-                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-                            <div class="card-icon-box-sm card-icon-red" style="margin-bottom: 0;">
-                                <x-icon name="map-pin" size="20" />
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Office Locations</h3>
-                        </div>
-
-                        <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border);">
-                            <strong style="color: var(--color-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Forest Hills NYC Headquarters:</strong>
-                            <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin: 0; line-height: 1.6;">
-                                70-20 Austin St, Suite 111<br>
-                                Forest Hills, NY 11375
-                            </p>
-                        </div>
-
-                        <div style="margin-bottom: 1rem;">
-                            <strong style="color: var(--color-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Long Island Consultation Office:</strong>
-                            <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin: 0; line-height: 1.6;">
-                                110-20 71st Ave<br>
-                                Forest Hills &amp; Long Island, NY
-                            </p>
-                        </div>
-
-                        <p style="font-size: 0.8125rem; color: var(--color-text-light); font-style: italic; margin: 0;">
-                            * Hospital and in-home visits available across NYC and Long Island for severely injured victims.
-                        </p>
-                    </div>
-
-                    {{-- Intake Hours Card --}}
-                    <div class="card" style="padding: 2rem;">
-                        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-                            <div class="card-icon-box-sm card-icon-blue" style="margin-bottom: 0;">
-                                <x-icon name="clock" size="20" />
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Intake &amp; Business Hours</h3>
-                        </div>
-
-                        <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9375rem;">
-                            <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
-                                <span style="font-weight: 600; color: var(--color-text);">Monday – Friday:</span>
-                                <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 AM – 7:00 PM</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
-                                <span style="font-weight: 600; color: var(--color-text);">Saturday – Sunday:</span>
-                                <span style="font-weight: 700; color: var(--color-accent-red);">24/7 Emergency Line</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between;">
-                                <span style="font-weight: 600; color: var(--color-text);">Online Case Form:</span>
-                                <span style="font-weight: 700; color: var(--color-accent-light);">Processed Instantly</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                {{-- Right Column: Free Case Evaluation Form Card --}}
-                <div style="position: sticky; top: 100px;">
-                    <x-contact-form />
+                {{-- Office Locations Card --}}
+                <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+                        <div class="card-icon-box-sm card-icon-red" style="margin-bottom: 0;">
+                            <x-icon name="map-pin" size="20" />
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Office Locations</h3>
+                    </div>
+
+                    <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border);">
+                        <strong style="color: var(--color-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Forest Hills NYC Headquarters:</strong>
+                        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin: 0; line-height: 1.6;">
+                            70-20 Austin St, Suite 111<br>
+                            Forest Hills, NY 11375
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; flex-grow: 1;">
+                        <strong style="color: var(--color-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Long Island Consultation Office:</strong>
+                        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin: 0; line-height: 1.6;">
+                            110-20 71st Ave<br>
+                            Forest Hills &amp; Long Island, NY
+                        </p>
+                    </div>
+
+                    <p style="font-size: 0.8125rem; color: var(--color-text-light); font-style: italic; margin: 0; margin-top: auto;">
+                        * In-home &amp; hospital visits available across NYC and Long Island.
+                    </p>
+                </div>
+
+                {{-- Intake Hours Card --}}
+                <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+                        <div class="card-icon-box-sm card-icon-blue" style="margin-bottom: 0;">
+                            <x-icon name="clock" size="20" />
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Intake &amp; Hours</h3>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9375rem; flex-grow: 1;">
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Monday – Friday:</span>
+                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 AM – 7:00 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Saturday – Sunday:</span>
+                            <span style="font-weight: 700; color: var(--color-accent-red);">24/7 Hotline</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600; color: var(--color-text);">Case Form:</span>
+                            <span style="font-weight: 700; color: var(--color-accent-light);">Processed 24/7</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--color-border);">
+                        <a href="tel:+19707427476" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center;">
+                            Call (970) SHAPIRO
+                        </a>
+                    </div>
                 </div>
 
             </div>

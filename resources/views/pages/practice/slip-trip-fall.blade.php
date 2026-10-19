@@ -16,12 +16,12 @@
                 <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 1.5rem;">
                     Property owners in New York have a strict legal duty to keep their premises safe for visitors and pedestrians. When they neglect hazards and you get hurt, we hold them fully accountable.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <div class="btn-action-row">
                     <a href="tel:+19707427476" class="btn btn-accent btn-lg">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        Get Your Free War Plan
+                        Get Free Case Review
                     </a>
-                    <a href="#consultation" class="btn btn-outline-white btn-lg">Free Consultation</a>
+                    <a href="#consultation" class="btn btn-outline-white btn-lg">Schedule Consultation</a>
                 </div>
                 <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.875rem; color: #94a3b8;">
                     <span>✓ Free Consultation</span>
@@ -57,9 +57,9 @@
                         We have been litigating premises liability cases across New York City since 1994. Adam knows every single defense strategy property owners use because he spent years helping build them. Now he tears them apart on behalf of injured New Yorkers.
                     </p>
                 </div>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Slip &amp; Fall Case Review &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                <div class="btn-action-row">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Fall Case Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
                 </div>
             </div>
 
@@ -262,10 +262,12 @@
                         The consultation is 100% free. No upfront fees. Adam Shapiro is reachable directly from your first call.
                     </p>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="tel:+19707427476" class="btn btn-accent btn-lg" style="text-align: center;">
-                        Call (970) 742-7476 — FREE. NOW.
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="tel:+19707427476" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; text-decoration: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Call (970) SHAPIRO / 970 742-7476</span>
                     </a>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); text-align: center;">Available 24/7 &bull; Direct Attorney Access &bull; No Win No Fee</span>
                 </div>
             </div>
 
