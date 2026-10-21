@@ -16,8 +16,8 @@ class PageController extends Controller
     public function about(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'About Adam L. Shapiro | NYC Personal Injury Attorney Since 1994',
-            description: 'Attorney Adam L. Shapiro has been fighting for New York & Florida injury victims since 1994. Former defense attorney for Lloyd\'s of London and Harley Davidson — now exclusively on your side. Free consultation.'
+            title: 'About Adam L.Shapiro Personal Injury Attorney Since 1994 Shapiro',
+            description: 'Attorney Adam L. Shapiro has been fighting for New York & Florida injury victims since 1994. Former defense attorney for Lloyds of London and Harley Davidson — now exclusively on your side. Free consultation.'
         );
 
         return view('pages.about', compact('seo'));
@@ -36,8 +36,8 @@ class PageController extends Controller
     public function personalInjury(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Personal Injury Lawyer NYC | Top-Rated Attorney | Shapiro',
-            description: 'Shapiro the Hero | NY personal injury lawyer with 30+ years of wins. Car accidents, construction & malpractice. No fee unless we win.'
+            title: 'Personal Injury Lawyer NYC & Queens NY | Catastrophic, Spinal Cord & Brain Injury',
+            description: 'Shapiro is a trusted personal injury lawyer in NYC, Forest Hills, and Queens, NY, serving catastrophic, spinal cord, brain and serious injury victims with experienced legal representation and personalized support.'
         );
 
         return view('pages.practice.personal-injury', compact('seo'));
@@ -46,8 +46,8 @@ class PageController extends Controller
     public function motorVehicle(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'New York Car Accident Lawyer | Motor Vehicle Accidents | Shapiro',
-            description: 'Injured in a New York car or motorcycle accident? Shapiro fights for maximum compensation. Free consultation. No fee unless he wins the case.'
+            title: 'Car, Truck & Motorcycle Accident Lawyer New York | NYC Accident Attorney',
+            description: 'Need a car or motorcycle accident lawyer in New York? Our NYC accident attorneys handle truck, motorcycle, rideshare, and pedestrian accident claims, helping injured clients pursue compensation after serious crashes.'
         );
 
         return view('pages.practice.motor-vehicle', compact('seo'));
@@ -56,8 +56,8 @@ class PageController extends Controller
     public function slipTripFall(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Slip & Fall Attorney New York | No Fee Unless We Win | Shapiro',
-            description: 'Injured in a New York slip and fall? Shapiro fights landlords, businesses, and municipalities. Free consultation. No fee unless he wins.'
+            title: 'Slip and Fall Lawyer NYC | Premises Liability Attorney New York | Shapiro',
+            description: 'Shapiro is a trusted slip and fall attorney New York serving injury victims with experienced representation. Our slip and fall lawyer in NYC handles premises liability claims.'
         );
 
         return view('pages.practice.slip-trip-fall', compact('seo'));
@@ -66,8 +66,8 @@ class PageController extends Controller
     public function workersCompensation(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Workers\' Compensation Lawyer New York | Injured on the Job | Shapiro',
-            description: 'Hurt at work in New York? Shapiro the Hero fights for full workers\' compensation benefits — medical care, lost wages, and disability coverage. Free consultation. No fee unless we win. Call (970) 742-7476.'
+            title: 'Workers’ Compensation Lawyer NYC | Injured on the Job | Shapiro',
+            description: 'Need a Workers’ Compensation Lawyer NYC? Shapiro helps injured workers pursue medical, wage and disability benefits, handle denied claims and appeals, and investigate third-party liability. Free consultation. No fee unless we win.'
         );
 
         return view('pages.practice.workers-compensation', compact('seo'));
@@ -76,8 +76,8 @@ class PageController extends Controller
     public function medicalMalpractice(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Medical Malpractice Attorney in New York | Shapiro',
-            description: 'Medical negligence in New York? Shapiro the Hero sues for malpractice, misdiagnosis & birth injuries. Free consult. No fee unless we win.'
+            title: 'Medical Malpractice Lawyer NYC | Surgical Errors & Hospital Negligence | Shapiro',
+            description: 'Need a Medical Malpractice Lawyer NYC? Shapiro handles surgical errors, hospital negligence, misdiagnosis, birth injuries, and medical malpractice claims, helping injured clients pursue compensation throughout New York.'
         );
 
         return view('pages.practice.medical-malpractice', compact('seo'));
@@ -87,7 +87,7 @@ class PageController extends Controller
     {
         $seo = $this->seoService->forPage(
             title: 'Wrongful Death Attorney in New York | Need a Hero? Call Shapiro!',
-            description: 'Wrongful death in New York? Shapiro the Hero recovers funeral costs, lost income & family support. Free consultation, no fee unless we win.'
+            description: 'Wrongful Death Attorney New York helping families pursue compensation for funeral expenses, lost income, and family support. Shapiro offers a free consultation with no fee unless we win.'
         );
 
         return view('pages.practice.wrongful-death', compact('seo'));
@@ -96,8 +96,8 @@ class PageController extends Controller
     public function constructionAccident(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'New York Construction Accident Lawyer | Labor Law 240 | Shapiro the Hero',
-            description: 'Injured on a New York construction site? Shapiro the Hero handles Labor Law 240/241 scaffold falls, equipment injuries, and wrongful death claims. Free consultation — no fee unless we win. Call (970) 742-7476.'
+            title: 'Construction Accident Lawyer NYC | Labor Law 240 & 241 Claims | Shapiro',
+            description: 'Injured in a NYC construction accident? Shapiro the Hero handles construction injury claims involving scaffolds, ladders, machinery, falls, and New York Labor Laws 240 and 241.'
         );
 
         return view('pages.practice.construction-accident', compact('seo'));
@@ -106,8 +106,8 @@ class PageController extends Controller
     public function ebikeScooter(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'New York E-Bike & Scooter Accident Lawyer | Shapiro',
-            description: 'E-bike or scooter accident in New York? Shapiro the Hero fights for delivery workers & crash victims. No fee unless we win.'
+            title: 'E-Bike & Electric Scooter Accident Lawyer NYC | Shapiro',
+            description: 'Injured in an e-bike or electric scooter accident in NYC? Shapiro the Hero helps victims pursue compensation for serious injuries, medical expenses, and accident-related losses. Free consultation.'
         );
 
         return view('pages.practice.ebike-scooter', compact('seo'));
@@ -116,8 +116,8 @@ class PageController extends Controller
     public function highProfileCases(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'High Profile Cases | Landmark Litigation | Shapiro The Hero',
-            description: 'High Profile Cases: Attorney Adam L. Shapiro has successfully litigated landmark, newsworthy cases against celebrities, major corporations, and municipal agencies.'
+            title: 'High Profiles Cases | Shapiro The Hero',
+            description: 'High Profiles Cases: Mr. Shapiro has successfully handled many high profile and news worthy cases and matters of public interest.'
         );
 
         return view('pages.high-profiles-cases', compact('seo'));
@@ -136,8 +136,8 @@ class PageController extends Controller
     public function career(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Careers at Shapiro Law Office | Join Our Legal Team | Shapiro The Hero',
-            description: 'Join our New York personal injury legal team in Forest Hills, Queens. Explore career opportunities for trial attorneys, paralegals, and legal staff.'
+            title: 'Career for Shapiro The Hero',
+            description: 'Searching For A Professional Law Firm? Book Consultation Now. A Reputation Backed by National Recognition and Client Success.'
         );
 
         return view('pages.career', compact('seo'));
@@ -146,8 +146,8 @@ class PageController extends Controller
     public function disclaimer(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Legal Disclaimer & Regulatory Disclosures | Shapiro The Hero',
-            description: 'Important regulatory disclosures, attorney advertising notices, and legal representation guidelines from the Law Offices of Adam L. Shapiro & Associates.'
+            title: 'Disclaimer provided by the law firm Shapiro The Hero',
+            description: 'Disclaimer Shapiro The Hero refers to the disclaimer provided by the law firm of Adam L. Shapiro, which uses the marketing slogan "Need a Hero? Call Shapiro!".'
         );
 
         return view('pages.disclaimer', compact('seo'));
@@ -157,7 +157,7 @@ class PageController extends Controller
     {
         $seo = $this->seoService->forPage(
             title: 'Privacy Policy | Shapiro The Hero',
-            description: 'Privacy Policy: Learn how Adam L. Shapiro & Associates protects your personal information and safeguards client confidentiality.'
+            description: 'Privacy Policy : Adam L. Shapiro & Associates focuses on Accident and Injury claims, Worker’s Compensation Matters.'
         );
 
         return view('pages.privacy-policy', compact('seo'));
@@ -167,7 +167,7 @@ class PageController extends Controller
     {
         $seo = $this->seoService->forPage(
             title: 'Terms & Conditions | Shapiro The Hero',
-            description: 'Terms and Conditions: Review the website terms of use and client communication policies for ShapiroTheHero.com.'
+            description: 'Terms & Conditions: You need to consult an attorney in person for legal advice regarding your individual situation Call Shapirothehero.'
         );
 
         return view('pages.terms-conditions', compact('seo'));
@@ -177,7 +177,7 @@ class PageController extends Controller
     {
         $seo = $this->seoService->forPage(
             title: 'Attorney Advertising | Shapiro The Hero',
-            description: 'Attorney Advertising notice under the New York Rules of Professional Conduct for the Law Offices of Adam L. Shapiro & Associates, P.C.'
+            description: 'Attorney Advertising | Shapiro The Hero. You need to consult an attorney in person for legal advice regarding your individual situation.'
         );
 
         return view('pages.attorney-advertising', compact('seo'));
@@ -187,7 +187,7 @@ class PageController extends Controller
     {
         $seo = $this->seoService->forPage(
             title: 'References & Recommendations | Shapiro The Hero',
-            description: 'Read client reviews, endorsements, and recommendations for Attorney Adam L. Shapiro from over 30 years of personal injury representation in New York.'
+            description: 'References & Recommendations : used Mr. Shapiro multiple times and found his professionalism and attention to details to be excellent.'
         );
 
         return view('pages.references-recommendations', compact('seo'));

@@ -22,12 +22,12 @@
                 A reputation backed by national recognition, peer distinction, and over 30 years of relentless courtroom advocacy for injured New Yorkers and their families.
             </p>
 
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#awards-grid" class="btn btn-accent btn-lg">
+            <div class="btn-action-row" style="justify-content: center;">
+                <a href="#awards-grid" class="btn btn-accent">
                     <span>View Honors &amp; Distinctions</span>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14m-7-7 7 7 7-7"/></svg>
                 </a>
-                <a href="#consultation" class="btn btn-outline-white btn-lg">
+                <a href="#consultation" class="btn btn-outline-white">
                     <span>Free Case Evaluation</span>
                 </a>
             </div>

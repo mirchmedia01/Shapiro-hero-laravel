@@ -1,6 +1,6 @@
 @props(['post'])
 
-<article class="card" style="padding: 0; overflow: hidden; height: 100%;">
+<article class="card blog-card" style="padding: 0; overflow: hidden; height: 100%; display: flex; flex-direction: column;">
     {{-- Card Thumbnail Container --}}
     <div style="position: relative; overflow: hidden; aspect-ratio: 16/10; min-height: 230px; background-color: #f1f5f9;">
         <a href="{{ route('blog.show', $post->slug) }}" style="display: block; width: 100%; height: 100%;">
@@ -35,9 +35,13 @@
             {{ \Illuminate\Support\Str::limit(strip_tags($post->excerpt ?: $post->content), 140) }}
         </p>
 
-        <div style="margin-top: auto; display: flex; align-items: center; justify-content: flex-end; border-top: 1px solid var(--color-border); padding-top: 1rem;">
-            <a href="{{ route('blog.show', $post->slug) }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); display: inline-flex; align-items: center; gap: 0.35rem;">
-                Read Article &rarr;
+        {{-- Card Action / Centered Read Article Button --}}
+        <div class="blog-card-action" style="margin-top: auto; display: flex; align-items: center; justify-content: center; width: 100%;">
+            <a href="{{ route('blog.show', $post->slug) }}" class="blog-read-btn" aria-label="Read Article: {{ $post->title }}">
+                <span>Read Article</span>
+                <svg class="blog-btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14m-7-7 7 7-7 7"/>
+                </svg>
             </a>
         </div>
     </div>

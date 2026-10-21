@@ -8,7 +8,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div>
-                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; width: fit-content; max-width: max-content; align-self: flex-start;">
                         <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ef4444;"></span>
                         <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #fca5a5;">The Evidence Room</span>
                     </div>
@@ -22,20 +22,20 @@
                         In-depth case analyses, New York statutory updates, and strategic litigation guides authored by Attorney Adam L. Shapiro &amp; Associates.
                     </p>
 
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                        <a href="#articles" class="btn btn-accent btn-lg">
+                    <div class="btn-action-row">
+                        <a href="#articles" class="btn btn-accent">
                             <span>Browse Case Briefs</span>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="btn btn-outline-white btn-lg">
+                        <a href="{{ route('contact') }}" class="btn btn-outline-white">
                             <span>Free Case Review</span>
                         </a>
                     </div>
                 </div>
 
                 <div>
-                    <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="New York Legal Strategy &amp; Trial Insights" loading="eager" style="object-position: center bottom;">
+                    <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                        <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="New York Legal Strategy &amp; Trial Insights" loading="eager" style="object-position: center bottom; border-radius: 24px;">
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(6,14,34,0.92) 0%, rgba(6,14,34,0.65) 60%, transparent 100%);">
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">New York Personal Injury &amp; Trial Law Insights</div>
                             <div style="color: #cbd5e1; font-size: 0.875rem; margin-top: 0.25rem;">Case Briefs, Trial Strategy &amp; Statutory Analysis</div>

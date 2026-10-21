@@ -8,7 +8,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div>
-                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; width: fit-content; max-width: max-content; align-self: flex-start;">
                         <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ef4444;"></span>
                         <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #fca5a5;">In The News &amp; Court of Public Record</span>
                     </div>
@@ -22,12 +22,12 @@
                         When high-stakes civil litigation reaches the front pages of the <em>New York Post</em> and national news broadcasts, Attorney Adam L. Shapiro delivers aggressive, fearless courtroom representation against celebrities, mega-corporations, and city agencies.
                     </p>
 
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem;">
-                        <a href="tel:+19707427476" class="btn btn-accent btn-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <div class="btn-action-row" style="margin-bottom: 2rem;">
+                        <a href="tel:+19707427476" class="btn btn-accent">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             <span>Call (970) SHAPIRO</span>
                         </a>
-                        <a href="#consultation" class="btn btn-outline-white btn-lg">
+                        <a href="#consultation" class="btn btn-outline-white">
                             <span>Request Free Evaluation</span>
                         </a>
                     </div>
@@ -40,8 +40,8 @@
                 </div>
 
                 <div>
-                    <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/about/ny-trial-courtroom.jpg') }}" alt="High Profile Landmark Cases &amp; Litigation" loading="eager">
+                    <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                        <img src="{{ asset('assets/media/about/ny-trial-courtroom.jpg') }}" alt="High Profile Landmark Cases &amp; Litigation" loading="eager" style="border-radius: 24px;">
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">Proven Trial Record</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">Featured Across NY Post, Daily News &amp; National TV</div>
@@ -65,12 +65,12 @@
                     <p style="font-size: 1.05rem; line-height: 1.7; color: var(--color-text); margin-bottom: 2rem;">
                         Whether facing mega-celebrity defense teams or New York City's Corporation Counsel, Attorney Adam Shapiro uses his deep knowledge of defense playbooks to achieve landmark justice for everyday New Yorkers.
                     </p>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="{{ route('contact') }}" class="btn btn-accent">
+                    <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">
                             Contact Us Today &rarr;
                         </a>
-                        <a href="#press-archives" class="btn btn-outline">
-                            View Press Archives &darr;
+                        <a href="#press-archives" class="btn btn-outline btn-md">
+                            View Press Archives &rarr;
                         </a>
                     </div>
                 </div>

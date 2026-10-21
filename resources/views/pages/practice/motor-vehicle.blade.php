@@ -16,12 +16,12 @@
                 <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 1.5rem;">
                     Insurance companies move fast after a crash. We move faster. If you were injured in a car, truck, motorcycle, rideshare, or any motor vehicle collision in New York, we fight to recover every dollar you are owed.
                 </p>
-                <div class="btn-action-row">
-                    <a href="tel:+19707427476" class="btn btn-accent btn-lg">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                        Get Free Case Review
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                    <a href="tel:+19707427476" class="btn btn-accent btn-md">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        Get Free Case Review &rarr;
                     </a>
-                    <a href="#consultation" class="btn btn-outline-white btn-lg">Schedule Consultation</a>
+                    <a href="#consultation" class="btn btn-outline-white btn-md">Schedule Consultation &rarr;</a>
                 </div>
                 <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.875rem; color: #94a3b8;">
                     <span>✓ Free Consultation</span>
@@ -31,8 +31,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Accident Lawyer NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden;">
+                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Accident Lawyer NYC" loading="eager" style="border-radius: 24px; width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -42,13 +42,13 @@
 {{-- Car Accident Claims in NY --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
-            <div>
-                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="{{ asset('assets/media/practice-areas/nyc-car-accident-claims.jpg') }}" alt="Car Accident Claims in New York" style="width: 100%; aspect-ratio: 16 / 11; max-height: 480px; height: 100%; object-fit: cover; display: block;">
+        <div class="two-col-equal-height">
+            <div class="col-image">
+                <div class="image-frame">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-car-accident-claims.jpg') }}" alt="Car Accident Claims in New York">
                 </div>
             </div>
-            <div>
+            <div class="col-content">
                 <span class="section-subtitle">Maximizing Your Settlement</span>
                 <h2 class="heading-lg" style="margin-bottom: 1.25rem;">Car Accident Claims in New York</h2>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -60,9 +60,9 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
                     When you hire us, we take over all communications with insurers immediately. We secure police reports, preserve surveillance footage and dashcam data, work with premier medical experts, and negotiate from strength. If they refuse to pay fairly, we take it to trial.
                 </p>
-                <div class="btn-action-row">
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
                     <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Crash Review &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476 &rarr;</a>
                 </div>
             </div>
         </div>
@@ -106,49 +106,61 @@
 {{-- Case Valuation & Specialized Vehicle Cases --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-2" style="gap: 3.5rem; align-items: flex-start; margin-bottom: 4rem;">
-            <div class="card" style="padding: 2.5rem;">
-                <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Case Valuation</span>
-                <h3 class="heading-md" style="margin-bottom: 1rem;">How Much Is a Car Accident Worth in New York?</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-                    No two cases are identical. New York law allows injury victims to pursue compensation across several distinct categories:
-                </p>
-                <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                    <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
-                        <strong style="color: var(--color-accent);">&bull;</strong> Medical bills — all current emergency treatment and projected future care
-                    </li>
-                    <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
-                        <strong style="color: var(--color-accent);">&bull;</strong> Lost wages and diminished future earning capacity
-                    </li>
-                    <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
-                        <strong style="color: var(--color-accent);">&bull;</strong> Pain and suffering, emotional distress, and loss of life enjoyment
-                    </li>
-                    <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
-                        <strong style="color: var(--color-accent);">&bull;</strong> Complete vehicle and personal property damage
-                    </li>
-                    <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
-                        <strong style="color: var(--color-accent);">&bull;</strong> Wrongful death compensation if a loved one was tragically lost
-                    </li>
-                </ul>
-                <div style="background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gold);">
-                    <p style="margin: 0; font-size: 0.9rem; color: var(--color-text); font-weight: 500;">
-                        The first offer from an insurer is almost never fair. We evaluate every factor — injury severity, recovery duration, lifetime economic loss, and policy limits — and demand full value.
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: stretch; margin-bottom: 4rem;">
+            {{-- Car Accident Case Valuation Card with Image --}}
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="aspect-ratio: 16/10; min-height: 320px; max-height: 380px; overflow: hidden; background: #0b1b3d;">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-car-accident-valuation.jpg') }}" alt="New York Car Accident Compensation & Settlement Valuation" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Case Valuation</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem;">How Much Is a Car Accident Worth in New York?</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                        No two cases are identical. New York law allows injury victims to pursue compensation across several distinct categories:
                     </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                        <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
+                            <strong style="color: var(--color-accent);">&bull;</strong> Medical bills — all current emergency treatment and projected future care
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
+                            <strong style="color: var(--color-accent);">&bull;</strong> Lost wages and diminished future earning capacity
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
+                            <strong style="color: var(--color-accent);">&bull;</strong> Pain and suffering, emotional distress, and loss of life enjoyment
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
+                            <strong style="color: var(--color-accent);">&bull;</strong> Complete vehicle and personal property damage
+                        </li>
+                        <li style="display: flex; gap: 0.5rem; color: var(--color-text);">
+                            <strong style="color: var(--color-accent);">&bull;</strong> Wrongful death compensation if a loved one was tragically lost
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gold);">
+                        <p style="margin: 0; font-size: 0.9rem; color: var(--color-text); font-weight: 500;">
+                            The first offer from an insurer is almost never fair. We evaluate every factor — injury severity, recovery duration, lifetime economic loss, and policy limits — and demand full value.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <span class="section-subtitle">Commercial &amp; Complex Collisions</span>
-                <h3 class="heading-md" style="margin-bottom: 1.25rem;">Truck Accident Claims — Federal Regulations &amp; Fleet Liability</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Commercial truck accidents involve severe injuries and complex federal FMCSA regulations. Unlike standard passenger car claims, liability often extends across multiple entities: the driver, the trucking company, the cargo loader, and equipment manufacturers.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-                    Commercial carriers carry commercial policies from $1M to $10M+. We act immediately to secure vital telemetry, driver electronic logs, and maintenance records before they can be altered or erased.
-                </p>
-                <div class="btn-action-row">
-                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Truck Claim Review &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
+            {{-- Commercial Truck Collisions Card with Image --}}
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/practice-areas/crash-scene-investigation.jpg') }}" alt="Commercial Truck Collision & Crash Scene Investigation">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="section-subtitle" style="display: block; margin-bottom: 0.5rem;">Commercial &amp; Complex Collisions</span>
+                    <h3 class="heading-md" style="margin-bottom: 1.25rem;">Truck Accident Claims — Federal Regulations &amp; Fleet Liability</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Commercial truck accidents involve severe injuries and complex federal FMCSA regulations. Unlike standard passenger car claims, liability often extends across multiple entities: the driver, the trucking company, the cargo loader, and equipment manufacturers.
+                    </p>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                        Commercial carriers carry commercial policies from $1M to $10M+. We act immediately to secure vital telemetry, driver electronic logs, and maintenance records before they can be altered or erased.
+                    </p>
+                    <div class="btn-action-row" style="margin-top: auto; padding-top: 1.25rem; flex-wrap: nowrap !important; gap: 1rem;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Truck Claim Review &rarr;</a>
+                        <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476 &rarr;</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,8 +199,8 @@
 {{-- Comparative Fault & Deadlines --}}
 <section class="section section-alt">
     <div class="container">
-        <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
-            <div>
+        <div class="two-col-equal-height">
+            <div class="col-content">
                 <span class="section-subtitle">Critical New York Rules</span>
                 <h2 class="heading-lg" style="margin-bottom: 1.25rem;">New York Comparative Negligence &amp; Strict Deadlines</h2>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -205,15 +217,15 @@
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     <strong>Serving All Five Boroughs:</strong> Queens (Forest Hills, Flushing, Jamaica, Astoria), Brooklyn, The Bronx, Manhattan, Staten Island, and Long Island.
                 </p>
-                <div class="btn-action-row" style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0.75rem; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-primary btn-md" style="white-space: nowrap;">Check Claim Deadline &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-md" style="white-space: nowrap;">Call (970) SHAPIRO</a>
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-md">Check Claim Deadline &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) SHAPIRO &rarr;</a>
                 </div>
             </div>
 
-            <div>
-                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl);">
-                    <img src="{{ asset('assets/media/practice-areas/crash-scene-investigation.jpg') }}" alt="Motor Vehicle Crash Representation" style="width: 100%; aspect-ratio: 16 / 11; max-height: 480px; height: 100%; object-fit: cover; display: block;">
+            <div class="col-image">
+                <div class="image-frame">
+                    <img src="{{ asset('assets/media/practice-areas/crash-scene-investigation.jpg') }}" alt="Motor Vehicle Crash Representation">
                 </div>
             </div>
         </div>

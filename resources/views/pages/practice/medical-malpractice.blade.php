@@ -37,8 +37,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/medical-malpractice-attorney.png') }}" alt="Medical Malpractice Attorney NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/medical-malpractice-attorney.png') }}" alt="Medical Malpractice Attorney NYC" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>
@@ -48,8 +48,14 @@
 {{-- Defining Medical Malpractice in NY --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
-            <div>
+        <div class="two-col-equal-height">
+            <div class="col-image">
+                <div class="image-frame">
+                    <img src="{{ asset('assets/media/blog/medical-malpractice-proof.png') }}" alt="Medical Malpractice Records Review and Evidence in New York">
+                </div>
+            </div>
+
+            <div class="col-content">
                 <span class="section-subtitle">The Legal Standard</span>
                 <h2 class="heading-lg" style="margin-bottom: 1.25rem;">What Is Medical Malpractice in New York?</h2>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -63,22 +69,9 @@
                         Proving that connection requires expert testimony. It requires someone in the same medical field to review the records and say, on the record, that the standard of care was breached. We build every case with licensed medical experts from the start. We review every record. We find where the standard of care broke down and who is responsible for it. Then we fight for everything you are owed.
                     </p>
                 </div>
-                <div class="btn-action-row">
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
                     <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Case Evaluation &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
-                </div>
-            </div>
-
-            <div>
-                <div class="card" style="padding: 2.5rem; background: #ffffff; border: 1px solid var(--color-border);">
-                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">No Damages Cap</span>
-                    <h3 class="heading-md" style="margin-bottom: 1rem;">No Damages Cap in New York</h3>
-                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                        New York has no statutory cap on medical malpractice damages. That means there is no artificial ceiling on what you can recover.
-                    </p>
-                    <p style="color: var(--color-text-muted); line-height: 1.7; margin: 0;">
-                        Economic damages cover medical bills, lost income, and future care costs. Non-economic damages cover pain and suffering, loss of enjoyment of life, and emotional harm. We pursue every category and fight for the full number.
-                    </p>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476 &rarr;</a>
                 </div>
             </div>
         </div>
@@ -88,6 +81,23 @@
 {{-- Case Types Grid --}}
 <section class="section section-alt">
     <div class="container">
+        {{-- No Damages Cap Feature Banner --}}
+        <div style="margin-bottom: 3.5rem; background: #ffffff; border: 1px solid var(--color-border); border-left: 5px solid var(--color-gold); border-radius: var(--radius-xl); padding: 2rem 2.5rem; box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+            <div style="max-width: 820px;">
+                <span class="badge badge-gold" style="margin-bottom: 0.75rem; align-self: flex-start;">No Damages Cap in New York</span>
+                <h3 class="heading-md" style="margin-bottom: 0.75rem;">Full Financial Recovery With No Artificial Statutory Ceiling</h3>
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 0.5rem;">
+                    New York has no statutory cap on medical malpractice damages. That means there is no artificial ceiling on what you can recover.
+                </p>
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin: 0;">
+                    Economic damages cover medical bills, lost income, and future care costs. Non-economic damages cover pain and suffering, loss of enjoyment of life, and emotional harm. We pursue every category and fight for the full number.
+                </p>
+            </div>
+            <div>
+                <a href="tel:+19707427476" class="btn btn-primary btn-md" style="white-space: nowrap;">Free Value Check &rarr;</a>
+            </div>
+        </div>
+
         <div class="section-header">
             <span class="section-subtitle">Areas of Clinical Focus</span>
             <h2 class="heading-lg">Medical Malpractice Cases We Handle</h2>
@@ -127,25 +137,37 @@
         </div>
 
         {{-- Deep Dive Section 1: Surgical Errors & Misdiagnosis --}}
-        <div class="grid grid-2" style="gap: 2.5rem; margin-bottom: 3.5rem;">
-            <div class="card" style="padding: 2.5rem; background: #ffffff;">
-                <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Surgical Errors — When the Operating Room Becomes the Danger Zone</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Surgery carries risk and every patient accepts that before going in. What no patient agrees to is a surgeon operating on the wrong site, or leaving an instrument inside the body, or causing nerve damage through careless technique.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin: 0;">
-                    Those outcomes have a name and it is failure. The surgeon, the hospital, and the anesthesiologist can all bear liability depending on what happened and who controlled it. We investigate every layer and pursue every source of compensation available to you.
-                </p>
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: stretch; margin-bottom: 3.5rem;">
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="Surgical Malpractice & Operating Room Investigation">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-red" style="margin-bottom: 1rem; align-self: flex-start;">Operating Room Failures</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Surgical Errors — When the Operating Room Becomes the Danger Zone</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Surgery carries risk and every patient accepts that before going in. What no patient agrees to is a surgeon operating on the wrong site, or leaving an instrument inside the body, or causing nerve damage through careless technique.
+                    </p>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-top: auto;">
+                        Those outcomes have a name and it is failure. The surgeon, the hospital, and the anesthesiologist can all bear liability depending on what happened and who controlled it. We investigate every layer and pursue every source of compensation available to you.
+                    </p>
+                </div>
             </div>
 
-            <div class="card" style="padding: 2.5rem; background: #ffffff;">
-                <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Misdiagnosis and Delayed Diagnosis</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Some of the most devastating malpractice cases never involve a scalpel. A doctor who misreads imaging and sends a stroke patient home has caused harm just as real as any surgical mistake.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin: 0;">
-                    A physician who dismisses chest pain without proper testing, and that patient suffers a heart attack hours later, has failed that person at the moment they needed care most. When a diagnostic failure causes a condition to worsen in ways that proper treatment would have prevented, we build the case that connects that failure to the full consequences and fight for everything those consequences are worth.
-                </p>
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/practice-areas/medical-malpractice-attorney.png') }}" alt="Misdiagnosis and Delayed Diagnosis in New York City">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Diagnostic Failures</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Misdiagnosis and Delayed Diagnosis</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Some of the most devastating malpractice cases never involve a scalpel. A doctor who misreads imaging and sends a stroke patient home has caused harm just as real as any surgical mistake.
+                    </p>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-top: auto;">
+                        A physician who dismisses chest pain without proper testing, and that patient suffers a heart attack hours later, has failed that person at the moment they needed care most. When a diagnostic failure causes a condition to worsen in ways that proper treatment would have prevented, we build the case that connects that failure to the full consequences and fight for everything those consequences are worth.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -199,8 +221,8 @@
 {{-- Deadlines & Certificate of Merit & Recoverable Damages --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-3" style="gap: 2.5rem; align-items: flex-start;">
-            <div class="card" style="padding: 2.5rem;">
+        <div class="grid grid-3" style="gap: 2.5rem; align-items: stretch;">
+            <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column;">
                 <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Strict Limitations</span>
                 <h3 class="heading-md" style="margin-bottom: 1rem;">New York Medical Malpractice Deadlines</h3>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
@@ -215,18 +237,26 @@
                 </ul>
             </div>
 
-            <div class="card" style="padding: 2.5rem; border: 2px solid var(--color-accent-light);">
-                <span class="badge badge-blue" style="margin-bottom: 1rem; align-self: flex-start;">CPLR § 3012-a</span>
-                <h3 class="heading-md" style="margin-bottom: 1rem;">What the Certificate of Merit Means for Your Case</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    New York requires a Certificate of Merit in every medical malpractice case, where an attorney confirms that a qualified medical professional has reviewed the case and found it has a reasonable basis.
+            <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+                <div style="aspect-ratio: 16/10; min-height: 190px; max-height: 220px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 1.25rem; background: #0b1b3d; box-shadow: 0 4px 15px rgba(0,0,0,0.12); -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-medical-certificate-of-merit.jpg') }}" alt="Medical Expert Records Review for Certificate of Merit CPLR § 3012-a" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
+                </div>
+                <span class="badge badge-blue" style="margin-bottom: 0.75rem; align-self: flex-start;">CPLR § 3012-a</span>
+                <h3 class="heading-md" style="margin-bottom: 0.85rem;">What the Certificate of Merit Means for Your Case</h3>
+                <p style="color: var(--color-text-muted); line-height: 1.65; margin-bottom: 1rem; font-size: 0.95rem;">
+                    Under New York Civil Practice Law &amp; Rules § 3012-a, every medical malpractice complaint must be accompanied by a formal Certificate of Merit signed by your attorney.
                 </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin: 0;">
-                    This means we cannot file your case without first having a licensed physician in the relevant specialty review the records and confirm the standard of care was breached. We build that expert record from the first consultation. It is part of how we prepare every case.
+                <div style="background: #f8fafc; border-left: 3px solid #2563eb; padding: 0.85rem 1rem; border-radius: 6px; margin-bottom: 1rem;">
+                    <p style="margin: 0; font-size: 0.875rem; color: #1e293b; line-height: 1.55; font-weight: 500;">
+                        <strong>Mandatory Physician Review:</strong> We cannot file your lawsuit without first having a licensed, board-certified physician in the relevant medical specialty review your complete medical records and certify in writing that there is a reasonable basis for the malpractice action.
+                    </p>
+                </div>
+                <p style="color: var(--color-text-muted); line-height: 1.65; font-size: 0.95rem; margin-top: auto;">
+                    We retain premier medical experts early to examine imaging, diagnostic charts, and surgical logs. We build an ironclad expert evidentiary foundation from day one.
                 </p>
             </div>
 
-            <div class="card" style="padding: 2.5rem;">
+            <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column;">
                 <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Full Recovery</span>
                 <h3 class="heading-md" style="margin-bottom: 1rem;">What Compensation Can You Recover?</h3>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -240,7 +270,7 @@
                     <li>✓ Long-term care and rehabilitation costs</li>
                     <li>✓ Wrongful death damages if a loved one was killed</li>
                 </ul>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin-top: auto; font-size: 0.95rem;">
                     We evaluate every category and fight for what the case is actually worth. Not what the hospital’s insurer offers.
                 </p>
             </div>

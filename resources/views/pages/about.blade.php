@@ -11,22 +11,17 @@
     <div class="container">
         <div class="hero-grid">
             <div>
-                <span class="badge badge-gold" style="margin-bottom: 1.25rem;">Attorney Biography</span>
-                <h1 class="heading-xl" style="color: #ffffff; margin-bottom: 1.5rem;">
+                <span class="badge badge-gold" style="margin-bottom: 1.25rem;">Founding Attorney Biography</span>
+                <h1 class="heading-xl about-hero-heading" style="color: #ffffff; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.25; margin-bottom: 1.35rem;">
                     Meet Adam L. Shapiro &mdash; <span style="color: var(--color-accent-light);">Personal Injury Attorney</span> Licensed in New York &amp; Florida
                 </h1>
-                <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 1.5rem;">
-                    Adam L. Shapiro has been fighting for injured New Yorkers since 1994.
-                     Based in Forest Hills, Queens, he represents accident victims, injured workers,
-                      and families across New York and Florida. Car crashes. Construction falls. Slip 
-                      and fall injuries. Medical malpractice. Workers’ comp. Wrongful death.
-
-
+                <p style="font-size: 1.125rem; line-height: 1.8; color: #cbd5e1; margin-bottom: 1.25rem;">
+                    Adam L. Shapiro has been fighting for injured New Yorkers since 1994. Based in Forest Hills, Queens, he represents accident victims, injured workers, and families across New York and Florida. Car crashes. Construction falls. Slip and fall injuries. Medical malpractice. Workers’ comp. Wrongful death.
                 </p>
                 <p style="font-size: 1.0625rem; line-height: 1.8; color: #ffffff; font-weight: 600; margin-bottom: 2rem;">
                     He handles it all. Personally. You will not be handed off to a paralegal or treated like a file number. Adam takes your calls, knows your case, and when the insurance company comes with a lowball offer, Adam is already two steps ahead.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <div class="btn-action-row">
                     <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">
                         <span>Schedule Free Consultation</span>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
@@ -35,11 +30,34 @@
                         <span>(970) SHAPIRO</span>
                     </a>
                 </div>
+                <div style="margin-top: 1.75rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.875rem; color: #94a3b8;">
+                    <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #e2e8f0;"><strong style="color: var(--color-gold);">✓</strong> 30+ Years Experience</span>
+                    <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #e2e8f0;"><strong style="color: var(--color-gold);">✓</strong> Direct Attorney Access</span>
+                    <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #e2e8f0;"><strong style="color: var(--color-gold);">✓</strong> English &amp; Español</span>
+                    <span style="display: inline-flex; align-items: center; gap: 0.4rem; color: #e2e8f0;"><strong style="color: var(--color-gold);">✓</strong> No Fee Unless We Win</span>
+                </div>
             </div>
 
-            <div>
-                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 420px; margin: 0 auto; position: relative;">
-                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro Personal Injury Attorney" class="champion-portrait-img" style="height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%;">
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                <div class="about-hero-portrait-card" style="box-shadow: 0 25px 60px -15px rgba(0,0,0,0.7); max-width: 480px; width: 100%; position: relative; border-radius: var(--radius-2xl); overflow: hidden; border: 2.5px solid rgba(212, 163, 115, 0.45); background: #0b1b3d;">
+                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-real-client-hd.png') }}" alt="Adam L. Shapiro, Esq. - Founding Personal Injury Attorney" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center center; display: block;">
+                    
+                    {{-- Experience Floating Badge --}}
+                    <div style="position: absolute; top: 1.25rem; right: 1.25rem; background: rgba(11, 27, 61, 0.9); backdrop-filter: blur(8px); border: 1px solid rgba(212, 163, 115, 0.6); border-radius: 9999px; padding: 0.4rem 0.95rem; display: flex; align-items: center; gap: 0.45rem; box-shadow: 0 4px 15px rgba(0,0,0,0.4);">
+                        <span style="color: var(--color-gold); font-size: 0.9rem;">★</span>
+                        <span style="color: #ffffff; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;">Since 1994</span>
+                    </div>
+
+                    {{-- Bottom Credential Overlay Card --}}
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(11, 27, 61, 0.97) 0%, rgba(11, 27, 61, 0.82) 65%, transparent 100%); padding: 2rem 1.5rem 1.35rem; text-align: center;">
+                        <div style="font-size: 1.35rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em;">Adam L. Shapiro, Esq.</div>
+                        <div style="font-size: 0.85rem; color: var(--color-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.35rem;">
+                            Founder &amp; Principal Trial Attorney
+                        </div>
+                        <div style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.25rem;">
+                            Direct Attorney Access &bull; Admitted in NY &amp; FL
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,18 +86,21 @@
                     <div>
                         <span class="badge badge-gold" style="font-size: 0.875rem; padding: 0.5rem 1rem;">30+ Years of Dual-Perspective Trial Mastery</span>
                     </div>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                        <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Schedule Free Consultation &rarr;</a>
-                        <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                    <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Schedule Free Consultation &rarr;</a>
+                        <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
                     </div>
                 </div>
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div class="hero-reel-mockup">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
+                <div class="hero-reel-mockup" style="max-width: 400px; border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <video poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
+                        <source src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
                 </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 400px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
                     <div>
                         <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-primary); margin: 0;">Adam L. Shapiro on Video</h4>
                         <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Advice if you are injured in an accident</p>
@@ -152,9 +173,9 @@
                 </div>
 
                 {{-- Action Buttons --}}
-                <div style="margin-top: 1.75rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                    <a href="{{ route('contact') }}" class="btn btn-primary btn-lg">Get Adam On Your Side &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) SHAPIRO</a>
+                <div class="btn-action-row" style="margin-top: 1.75rem; flex-wrap: nowrap !important; gap: 1rem;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-md">Get Adam On Your Side &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) SHAPIRO</a>
                 </div>
             </div>
 
@@ -267,9 +288,9 @@
                     <div style="font-size: 1.25rem; font-weight: 800; color: var(--color-accent-light); font-family: var(--font-heading); margin-bottom: 1.5rem;">
                         Hablamos Espa&ntilde;ol.
                     </div>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-                        <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Consulta Gratuita / Free Case Review &rarr;</a>
-                        <a href="tel:+19707427476" class="btn btn-outline-white btn-lg">Llámenos: (970) 742-7476</a>
+                    <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                        <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Consulta Gratuita / Free Case Review &rarr;</a>
+                        <a href="tel:+19707427476" class="btn btn-outline-white btn-md">Llámenos: (970) 742-7476</a>
                     </div>
                 </div>
 
@@ -291,103 +312,187 @@
 {{-- =========================================================================
      5. ACADEMIC BACKGROUND & BAR ADMISSIONS
      ========================================================================= --}}
-<section class="section">
+<section class="section" style="background: var(--color-bg-alt); padding: 5rem 0;">
     <div class="container">
-        <div class="section-header" style="text-align: center; max-width: 780px; margin: 0 auto 3rem;">
+        <div class="section-header" style="text-align: center; max-width: 780px; margin: 0 auto 3.5rem;">
             <span class="section-subtitle">Credentials &amp; Heritage</span>
             <h2 class="heading-lg">Academic Background &amp; Field Experience</h2>
             <p>A verified record of prestigious scholarship, legal internships, and multi-state licensure.</p>
         </div>
 
-        <div class="grid grid-2" style="gap: 2.5rem; align-items: start;">
+        {{-- Two-Column Equal Height Cards --}}
+        <div class="responsive-two-col" style="gap: 2rem; align-items: stretch; margin-bottom: 2rem;">
             {{-- Academic Background Card --}}
-            <div class="card" style="height: 100%; padding: 2.25rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div class="card-icon-box card-icon-blue" style="margin-bottom: 0;">
+            <div class="card" style="flex: 1 1 50%; padding: 2.25rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); display: flex; flex-direction: column;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border);">
+                    <div class="card-icon-box card-icon-blue" style="margin-bottom: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md);">
                         <x-icon name="graduation-cap" size="24" />
                     </div>
                     <div>
-                        <h3 class="heading-sm" style="margin: 0;">Academic Background</h3>
-                        <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Decades of excellence in legal scholarship</span>
+                        <h3 class="heading-sm" style="margin: 0; font-size: 1.25rem; color: var(--color-primary);">Academic Background</h3>
+                        <span style="font-size: 0.8125rem; color: var(--color-text-muted); font-weight: 500;">Decades of excellence in legal scholarship</span>
                     </div>
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <div style="border-left: 3px solid var(--color-primary-blue); padding-left: 1rem;">
-                        <h4 style="font-size: 1.0625rem; font-weight: 700; color: var(--color-primary);">JAMAICA HIGH SCHOOL</h4>
-                        <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0.25rem 0;">Presidential Award Recipient (1986) &bull; Regents Scholarship</p>
-                        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Graduated with honors, demonstrating early academic distinction.</p>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem; flex-grow: 1;">
+                    {{-- Univ of Miami --}}
+                    <div style="position: relative; padding-left: 1.25rem; border-left: 3px solid var(--color-primary-blue);">
+                        <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;">
+                            <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--color-primary); margin: 0;">UNIVERSITY OF MIAMI SCHOOL OF LAW</h4>
+                            <span class="badge badge-primary" style="font-size: 0.75rem; padding: 0.2rem 0.6rem; font-weight: 700;">1993</span>
+                        </div>
+                        <p style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); margin: 0.25rem 0 0.4rem 0;">Juris Doctor (J.D.)</p>
+                        <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                            Before graduating, tried cases in court. Clerked at Shrier &amp; Koenigsberg and interned at Dade County Public Defender's Office.
+                        </p>
                     </div>
 
-                    <div style="border-left: 3px solid var(--color-primary-blue); padding-left: 1rem;">
-                        <h4 style="font-size: 1.0625rem; font-weight: 700; color: var(--color-primary);">SUNY ALBANY</h4>
-                        <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0.25rem 0;">Psychology &amp; Criminal Justice (1990)</p>
-                        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Bachelor of Science in Psychology with double minors in Philosophy and Criminal Justice.</p>
+                    {{-- SUNY Albany --}}
+                    <div style="position: relative; padding-left: 1.25rem; border-left: 3px solid var(--color-primary-blue);">
+                        <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;">
+                            <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--color-primary); margin: 0;">SUNY ALBANY</h4>
+                            <span class="badge badge-primary" style="font-size: 0.75rem; padding: 0.2rem 0.6rem; font-weight: 700;">1990</span>
+                        </div>
+                        <p style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); margin: 0.25rem 0 0.4rem 0;">Psychology &amp; Criminal Justice</p>
+                        <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                            Bachelor of Science in Psychology with double minors in Philosophy and Criminal Justice.
+                        </p>
                     </div>
 
-                    <div style="border-left: 3px solid var(--color-primary-blue); padding-left: 1rem;">
-                        <h4 style="font-size: 1.0625rem; font-weight: 700; color: var(--color-primary);">UNIVERSITY OF MIAMI SCHOOL OF LAW</h4>
-                        <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0.25rem 0;">Juris Doctor (J.D.) (1993)</p>
-                        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Before graduating, tried cases in court. Clerked at Shrier &amp; Koenigsberg and interned at Dade County Public Defender's Office.</p>
+                    {{-- Jamaica High School --}}
+                    <div style="position: relative; padding-left: 1.25rem; border-left: 3px solid var(--color-primary-blue);">
+                        <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;">
+                            <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--color-primary); margin: 0;">JAMAICA HIGH SCHOOL</h4>
+                            <span class="badge badge-primary" style="font-size: 0.75rem; padding: 0.2rem 0.6rem; font-weight: 700;">1986</span>
+                        </div>
+                        <p style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); margin: 0.25rem 0 0.4rem 0;">Presidential Award Recipient &bull; Regents Scholarship</p>
+                        <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
+                            Graduated with honors, demonstrating early academic distinction.
+                        </p>
                     </div>
                 </div>
             </div>
 
             {{-- Admissions & Field Experience Card --}}
-            <div class="card" style="height: 100%; padding: 2.25rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div class="card-icon-box card-icon-red" style="margin-bottom: 0;">
+            <div class="card" style="flex: 1 1 50%; padding: 2.25rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); display: flex; flex-direction: column;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border);">
+                    <div class="card-icon-box card-icon-red" style="margin-bottom: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md);">
                         <x-icon name="scale" size="24" />
                     </div>
                     <div>
-                        <h3 class="heading-sm" style="margin: 0;">Field Experience &amp; Bar Admissions</h3>
-                        <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Multi-state jurisdictional reach</span>
+                        <h3 class="heading-sm" style="margin: 0; font-size: 1.25rem; color: var(--color-primary);">Bar &amp; Court Admissions</h3>
+                        <span style="font-size: 0.8125rem; color: var(--color-text-muted); font-weight: 500;">Multi-state jurisdictional reach &amp; federal admissions</span>
                     </div>
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem; background: var(--color-bg-alt); border-radius: var(--radius-md);">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <span style="font-size: 0.95rem; font-weight: 700; color: var(--color-primary); display: block;">NEW YORK BAR</span>
-                            <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Licensed &amp; Active Since 1994</span>
+                <div style="display: flex; flex-direction: column; gap: 1.15rem; flex-grow: 1;">
+                    {{-- New York Bar --}}
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg);">
+                        <div style="display: flex; align-items: center; gap: 0.85rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #dcfce7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <span style="font-size: 1rem; font-weight: 800; color: var(--color-primary); display: block;">NEW YORK BAR</span>
+                                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">State-wide Trial &amp; Appellate Courts</span>
+                            </div>
                         </div>
+                        <span style="background: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 999px; white-space: nowrap;">Active Since 1994</span>
                     </div>
 
-                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem; background: var(--color-bg-alt); border-radius: var(--radius-md);">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <span style="font-size: 0.95rem; font-weight: 700; color: var(--color-primary); display: block;">FLORIDA BAR</span>
-                            <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Multi-state jurisdictional reach (Licensed 1993)</span>
+                    {{-- Florida Bar --}}
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg);">
+                        <div style="display: flex; align-items: center; gap: 0.85rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #dcfce7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <span style="font-size: 1rem; font-weight: 800; color: var(--color-primary); display: block;">FLORIDA BAR</span>
+                                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Multi-State Jurisdictional Reach</span>
+                            </div>
                         </div>
+                        <span style="background: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 999px; white-space: nowrap;">Licensed 1993</span>
                     </div>
 
-                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem; background: var(--color-bg-alt); border-radius: var(--radius-md);">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                        <div>
-                            <span style="font-size: 0.95rem; font-weight: 700; color: var(--color-primary); display: block;">U.S. DISTRICT COURTS (EDNY &amp; SDNY)</span>
-                            <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Federal trial court admissions in Eastern &amp; Southern Districts</span>
+                    {{-- US District Courts --}}
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg);">
+                        <div style="display: flex; align-items: center; gap: 0.85rem;">
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background: #dcfce7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <span style="font-size: 1rem; font-weight: 800; color: var(--color-primary); display: block;">U.S. DISTRICT COURTS (EDNY &amp; SDNY)</span>
+                                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Federal Eastern &amp; Southern Districts of New York</span>
+                            </div>
                         </div>
+                        <span style="background: #fef3c7; color: #92400e; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 999px; white-space: nowrap;">Federal Admission</span>
                     </div>
-                </div>
-
-                {{-- Bar Associations & Recognition --}}
-                <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border);">
-                    <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">Bar Admissions, Associations &amp; Awards</h4>
-                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">
-                        Adam is recognized nationally and locally as one of New York’s top personal injury attorneys:
-                    </p>
-                    <ul style="padding-left: 1.25rem; font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.7;">
-                        <li>Licensed: New York State Bar, Florida State Bar</li>
-                        <li>Member: American Association for Justice (AAJ)</li>
-                        <li>Top 100 National Trial Lawyers</li>
-                        <li>Lawyers of Distinction &bull; Million Dollar Advocates Forum</li>
-                        <li>10 Best Law Firms &bull; Best Attorney recognition across multiple years</li>
-                        <li>Featured on CBS, NBC, WPIX, News12, NY1, The New York Post, and Newsday</li>
-                    </ul>
                 </div>
             </div>
         </div>
+
+        {{-- Full Width Bar Admissions, Associations & Awards Showcase --}}
+        <div class="card" style="padding: 2.5rem; background: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border);">
+                <div>
+                    <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Verified Honors</span>
+                    <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--color-primary); margin: 0;">
+                        Bar Admissions, Associations &amp; Awards
+                    </h3>
+                    <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin: 0.35rem 0 0 0;">
+                        Adam is recognized nationally and locally as one of New York’s top personal injury attorneys:
+                    </p>
+                </div>
+                <div class="btn-action-row" style="margin: 0; flex-wrap: nowrap !important;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-md">
+                        Work With Adam &rarr;
+                    </a>
+                </div>
+            </div>
+
+            {{-- 4 Grid Badges --}}
+            <div class="grid grid-4" style="gap: 1.25rem; margin-bottom: 2rem;">
+                <div style="padding: 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 0.25rem;">AAJ Member</div>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.4; display: block;">American Association for Justice</span>
+                </div>
+                <div style="padding: 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 0.25rem;">Top 100 Trial Lawyers</div>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.4; display: block;">National Trial Lawyers Association</span>
+                </div>
+                <div style="padding: 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 0.25rem;">Million Dollar Advocates</div>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.4; display: block;">Forum Member (Top 1% in US)</span>
+                </div>
+                <div style="padding: 1.25rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg); text-align: center;">
+                    <div style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 0.25rem;">10 Best Law Firms</div>
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.4; display: block;">Lawyers of Distinction &amp; Best Attorney</span>
+                </div>
+            </div>
+
+            {{-- Media Broadcast Strip --}}
+            <div style="background: linear-gradient(135deg, #0b1b3d 0%, #1e3a8a 100%); border-radius: var(--radius-lg); padding: 1.5rem 2rem; color: #ffffff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <x-icon name="tv" size="24" class="text-gold" />
+                    <div>
+                        <span style="font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-light); font-weight: 700; display: block;">Media Recognition</span>
+                        <strong style="font-size: 1rem; color: #ffffff;">Featured on Major Investigative &amp; News Outlets</strong>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">CBS</span>
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">NBC</span>
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">WPIX 11</span>
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">News12</span>
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">NY1</span>
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">The New York Post</span>
+                    <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; color: #ffffff;">Newsday</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </div>
 </section>
 

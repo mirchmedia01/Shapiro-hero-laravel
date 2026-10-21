@@ -23,12 +23,12 @@
                 When life changes in an instant, we are here. Read direct references and recommendations from clients, colleagues, and families represented by Attorney Adam L. Shapiro across over 30 years of personal injury advocacy in New York and Florida.
             </p>
 
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#testimonials-list" class="btn btn-accent btn-lg">
+            <div class="btn-action-row" style="justify-content: center;">
+                <a href="#testimonials-list" class="btn btn-accent">
                     <span>Read Verified Reviews</span>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14m-7-7 7 7 7-7"/></svg>
                 </a>
-                <a href="{{ route('contact') }}" class="btn btn-outline-white btn-lg">
+                <a href="{{ route('contact') }}" class="btn btn-outline-white">
                     <span>Free Case Evaluation</span>
                 </a>
             </div>

@@ -879,11 +879,10 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background-color: #060e22;
     background-image: 
-        radial-gradient(circle at 85% 20%, rgba(30, 58, 138, 0.35) 0%, transparent 55%),
-        radial-gradient(circle at 10% 80%, rgba(214, 40, 40, 0.14) 0%, transparent 45%),
-        radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.6) 0%, transparent 80%),
-        linear-gradient(135deg, #050b18 0%, #0b1b3d 50%, #071226 100%);
-    background-size: 100% 100%;
+        linear-gradient(135deg, rgba(6, 14, 34, 0.88) 0%, rgba(11, 27, 61, 0.82) 50%, rgba(7, 18, 38, 0.90) 100%),
+        url('../media/branding/hero-bg-court.jpg');
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
     padding: 4rem 0 5rem 0;
@@ -926,10 +925,56 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.hero-grid > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-grid > div:first-child > * {
+    max-width: 100%;
+}
+
+.hero-grid > div:first-child .btn-action-row {
+    width: 100%;
+}
+
+.hero-grid div[style*="border-radius: var(--radius-full)"],
+.hero-grid div[style*="border-radius: 9999px"],
+.hero-grid [class*="badge"],
+.hero-grid .badge,
+.responsive-two-col div[style*="border-radius: var(--radius-full)"],
+.responsive-two-col div[style*="border-radius: 9999px"],
+.responsive-two-col [class*="badge"],
+.responsive-two-col .badge,
+.split-section div[style*="border-radius: var(--radius-full)"],
+.client-reviews-header div[style*="border-radius: var(--radius-full)"] {
+    width: fit-content !important;
+    max-width: max-content !important;
+    align-self: flex-start !important;
+    display: inline-flex !important;
+    flex-shrink: 0 !important;
+}
+
 @media (min-width: 1024px) {
     .hero-grid {
         grid-template-columns: 1fr 1fr;
         gap: 3.5rem;
+        align-items: stretch;
+    }
+
+    .hero-grid > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hero-grid > div:last-child .hero-media-card {
+        height: 100%;
+        min-height: 480px;
+        flex: 1 1 auto;
     }
 }
 
@@ -1021,18 +1066,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Full-bleed Hero Media Card for Practice & Inner Pages */
 .hero-media-card {
     position: relative;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.15);
+    border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
+    overflow: hidden !important;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.18);
     width: 100%;
-    aspect-ratio: 4 / 3;
-    max-height: 520px;
-    min-height: 420px;
-    height: auto;
+    min-height: 480px;
+    height: 100%;
     background: #0b1b3d;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
 }
 
 .hero-media-card img {
@@ -1041,10 +1085,13 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     object-position: center center;
     display: block;
+    border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
 }
 
 .hero-media-card img[src*="construction-accident"],
-.hero-media-card img[src*="injured-construction-worker"] {
+.hero-media-card img[src*="injured-construction-worker"],
+.hero-media-card img[src*="workers-compensation"] {
     object-position: center center;
 }
 
@@ -1053,7 +1100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-media-card img[src*="personal-injury"] {
-    object-position: center 15%;
+    object-position: center 20%;
 }
 
 @media (max-width: 768px) {
@@ -1186,20 +1233,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .practice-detail-page .hero-media-card,
 .services-page .hero-media-card {
-    aspect-ratio: 4 / 3;
-    max-height: 540px;
-    min-height: 440px;
-    height: auto;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
+    overflow: hidden !important;
+    display: flex;
+    height: 100%;
+    min-height: 480px;
+    width: 100%;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+}
+
+.practice-detail-page .hero-media-card img,
+.services-page .hero-media-card img {
+    border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
+}
+
+@media (max-width: 1023px) {
+    .practice-detail-page .hero-media-card,
+    .services-page .hero-media-card {
+        aspect-ratio: 16 / 10;
+        min-height: 320px;
+        max-height: 440px;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
     .practice-detail-page .hero-media-card,
     .services-page .hero-media-card {
         aspect-ratio: 16 / 10;
-        max-height: 360px;
-        min-height: auto;
+        min-height: 280px;
+        max-height: 380px;
         height: auto;
     }
 }
@@ -1208,39 +1276,169 @@ h1, h2, h3, h4, h5, h6 {
     .practice-detail-page .hero-media-card,
     .services-page .hero-media-card {
         aspect-ratio: 16 / 10;
-        max-height: 290px;
-        min-height: auto;
+        min-height: 250px;
+        max-height: 320px;
         height: auto;
     }
 }
 
-/* Action Button Row - Keep buttons on one row side-by-side */
-.btn-action-row {
+/* Action Button Row - Keep buttons on one single row side-by-side */
+.btn-action-row,
+.hero-btn-row {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 0.75rem !important;
+    gap: 0.85rem !important;
     flex-wrap: nowrap !important;
     max-width: 100% !important;
 }
 
-.btn-action-row .btn {
+.btn-action-row .btn,
+.hero-btn-row .btn {
     white-space: nowrap !important;
     flex: 0 1 auto !important;
-    padding: 0.75rem 1.25rem !important;
-    font-size: 0.9375rem !important;
+    padding: 0.825rem 1.35rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.25 !important;
 }
 
-@media (max-width: 480px) {
-    .btn-action-row {
+@media (max-width: 640px) {
+    .btn-action-row .btn,
+    .hero-btn-row .btn {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.875rem !important;
+        gap: 0.35rem !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .btn-action-row,
+    .hero-btn-row {
         flex-direction: column !important;
         align-items: stretch !important;
         flex-wrap: wrap !important;
     }
-    .btn-action-row .btn {
+    .btn-action-row .btn,
+    .hero-btn-row .btn {
         width: 100% !important;
         text-align: center !important;
         justify-content: center !important;
+    }
+}
+
+/* About Page Hero Refinements - Balanced H1 & Larger Client Portrait */
+.about-page .hero-section .heading-xl,
+.about-hero-heading {
+    font-size: clamp(2rem, 3.2vw, 2.75rem) !important;
+    line-height: 1.22 !important;
+    letter-spacing: -0.02em !important;
+}
+
+.about-hero-portrait-card {
+    max-width: 480px !important;
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+}
+
+@media (max-width: 991px) {
+    .about-hero-portrait-card {
+        max-width: 400px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-portrait-card {
+        max-width: 320px !important;
+    }
+}
+
+/* ==========================================================================
+   EQUAL-HEIGHT IMAGE & CONTENT ALIGNMENT ("content height and image height is same")
+   ========================================================================== */
+.two-col-equal-height {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 3.5rem !important;
+}
+
+.two-col-equal-height > .col-image {
+    flex: 1 1 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+}
+
+.two-col-equal-height > .col-image .image-frame {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 480px !important;
+    border-radius: var(--radius-xl) !important;
+    overflow: hidden !important;
+    box-shadow: var(--shadow-xl) !important;
+    border: 1px solid var(--color-border) !important;
+    display: flex !important;
+}
+
+.two-col-equal-height > .col-image .image-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    flex-grow: 1 !important;
+}
+
+.two-col-equal-height > .col-content {
+    flex: 1 1 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+@media (max-width: 991px) {
+    .two-col-equal-height {
+        flex-direction: column !important;
+        gap: 2.5rem !important;
+    }
+    .two-col-equal-height > .col-image,
+    .two-col-equal-height > .col-content {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+    }
+    .two-col-equal-height > .col-image .image-frame {
+        min-height: 340px !important;
+        max-height: 480px !important;
+    }
+}
+
+/* Card Media Banners - Increased height for prominent visual impact */
+.card-media-banner,
+.deep-dive-card-media {
+    width: 100% !important;
+    min-height: 320px !important;
+    max-height: 420px !important;
+    aspect-ratio: 16 / 10 !important;
+    overflow: hidden !important;
+    background: #0b1b3d !important;
+}
+
+.card-media-banner img,
+.deep-dive-card-media img {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+}
+
+@media (max-width: 640px) {
+    .card-media-banner,
+    .deep-dive-card-media {
+        min-height: 240px !important;
+        max-height: 300px !important;
     }
 }
 
@@ -1573,7 +1771,8 @@ video.video-fluid {
 .practice-card-media {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 11;
+    min-height: 250px;
     height: auto;
     overflow: hidden;
     background-color: #0f172a;
@@ -1650,7 +1849,8 @@ video.video-fluid {
     }
 
     .practice-card-media {
-        aspect-ratio: 16 / 10;
+        aspect-ratio: 16 / 11;
+        min-height: 220px;
         height: auto;
     }
 
@@ -2524,6 +2724,89 @@ video.video-fluid {
 }
 
 /* ==========================================================================
+   Blog Card & Read Article Button
+   ========================================================================== */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -4px rgba(11, 27, 61, 0.12), 0 8px 16px -4px rgba(11, 27, 61, 0.08);
+}
+
+.blog-card-action {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.blog-read-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 220px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--color-primary-blue) 0%, #0f2b6b 100%);
+    border: 1.5px solid transparent;
+    border-radius: var(--radius-full);
+    box-shadow: 0 3px 10px rgba(30, 58, 138, 0.22);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.blog-read-btn:hover {
+    background: linear-gradient(135deg, var(--color-accent-red) 0%, #b71c1c 100%);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(214, 40, 40, 0.35);
+}
+
+.blog-read-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(214, 40, 40, 0.2);
+}
+
+.blog-read-btn .blog-btn-arrow {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.25s ease;
+}
+
+.blog-read-btn:hover .blog-btn-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 640px) {
+    .blog-card-action {
+        padding-top: 1rem;
+    }
+
+    .blog-read-btn {
+        max-width: 100%;
+        width: 100%;
+        padding: 0.8125rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+}
+
+/* ==========================================================================
    News & Press Clippings Archive Gallery
    ========================================================================== */
 .press-filter-nav {
@@ -2874,9 +3157,9 @@ video.video-fluid {
 .ig-reel-video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
-    background: #000000;
+    background: #0f172a;
 }
 
 /* Top Reel Header Overlay */
@@ -2886,11 +3169,40 @@ video.video-fluid {
     left: 1rem;
     right: 1rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     z-index: 3;
     pointer-events: none;
     transition: opacity 0.35s ease;
+}
+
+.ig-reel-top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.ig-reel-brand-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #D62828;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.ig-reel-brand-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
 }
 
 .ig-reel-badge-pill {
@@ -2944,6 +3256,7 @@ video.video-fluid {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 4px;
     z-index: 2;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -4169,6 +4482,12 @@ a.blog-site-url:hover {
     .responsive-two-col {
         grid-template-columns: 1fr 1fr;
         gap: 3.5rem;
+        align-items: stretch;
+    }
+    .responsive-two-col > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .responsive-two-col.ratio-1-11 {
         grid-template-columns: 1fr 1.1fr;
@@ -4207,7 +4526,7 @@ a.blog-site-url:hover {
 
 .champion-portrait-wrapper {
     width: 100%;
-    max-width: 420px;
+    max-width: 360px;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     position: relative;
@@ -4216,6 +4535,7 @@ a.blog-site-url:hover {
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
     border: 3px solid rgba(255, 255, 255, 0.18);
     background: #0b1b3d;
+    display: block;
 }
 
 .champion-portrait-img {

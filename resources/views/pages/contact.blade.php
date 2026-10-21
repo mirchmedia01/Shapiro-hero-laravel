@@ -8,7 +8,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div>
-                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; width: fit-content; max-width: max-content; align-self: flex-start;">
                         <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ef4444;"></span>
                         <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #fca5a5;">Available 24/7 For Emergency Consultation</span>
                     </div>
@@ -22,12 +22,12 @@
                         Injured in New York? Don't navigate the legal system alone. Contact Attorney Adam L. Shapiro directly for aggressive, experienced representation. Available 24/7.
                     </p>
 
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem;">
-                        <a href="tel:+19707427476" class="btn btn-accent btn-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            <span>(970) SHAPIRO / (970) 742-7476</span>
+                    <div class="btn-action-row" style="margin-bottom: 2rem;">
+                        <a href="tel:+19707427476" class="btn btn-accent">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>(970) SHAPIRO / 970 742-7476</span>
                         </a>
-                        <a href="mailto:adam@shapirolawoffice.com" class="btn btn-outline-white btn-lg">
+                        <a href="mailto:adam@shapirolawoffice.com" class="btn btn-outline-white">
                             <span>Email Directly</span>
                         </a>
                     </div>
@@ -76,63 +76,77 @@
                     </div>
                 </div>
 
-                {{-- Office Locations Card --}}
+                {{-- Office Location Card --}}
                 <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
                     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
                         <div class="card-icon-box-sm card-icon-red" style="margin-bottom: 0;">
                             <x-icon name="map-pin" size="20" />
                         </div>
-                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Office Locations</h3>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Our Office Address</h3>
                     </div>
 
                     <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--color-border);">
-                        <strong style="color: var(--color-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Forest Hills NYC Headquarters:</strong>
-                        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin: 0; line-height: 1.6;">
-                            70-20 Austin St, Suite 111<br>
-                            Forest Hills, NY 11375
+                        <strong style="color: var(--color-primary); font-size: 1.15rem; display: block; margin-bottom: 0.35rem;">Forest Hills, NY</strong>
+                        <p style="color: var(--color-text); font-size: 1.05rem; font-weight: 700; margin: 0; line-height: 1.6;">
+                            70-20 Austin St Ste 111<br>
+                            <span style="font-size: 0.95rem; font-weight: 500; color: var(--color-text-muted);">Forest Hills, NY 11375</span>
                         </p>
                     </div>
 
-                    <div style="margin-bottom: 1rem; flex-grow: 1;">
-                        <strong style="color: var(--color-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Long Island Consultation Office:</strong>
-                        <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin: 0; line-height: 1.6;">
-                            110-20 71st Ave<br>
-                            Forest Hills &amp; Long Island, NY
-                        </p>
-                    </div>
-
-                    <p style="font-size: 0.8125rem; color: var(--color-text-light); font-style: italic; margin: 0; margin-top: auto;">
-                        * In-home &amp; hospital visits available across NYC and Long Island.
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0; line-height: 1.6; margin-bottom: 1.25rem;">
+                        Conveniently located on Austin Street in the heart of Forest Hills, Queens. Steps away from the E, F, M, and R subway lines and the Forest Hills LIRR station.
                     </p>
+
+                    <div style="margin-top: auto;">
+                        <a href="https://maps.google.com/maps?q=Forest%20Hills%2C%20NY%20%2070-20%20Austin%20St%20Ste%20111" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="width: 100%; justify-content: center;">
+                            Get Directions &rarr;
+                        </a>
+                    </div>
                 </div>
 
-                {{-- Intake Hours Card --}}
+                {{-- Business Hours Card --}}
                 <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
                     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
                         <div class="card-icon-box-sm card-icon-blue" style="margin-bottom: 0;">
                             <x-icon name="clock" size="20" />
                         </div>
-                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Intake &amp; Hours</h3>
+                        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary); margin: 0;">Business Hours</h3>
                     </div>
 
-                    <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9375rem; flex-grow: 1;">
-                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
-                            <span style="font-weight: 600; color: var(--color-text);">Monday – Friday:</span>
-                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 AM – 7:00 PM</span>
+                    <div style="display: flex; flex-direction: column; gap: 0.55rem; font-size: 0.9375rem; flex-grow: 1;">
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Monday:</span>
+                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 PM – 7:00 AM</span>
                         </div>
-                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
-                            <span style="font-weight: 600; color: var(--color-text);">Saturday – Sunday:</span>
-                            <span style="font-weight: 700; color: var(--color-accent-red);">24/7 Hotline</span>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Tuesday:</span>
+                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 PM – 7:00 AM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Wednesday:</span>
+                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 PM – 7:00 AM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Thursday:</span>
+                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 PM – 7:00 AM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Friday:</span>
+                            <span style="font-weight: 700; color: var(--color-primary-blue);">8:00 PM – 7:00 AM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem; border-bottom: 1px solid var(--color-border);">
+                            <span style="font-weight: 600; color: var(--color-text);">Saturday:</span>
+                            <span style="font-weight: 700; color: #dc2626;">Closed</span>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
-                            <span style="font-weight: 600; color: var(--color-text);">Case Form:</span>
-                            <span style="font-weight: 700; color: var(--color-accent-light);">Processed 24/7</span>
+                            <span style="font-weight: 600; color: var(--color-text);">Sunday:</span>
+                            <span style="font-weight: 700; color: #dc2626;">Closed</span>
                         </div>
                     </div>
 
                     <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--color-border);">
                         <a href="tel:+19707427476" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center;">
-                            Call (970) SHAPIRO
+                            Call (970) SHAPIRO &rarr;
                         </a>
                     </div>
                 </div>
@@ -151,8 +165,8 @@
                             <x-icon name="map-pin" size="18" />
                         </span>
                         <div>
-                            <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: #ffffff;">Forest Hills NYC Headquarters &bull; Interactive Map</h3>
-                            <p style="font-size: 0.85rem; color: #94a3b8; margin: 0;">70-20 Austin St, Suite 111, Forest Hills, NY 11375</p>
+                            <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: #ffffff;">Forest Hills, NY &bull; 70-20 Austin St Ste 111</h3>
+                            <p style="font-size: 0.85rem; color: #94a3b8; margin: 0;">70-20 Austin St Ste 111, Forest Hills, NY 11375</p>
                         </div>
                     </div>
                     <a href="https://maps.google.com/maps?q=Forest%20Hills%2C%20NY%20%2070-20%20Austin%20St%20Ste%20111" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white btn-sm" style="font-size: 0.85rem;">

@@ -34,8 +34,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/personal-injury-lawyer.jpg') }}" alt="Personal Injury Lawyer NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-personal-injury-hero.jpg') }}" alt="Personal Injury Lawyer New York City" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>
@@ -45,13 +45,13 @@
 {{-- What Personal Injury Means in NY --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
-            <div>
-                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
-                    <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Personal Injury Claims in New York" style="width: 100%; height: 480px; object-fit: cover;">
+        <div class="two-col-equal-height">
+            <div class="col-image">
+                <div class="image-frame">
+                    <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Personal Injury Claims in New York">
                 </div>
             </div>
-            <div>
+            <div class="col-content">
                 <span class="section-subtitle">Understanding Your Rights</span>
                 <h2 class="heading-lg" style="margin-bottom: 1.25rem;">What Personal Injury Law Actually Means in New York</h2>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -64,9 +64,9 @@
                     <strong style="color: var(--color-primary); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">That is where we come in.</strong>
                     <p style="margin: 0; font-size: 0.95rem; color: var(--color-text);">We protect your rights from day one, ensuring no insurer takes advantage of your situation while you heal.</p>
                 </div>
-                <div class="btn-action-row">
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
                     <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Injury Consultation &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476 &rarr;</a>
                 </div>
             </div>
         </div>

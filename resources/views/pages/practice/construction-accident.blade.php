@@ -37,8 +37,41 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/construction-accident-lawyer.png') }}" alt="Construction Accident Lawyer NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/construction-accident-lawyer.png') }}" alt="Construction Accident Lawyer NYC" loading="eager" style="border-radius: 24px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- Construction Overview & Job Site Rights --}}
+<section class="section">
+    <div class="container">
+        <div class="two-col-equal-height">
+            <div class="col-image">
+                <div class="image-frame">
+                    <img src="{{ asset('assets/media/practice-areas/injured-construction-worker.png') }}" alt="Injured Construction Worker Legal Protection NYC">
+                </div>
+            </div>
+
+            <div class="col-content">
+                <span class="section-subtitle">Aggressive Worker Representation</span>
+                <h2 class="heading-lg" style="margin-bottom: 1.25rem;">Holding Property Owners &amp; General Contractors Accountable</h2>
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                    Construction remains the single most hazardous industry in New York City. From high-rise developments in Manhattan to transit renovations in Brooklyn and Queens, a split-second equipment failure or absent safety harness causes life-altering trauma.
+                </p>
+                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                    General contractors and site owners frequently attempt to hide behind workers' compensation to block injured workers from full recovery. We cut through that defense immediately. By deploying New York's strict Labor Laws, we hold third parties accountable for pain, suffering, and full lifetime earning losses.
+                </p>
+                <div style="padding: 1.25rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                    <p style="margin: 0; color: var(--color-text); font-weight: 500;">
+                        We dispatch investigators to the job site immediately to photograph safety violations, interview co-workers, and subpoena OSHA inspection records before equipment is altered.
+                    </p>
+                </div>
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Construction Review &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476 &rarr;</a>
                 </div>
             </div>
         </div>
@@ -46,38 +79,54 @@
 </section>
 
 {{-- Labor Law 240 & 241 Overview --}}
-<section class="section">
+<section class="section section-alt">
     <div class="container">
-        <div class="grid grid-2" style="gap: 3.5rem; align-items: flex-start;">
-            <div class="card" style="border-top: 4px solid var(--color-accent); padding: 2.5rem;">
-                <span class="badge badge-red" style="margin-bottom: 1rem; align-self: flex-start;">Absolute Liability</span>
-                <h3 class="heading-md" style="margin-bottom: 1rem;">New York Labor Law 240 — The Scaffold Law and Absolute Liability</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Labor Law 240 is one of the most powerful worker protections in the country. It imposes <strong>absolute liability</strong> on property owners and general contractors when a worker is injured in a fall from a height or is struck by a falling object.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-                    <strong>Absolute means exactly that.</strong> The owner cannot blame the injured worker, even partially. If proper fall protection was absent, liability attaches. Full stop.
-                </p>
-                <div style="background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent);">
-                    <p style="margin: 0; font-size: 0.95rem; color: var(--color-text); font-weight: 500;">
-                        This covers falls from scaffolding, ladders, roofs, and elevated platforms, as well as injuries from falling tools, materials, and unsecured debris. We have litigated Labor Law 240 cases for over 30 years. Adam knows exactly how insurers fight these claims. He knows because he used to help build those arguments. Now he dismantles them.
+        <div class="section-header">
+            <span class="section-subtitle">Statutory Protections</span>
+            <h2 class="heading-lg">New York Labor Law 240 &amp; 241 Rights</h2>
+            <p>New York provides unique, powerful statutory protections that hold site owners strictly accountable.</p>
+        </div>
+
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: stretch;">
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/cases/window-washer-liability.png') }}" alt="Scaffold and High-Rise Fall Protection Law New York">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-red" style="margin-bottom: 1rem; align-self: flex-start;">Absolute Liability</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem;">New York Labor Law 240 — The Scaffold Law and Absolute Liability</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Labor Law 240 is one of the most powerful worker protections in the country. It imposes <strong>absolute liability</strong> on property owners and general contractors when a worker is injured in a fall from a height or is struck by a falling object.
                     </p>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                        <strong>Absolute means exactly that.</strong> The owner cannot blame the injured worker, even partially. If proper fall protection was absent, liability attaches. Full stop.
+                    </p>
+                    <div style="margin-top: auto; background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent);">
+                        <p style="margin: 0; font-size: 0.95rem; color: var(--color-text); font-weight: 500;">
+                            This covers falls from scaffolding, ladders, roofs, and elevated platforms, as well as injuries from falling tools, materials, and unsecured debris. We have litigated Labor Law 240 cases for over 30 years. Adam knows exactly how insurers fight these claims. He knows because he used to help build those arguments. Now he dismantles them.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card" style="border-top: 4px solid var(--color-primary); padding: 2.5rem;">
-                <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Industrial Code Rights</span>
-                <h3 class="heading-md" style="margin-bottom: 1rem;">New York Labor Law 241 — Construction, Demolition, and Excavation Rights</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Labor Law 241 protects workers injured during construction, demolition, and excavation, even without a fall from height. Property owners and general contractors must maintain safe conditions throughout the entire project. Violations of the Industrial Code establish liability directly.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-                    Unlike Labor Law 240, comparative fault applies under 241. But it reduces your recovery. We identify all applicable code violations and pursue all responsible parties.
-                </p>
-                <div style="background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gold);">
-                    <p style="margin: 0; font-size: 0.95rem; color: var(--color-text); font-weight: 500;">
-                        We identify all applicable Industrial Code (Part 23) violations and pursue every contractor, owner, and subcontractor who failed to follow statutory safety mandates.
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/practice-areas/construction-accident-lawyer.png') }}" alt="Demolition and Excavation Industrial Code Claims New York">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Industrial Code Rights</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem;">New York Labor Law 241 — Construction, Demolition, and Excavation Rights</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Labor Law 241 protects workers injured during construction, demolition, and excavation, even without a fall from height. Property owners and general contractors must maintain safe conditions throughout the entire project. Violations of the Industrial Code establish liability directly.
                     </p>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                        Unlike Labor Law 240, comparative fault applies under 241. But it reduces your recovery. We identify all applicable code violations and pursue all responsible parties.
+                    </p>
+                    <div style="margin-top: auto; background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gold);">
+                        <p style="margin: 0; font-size: 0.95rem; color: var(--color-text); font-weight: 500;">
+                            We identify all applicable Industrial Code (Part 23) violations and pursue every contractor, owner, and subcontractor who failed to follow statutory safety mandates.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,33 +178,36 @@
         </div>
 
         {{-- Deep Dive Section: Falls from Heights, Caught-In, and Electrocution --}}
-        <div class="grid grid-3" style="gap: 2rem; margin-bottom: 3.5rem;">
-            <div class="card" style="padding: 2rem; background: #ffffff;">
+        <div class="grid grid-3" style="gap: 2rem; align-items: stretch; margin-bottom: 3.5rem;">
+            <div class="card" style="padding: 2.25rem 2rem; background: #ffffff; display: flex; flex-direction: column;">
+                <span class="badge badge-red" style="margin-bottom: 0.75rem; align-self: flex-start;">High-Rise Hazards</span>
                 <h4 style="color: var(--color-primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">Falls from Heights — Scaffolding, Ladders and Roofs</h4>
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
                     Falls from height are the leading cause of serious injury and death on New York construction sites. They are also the category most directly protected under Labor Law 240. When scaffolding collapses, a ladder shifts, or a guardrail fails, the property owner and general contractor bear absolute liability provided the required safety equipment was absent or inadequate.
                 </p>
-                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin: 0;">
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin-top: auto;">
                     Construction sites get cleaned up fast after accidents. We move faster. We secure OSHA records, site inspection logs, witness statements, and photographic evidence before they disappear. That evidence is the case. We protect it from day one.
                 </p>
             </div>
 
-            <div class="card" style="padding: 2rem; background: #ffffff;">
+            <div class="card" style="padding: 2.25rem 2rem; background: #ffffff; display: flex; flex-direction: column;">
+                <span class="badge badge-gold" style="margin-bottom: 0.75rem; align-self: flex-start;">Equipment Hazards</span>
                 <h4 style="color: var(--color-primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">Caught-In and Between Accidents — Machinery and Trenching Injuries</h4>
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
                     Caught-in and caught-between accidents involve workers pulled into machinery, trapped between equipment, or buried in trench collapses. Amputations, crush injuries, and fatalities are common outcomes.
                 </p>
-                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin: 0;">
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin-top: auto;">
                     Liability frequently extends to equipment manufacturers, general contractors, and property owners simultaneously. We investigate every layer rather than stopping at the most obvious defendant. Every responsible party answers.
                 </p>
             </div>
 
-            <div class="card" style="padding: 2rem; background: #ffffff;">
+            <div class="card" style="padding: 2.25rem 2rem; background: #ffffff; display: flex; flex-direction: column;">
+                <span class="badge badge-blue" style="margin-bottom: 0.75rem; align-self: flex-start;">Electrical Infrastructure</span>
                 <h4 style="color: var(--color-primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">Electrocution and Electrical Injuries on NYC Job Sites</h4>
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
                     Electrocution is the third leading cause of construction worker deaths nationally. In New York City, aging electrical infrastructure further raises that risk. Overhead power lines, faulty wiring, and improper lockout/tagout procedures cause severe burns, nerve damage, cardiac arrest, and death.
                 </p>
-                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin: 0;">
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; margin-top: auto;">
                     Liability can extend to utility companies, equipment manufacturers, and property owners who failed to disclose known electrical hazards on the job site. We work with electrical engineering experts to establish exactly what went wrong and who is responsible.
                 </p>
             </div>
@@ -176,9 +228,9 @@
                     <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1.5rem;">
                         A third-party personal injury lawsuit runs parallel to your workers’ comp claim and recovers damages workers’ comp will never pay. We pursue both paths simultaneously from the first consultation. You should not have to choose between them.
                     </p>
-                    <div class="btn-action-row">
+                    <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
                         <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Construction Review &rarr;</a>
-                        <a href="tel:+19707427476" class="btn btn-outline-white btn-md">Call (970) SHAPIRO</a>
+                        <a href="tel:+19707427476" class="btn btn-outline-white btn-md">Call (970) SHAPIRO &rarr;</a>
                     </div>
                 </div>
                 <div style="background: rgba(255,255,255,0.08); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15);">

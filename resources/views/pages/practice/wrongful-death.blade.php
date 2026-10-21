@@ -37,8 +37,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/wrongful-death-lawyer.jpg') }}" alt="Wrongful Death Lawyer NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/wrongful-death-lawyer.jpg') }}" alt="Wrongful Death Lawyer NYC" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>

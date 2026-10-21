@@ -37,8 +37,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="E-Bike &amp; Scooter Accident Lawyer NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="E-Bike &amp; Scooter Accident Lawyer NYC" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>
@@ -48,8 +48,14 @@
 {{-- Surge & Complexity Section --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-2" style="align-items: center; gap: 3.5rem;">
-            <div>
+        <div class="two-col-equal-height">
+            <div class="col-image">
+                <div class="image-frame">
+                    <img src="{{ asset('assets/media/practice-areas/crash-scene-investigation.jpg') }}" alt="NYC E-Bike and Scooter Collision Investigation">
+                </div>
+            </div>
+
+            <div class="col-content">
                 <span class="section-subtitle">A Critical Safety Crisis</span>
                 <h2 class="heading-lg" style="margin-bottom: 1.25rem;">Why E-Bike and Scooter Accident Cases Are More Complicated Than Car Crashes</h2>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -63,25 +69,9 @@
                         Standard auto policies rarely cover e-scooter injuries. Some homeowners or renters policies provide limited liability. Many injured riders discover they are caught between policies with no clear path to recovery. We know that path. We find it, and we deploy every available claim.
                     </p>
                 </div>
-                <div class="btn-action-row">
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
                     <a href="{{ route('contact') }}" class="btn btn-accent btn-md">Free Case Review &rarr;</a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476</a>
-                </div>
-            </div>
-
-            <div>
-                <div class="card" style="padding: 2.5rem; background: var(--color-primary); color: #ffffff; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);">
-                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">New Legal Framework</span>
-                    <h3 style="color: #ffffff; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">New York E-Bike Laws: What Changed in 2025?</h3>
-                    <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1rem;">
-                        The law governing e-bike and scooter accidents in New York shifted significantly in 2025. You need to know this before you file anything.
-                    </p>
-                    <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1rem;">
-                        <strong>Effective July 11, 2025</strong>, New York law requires police to investigate and report e-bike and e-scooter accidents involving physical injury or serious physical injury to the DMV within <strong>5 days</strong> of the crash. E-scooter operators involved in crashes causing death or serious physical injury must report to the DMV within <strong>10 days</strong>.
-                    </p>
-                    <p style="color: #cbd5e1; line-height: 1.7; margin: 0; font-size: 0.95rem;">
-                        This is significant. Before this law, many e-bike crashes went unreported. Now there is a paper trail. That paper trail is evidence. We use it. E-scooters may not exceed 15 mph and may ride in bike lanes. Helmets are required for riders aged 16 and 17.
-                    </p>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-md">Call (970) 742-7476 &rarr;</a>
                 </div>
             </div>
         </div>
@@ -91,6 +81,29 @@
 {{-- Who Can Be Held Liable --}}
 <section class="section section-alt">
     <div class="container">
+        {{-- 2025 Legal Framework Feature Banner --}}
+        <div style="margin-bottom: 3.5rem; background: var(--color-primary); color: #ffffff; border-radius: var(--radius-xl); padding: 2.75rem 2.5rem; box-shadow: var(--shadow-xl);">
+            <div class="grid grid-2" style="gap: 2.5rem; align-items: center;">
+                <div>
+                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">New Legal Framework</span>
+                    <h3 style="color: #ffffff; font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">New York E-Bike Laws: What Changed in 2025?</h3>
+                    <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 1rem;">
+                        The law governing e-bike and scooter accidents in New York shifted significantly in 2025. You need to know this before you file anything.
+                    </p>
+                    <p style="color: #cbd5e1; line-height: 1.7; margin: 0; font-size: 0.95rem;">
+                        <strong>Effective July 11, 2025</strong>, New York law requires police to investigate and report e-bike and e-scooter accidents involving physical injury or serious physical injury to the DMV within <strong>5 days</strong> of the crash. E-scooter operators involved in crashes causing death or serious physical injury must report to the DMV within <strong>10 days</strong>.
+                    </p>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); padding: 1.75rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15);">
+                    <div style="font-size: 1.15rem; font-weight: 700; color: var(--color-gold); margin-bottom: 0.75rem;">Mandatory DMV Paper Trail</div>
+                    <p style="color: #cbd5e1; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.25rem;">
+                        Before this law, many e-bike crashes went unreported. Now there is an official paper trail that serves as decisive evidence for your case. E-scooters may not exceed 15 mph and may ride in bike lanes. Helmets are required for riders aged 16 and 17.
+                    </p>
+                    <a href="tel:+19707427476" class="btn btn-accent btn-md">Verify Your Crash Report &rarr;</a>
+                </div>
+            </div>
+        </div>
+
         <div class="section-header">
             <span class="section-subtitle">Multi-Party Culpability</span>
             <h2 class="heading-lg">Who Can Be Held Liable in an E-Bike Accident?</h2>
@@ -120,40 +133,51 @@
         </div>
 
         {{-- Deep Dive: Injuries & Delivery Workers --}}
-        <div class="grid grid-2" style="gap: 2.5rem; margin-bottom: 2.5rem;">
-            <div class="card" style="padding: 2.5rem; background: #ffffff;">
-                <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Common E-Bike &amp; Scooter Injuries We Fight For</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Riders have no protection between their body and the impact. The injuries reflect that:
-                </p>
-                <ul style="list-style: none; padding: 0; margin: 0 0 1rem 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text-muted);">
-                    <li>✓ Traumatic brain injuries and concussions</li>
-                    <li>✓ Spinal cord damage and paralysis</li>
-                    <li>✓ Broken arms, wrists, hands, and legs</li>
-                    <li>✓ Road rash requiring surgery and skin grafting</li>
-                    <li>✓ Internal injuries and organ damage</li>
-                    <li>✓ Facial lacerations and dental injuries</li>
-                    <li>✓ Wrongful death</li>
-                </ul>
-                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                    Electric bicycle riders have higher rates of traumatic brain injuries and are three times as likely to involve a pedestrian compared to traditional bike accidents. These are not soft-tissue cases. We treat every e-bike claim with the severity it deserves.
-                </p>
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: stretch; margin-bottom: 3.5rem;">
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="E-Bike and Scooter Injury Claims Investigation">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-red" style="margin-bottom: 1rem; align-self: flex-start;">Catastrophic Harm</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Common E-Bike &amp; Scooter Injuries We Fight For</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Riders have no protection between their body and the impact. The injuries reflect that:
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text-muted);">
+                        <li>✓ Traumatic brain injuries and concussions</li>
+                        <li>✓ Spinal cord damage and paralysis</li>
+                        <li>✓ Broken arms, wrists, hands, and legs</li>
+                        <li>✓ Road rash requiring surgery and skin grafting</li>
+                        <li>✓ Internal injuries and organ damage</li>
+                        <li>✓ Facial lacerations and dental injuries</li>
+                        <li>✓ Wrongful death</li>
+                    </ul>
+                    <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin-top: auto;">
+                        Electric bicycle riders have higher rates of traumatic brain injuries and are three times as likely to involve a pedestrian compared to traditional bike accidents. These are not soft-tissue cases. We treat every e-bike claim with the severity it deserves.
+                    </p>
+                </div>
             </div>
 
-            <div class="card" style="padding: 2.5rem; background: #ffffff;">
-                <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Deliveristas Rights</span>
-                <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Delivery Workers — Your Rights Are the Same</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    Tens of thousands of delivery workers ride e-bikes across New York City every day. They are among the most vulnerable people on New York streets and among the most underserved when accidents happen.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
-                    If you were injured as a delivery worker on an e-bike, your rights are the same as any other injury victim. We fight for delivery workers across all five boroughs. Language is not a barrier. We work in English and Spanish. Hablamos Español.
-                </p>
-                <div style="background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent);">
-                    <h5 style="color: var(--color-primary); margin-bottom: 0.25rem; font-size: 1rem;">What Happens When the Driver Has No Insurance</h5>
-                    <p style="margin: 0; color: var(--color-text-muted); font-size: 0.9rem;">
-                        An uninsured driver does not mean an uncompensated victim. Recovery can be pursued through New York’s Motor Vehicle Accident Indemnification Corporation (MVAIC) or household auto policies.
+            <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                <div class="deep-dive-card-media">
+                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="Delivery Workers and Courier Rights NYC">
+                </div>
+                <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
+                    <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Deliveristas Rights</span>
+                    <h3 class="heading-md" style="margin-bottom: 1rem; color: var(--color-primary);">Delivery Workers — Your Rights Are the Same</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+                        Tens of thousands of delivery workers ride e-bikes across New York City every day. They are among the most vulnerable people on New York streets and among the most underserved when accidents happen.
                     </p>
+                    <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                        If you were injured as a delivery worker on an e-bike, your rights are the same as any other injury victim. We fight for delivery workers across all five boroughs. Language is not a barrier. We work in English and Spanish. Hablamos Español.
+                    </p>
+                    <div style="margin-top: auto; background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent);">
+                        <h5 style="color: var(--color-primary); margin-bottom: 0.25rem; font-size: 1rem;">What Happens When the Driver Has No Insurance</h5>
+                        <p style="margin: 0; color: var(--color-text-muted); font-size: 0.9rem;">
+                            An uninsured driver does not mean an uncompensated victim. Recovery can be pursued through New York’s Motor Vehicle Accident Indemnification Corporation (MVAIC) or household auto policies.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

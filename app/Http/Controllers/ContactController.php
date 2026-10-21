@@ -18,8 +18,8 @@ class ContactController extends Controller
     public function index(): View
     {
         $seo = $this->seoService->forPage(
-            title: 'Contact Shapiro Personal Injury Lawyer in Queens, NY | (718) 261-8500',
-            description: 'Get a free personal injury case evaluation with Shapiro The Hero — New York\'s dedicated fighter for accident victims since 1994. Call (718) 261-8500 or submit our online form. Available 24/7. No fee unless we win.',
+            title: 'Contact Shapiro Personal Injury Lawyer Queens (718) 261-8500',
+            description: 'Get in touch with Shapiro the Hero in New York for guidance on your personal injury matters. Call 970 742-7476 or connect via our online form. Available for urgent cases. No fee unless we win.',
             canonicalUrl: url('/contact-us/')
         );
 

@@ -31,8 +31,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Trip & Fall Attorney NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/slip-trip-fall-attorney.jpg') }}" alt="Trip & Fall Attorney NYC" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>
@@ -127,8 +127,8 @@
 {{-- Local Law 49 & City Liability --}}
 <section class="section">
     <div class="container">
-        <div class="grid grid-2" style="gap: 3.5rem; align-items: flex-start;">
-            <div class="card" style="padding: 2.5rem;">
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: stretch;">
+            <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column;">
                 <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">NYC Administrative Code</span>
                 <h3 class="heading-md" style="margin-bottom: 1rem;">NYC Sidewalk Liability — Local Law 49</h3>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -137,14 +137,14 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     Cracked pavement, raised flags, and missing concrete are the property owner's legal responsibility in most cases — not the City of New York.
                 </p>
-                <div style="background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gold);">
+                <div style="margin-top: auto; background: var(--color-bg-alt); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gold);">
                     <p style="margin: 0; font-size: 0.9rem; color: var(--color-text); font-weight: 500;">
                         We identify the adjacent property owner, search the NYC Department of Transportation database for prior violation notices, and pull maintenance history immediately.
                     </p>
                 </div>
             </div>
 
-            <div class="card" style="padding: 2.5rem; border: 2px solid var(--color-accent-light);">
+            <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column;">
                 <span class="badge badge-red" style="margin-bottom: 1rem; align-self: flex-start;">Strict 90-Day Window</span>
                 <h3 class="heading-md" style="margin-bottom: 1rem;">Suing the City of New York</h3>
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
@@ -153,7 +153,7 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     Before suing New York City, a formal <strong>Notice of Claim must be served within 90 days</strong> of the accident. Miss that deadline by a single day, and your right to recover is permanently extinguished.
                 </p>
-                <div style="background: rgba(220, 38, 38, 0.08); padding: 1.25rem; border-radius: var(--radius-md);">
+                <div style="margin-top: auto; background: rgba(220, 38, 38, 0.08); padding: 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-accent-red);">
                     <p style="margin: 0; font-size: 0.9rem; color: var(--color-text); font-weight: 600;">
                         We file Notices of Claim immediately upon retention. If city property was involved, call us today.
                     </p>

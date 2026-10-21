@@ -14,17 +14,17 @@
                     Personal Injury <span style="color: var(--color-accent-light);">Practice Areas</span> — New York Accident &amp; Injury Lawyer
                 </h1>
                 <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2rem;">
-                    Thirty years. Both sides of the courtroom. Adam defended the insurance giants before he switched sides to fight for victims. Every case below is handled personally. You are never a file number here.
+                    Thirty years. Both sides of the courtroom. Adam defended the insurance giants before he switched sides to hunt them. Every case below is handled personally. You are never a file number here.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#directory" class="btn btn-accent btn-lg">Explore Practice Areas</a>
-                    <a href="{{ route('contact') }}" class="btn btn-outline-white btn-lg">Free Consultation</a>
+                <div class="btn-action-row">
+                    <a href="#directory" class="btn btn-accent">Explore Practice Areas</a>
+                    <a href="{{ route('contact') }}" class="btn btn-outline-white">Free Consultation</a>
                 </div>
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/personal-injury-lawyer.jpg') }}" alt="Personal Injury Legal Services" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-personal-injury-hero.jpg') }}" alt="Personal Injury Legal Services" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>

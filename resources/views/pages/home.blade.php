@@ -12,7 +12,7 @@
         <div class="hero-grid">
             {{-- Left Column: Headline & Action CTAs --}}
             <div>
-                <div style="display: inline-flex; align-items: center; gap: 0.65rem; background: rgba(30, 58, 138, 0.35); border: 1.5px solid rgba(214, 40, 40, 0.5); padding: 0.35rem 1.1rem 0.35rem 0.45rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; backdrop-filter: blur(8px); box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+                <div style="display: inline-flex; align-items: center; gap: 0.65rem; background: rgba(30, 58, 138, 0.35); border: 1.5px solid rgba(214, 40, 40, 0.5); padding: 0.35rem 1.1rem 0.35rem 0.45rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; backdrop-filter: blur(8px); box-shadow: 0 4px 15px rgba(0,0,0,0.25); width: fit-content; max-width: max-content; align-self: flex-start;">
                     <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro The Hero" style="width: 28px; height: 28px; border-radius: 50%; object-fit: contain; background: #ffffff; padding: 2px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
                     <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">Need A Hero? <span style="color: #fca5a5;">Call Shapiro!</span></span>
                 </div>
@@ -27,12 +27,12 @@
                     When you're hit, we hit back harder. Adam L. Shapiro is the shield between you and the insurance giants. Over 25+ years of aggressive trial representation across New York City and Long Island. <strong>No fee unless we win your case.</strong>
                 </p>
 
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2.5rem;">
-                    <a href="tel:+19707427476" class="btn btn-accent btn-lg" style="box-shadow: 0 8px 20px rgba(214, 40, 40, 0.4);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div class="btn-action-row" style="margin-bottom: 2.5rem;">
+                    <a href="tel:+19707427476" class="btn btn-accent" style="box-shadow: 0 8px 20px rgba(214, 40, 40, 0.4);">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <span>CALL (970) 742-7476</span>
                     </a>
-                    <a href="{{ route('contact') }}" class="btn btn-outline-white btn-lg">
+                    <a href="{{ route('contact') }}" class="btn btn-outline-white">
                         <span>Free Case Evaluation</span>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
@@ -438,21 +438,24 @@
                 <div style="font-weight: 700; font-size: 1.15rem; color: #1e3a8a; border-left: 3px solid #d62828; padding-left: 1.25rem; margin-bottom: 2rem; line-height: 1.6;">
                     Exemplary legal expertise tailored to your unique needs and challenges
                 </div>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="{{ route('about') }}" class="btn btn-primary btn-lg">
+                <div class="btn-action-row">
+                    <a href="{{ route('about') }}" class="btn btn-primary">
                         <span>Explore Our Firm &rarr;</span>
                     </a>
-                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">
+                    <a href="tel:+19707427476" class="btn btn-outline">
                         <span>CALL (970) 742-7476</span>
                     </a>
                 </div>
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div class="hero-reel-mockup" style="border: 2.5px solid rgba(11, 27, 61, 0.2); box-shadow: var(--shadow-2xl);">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
+                <div class="hero-reel-mockup" style="border: 2.5px solid rgba(11, 27, 61, 0.2); box-shadow: var(--shadow-2xl); width: 100%; max-width: 400px; border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <video poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
+                        <source src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
                 </div>
-                <p style="text-align: center; width: 100%; max-width: 360px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
+                <p style="text-align: center; width: 100%; max-width: 400px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
                     Watch: What to do immediately after an injury in NYC
                 </p>
             </div>
@@ -467,8 +470,8 @@
     <div class="container">
         <div class="responsive-two-col ratio-1-11" style="align-items: center; gap: 3.5rem;">
             <div>
-                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 420px; margin: 0 auto; position: relative;">
-                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro, Esq." class="champion-portrait-img" style="height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%;">
+                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 420px; margin: 0 auto; position: relative; border-radius: var(--radius-xl); overflow: hidden;">
+                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-real-client-hd.png') }}" alt="Adam L. Shapiro, Esq." class="champion-portrait-img" style="width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; display: block;">
                     {{-- Dual Identity Hero Badge --}}
                     <div style="position: absolute; bottom: 16px; right: 16px; background: rgba(11, 27, 61, 0.92); border: 1.5px solid rgba(214, 40, 40, 0.6); padding: 0.45rem 0.9rem; border-radius: 9999px; display: flex; align-items: center; gap: 0.6rem; backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
                         <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="The Shapiro Shield" style="width: 28px; height: 28px; object-fit: contain; background: #ffffff; border-radius: 50%; padding: 2px;">
@@ -487,7 +490,7 @@
             </div>
 
             <div>
-                <div style="display: inline-flex; align-items: center; gap: 0.55rem; background: rgba(30, 58, 138, 0.35); border: 1.5px solid rgba(214, 40, 40, 0.45); padding: 0.35rem 1rem 0.35rem 0.45rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px);">
+                <div style="display: inline-flex; align-items: center; gap: 0.55rem; background: rgba(30, 58, 138, 0.35); border: 1.5px solid rgba(214, 40, 40, 0.45); padding: 0.35rem 1rem 0.35rem 0.45rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px); width: fit-content !important; max-width: max-content !important; align-self: flex-start !important;">
                     <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro Hero Shield" style="width: 22px; height: 22px; border-radius: 50%; object-fit: contain; background: #ffffff; padding: 1.5px;">
                     <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">The Professional Force</span>
                 </div>
@@ -503,12 +506,12 @@
                     Shapiro Law Office isn’t just a business—it’s a sanctuary for the injured. We combine meticulous legal strategy with the relentless energy of a champion. When insurance giants try to crush you, we deploy the Shapiro Shield.
                 </p>
 
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="{{ route('about') }}" class="btn btn-accent btn-lg" style="box-shadow: 0 8px 20px rgba(214, 40, 40, 0.4);">
+                <div class="btn-action-row">
+                    <a href="{{ route('about') }}" class="btn btn-accent" style="box-shadow: 0 8px 20px rgba(214, 40, 40, 0.4);">
                         <span>Explore the Origin</span>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                     </a>
-                    <a href="tel:+19707427476" class="btn btn-outline-white btn-lg">
+                    <a href="tel:+19707427476" class="btn btn-outline-white">
                         <span>CALL (970) 742-7476</span>
                     </a>
                 </div>
@@ -522,12 +525,12 @@
      ========================================================================= --}}
 <section class="section" style="background: #ffffff;">
     <div class="container">
-        <div class="responsive-two-col ratio-1-11" style="align-items: center; gap: 3.5rem; background: linear-gradient(135deg, #1e3a8a 0%, #0b1b3d 100%); border-radius: var(--radius-2xl); padding: 3.5rem 3rem; color: #ffffff; box-shadow: var(--shadow-xl); position: relative; overflow: hidden;">
+        <div class="responsive-two-col ratio-1-11" style="align-items: stretch; gap: 3.5rem; background: linear-gradient(135deg, #1e3a8a 0%, #0b1b3d 100%); border-radius: var(--radius-2xl); padding: 3.5rem 3rem; color: #ffffff; box-shadow: var(--shadow-xl); position: relative; overflow: hidden;">
             {{-- Subtle Hero Shield Watermark --}}
             <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="" aria-hidden="true" style="position: absolute; right: -40px; bottom: -40px; width: 320px; height: 320px; opacity: 0.05; filter: grayscale(100%) brightness(200%); pointer-events: none;">
 
-            <div>
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); margin-bottom: 1rem;">
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); margin-bottom: 1rem; width: fit-content !important; max-width: max-content !important; align-self: flex-start !important;">
                     <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro Badge" style="width: 18px; height: 18px; object-fit: contain;">
                     <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">Unwavering Advocacy</span>
                 </div>
@@ -580,22 +583,22 @@
                     </li>
                 </ul>
 
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg" style="box-shadow: 0 8px 25px rgba(214, 40, 40, 0.4);">
-                        <span>Free Case Evaluation</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                <div class="btn-action-row" style="flex-wrap: nowrap !important; gap: 1rem;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-md" style="box-shadow: 0 8px 25px rgba(214, 40, 40, 0.4);">
+                        <span>Free Case Evaluation &rarr;</span>
                     </a>
-                    <a href="tel:+19707427476" class="btn btn-outline-white btn-lg">
-                        <span>CALL (970) 742-7476</span>
+                    <a href="tel:+19707427476" class="btn btn-outline-white btn-md">
+                        <span>Call (970) 742-7476 &rarr;</span>
                     </a>
                 </div>
             </div>
 
-            <div>
-                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-2xl); border: 2px solid rgba(255,255,255,0.15);">
-                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="Electric Scooter Accident Attorney" style="width: 100%; aspect-ratio: 16 / 11; max-height: 420px; height: auto; object-fit: cover; object-position: center center; display: block;">
+            <div style="display: flex; flex-direction: column;">
+                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-2xl); border: 2px solid rgba(255,255,255,0.15); height: 100%; display: flex;">
+                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="Electric Scooter Accident Attorney" style="width: 100%; height: 100%; min-height: 480px; object-fit: cover; object-position: center center; display: block; flex-grow: 1;">
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -634,12 +637,17 @@
         <div class="ig-reels-track" id="ig-reels-track">
             {{-- Reel 1: Accident Immediate Steps --}}
             <div class="ig-reel-card">
-                <video class="ig-reel-video" src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" playsinline preload="metadata"></video>
+                <video class="ig-reel-video" src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}#t=0.001" poster="{{ asset('assets/media/videos/reel-1-poster.jpg') }}" playsinline preload="metadata" muted></video>
                 <div class="ig-reel-top">
-                    <span class="ig-reel-badge-pill">
-                        <x-icon name="instagram" size="14" />
-                        <span>Immediate Steps</span>
-                    </span>
+                    <div class="ig-reel-top-left">
+                        <span class="ig-reel-badge-pill">
+                            <x-icon name="instagram" size="14" />
+                            <span>Immediate Steps</span>
+                        </span>
+                        <div class="ig-reel-brand-badge">
+                            <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro The Hero">
+                        </div>
+                    </div>
                     <button type="button" class="ig-sound-btn" title="Toggle Sound">
                         <x-icon name="volume" size="16" />
                     </button>
@@ -668,12 +676,17 @@
 
             {{-- Reel 2: Comprehensive Settlement Guide --}}
             <div class="ig-reel-card">
-                <video class="ig-reel-video" src="{{ asset('assets/media/videos/hurt-in-accident-legal-guide.mp4') }}" playsinline preload="metadata"></video>
+                <video class="ig-reel-video" src="{{ asset('assets/media/videos/hurt-in-accident-legal-guide.mp4') }}#t=0.001" poster="{{ asset('assets/media/videos/reel-2-poster.jpg') }}" playsinline preload="metadata" muted></video>
                 <div class="ig-reel-top">
-                    <span class="ig-reel-badge-pill">
-                        <x-icon name="instagram" size="14" />
-                        <span>Settlement Guide</span>
-                    </span>
+                    <div class="ig-reel-top-left">
+                        <span class="ig-reel-badge-pill">
+                            <x-icon name="instagram" size="14" />
+                            <span>Settlement Guide</span>
+                        </span>
+                        <div class="ig-reel-brand-badge">
+                            <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro The Hero">
+                        </div>
+                    </div>
                     <button type="button" class="ig-sound-btn" title="Toggle Sound">
                         <x-icon name="volume" size="16" />
                     </button>
@@ -702,12 +715,17 @@
 
             {{-- Reel 3: Strategy & Case Review --}}
             <div class="ig-reel-card">
-                <video class="ig-reel-video" src="{{ asset('assets/media/videos/nyc-injury-lawyer-consultation.mp4') }}" playsinline preload="metadata"></video>
+                <video class="ig-reel-video" src="{{ asset('assets/media/videos/nyc-injury-lawyer-consultation.mp4') }}#t=0.001" poster="{{ asset('assets/media/videos/reel-3-poster.jpg') }}" playsinline preload="metadata" muted></video>
                 <div class="ig-reel-top">
-                    <span class="ig-reel-badge-pill">
-                        <x-icon name="instagram" size="14" />
-                        <span>Case Strategy</span>
-                    </span>
+                    <div class="ig-reel-top-left">
+                        <span class="ig-reel-badge-pill">
+                            <x-icon name="instagram" size="14" />
+                            <span>Case Strategy</span>
+                        </span>
+                        <div class="ig-reel-brand-badge">
+                            <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro The Hero">
+                        </div>
+                    </div>
                     <button type="button" class="ig-sound-btn" title="Toggle Sound">
                         <x-icon name="volume" size="16" />
                     </button>
@@ -736,12 +754,17 @@
 
             {{-- Reel 4: Courtroom & Trial Preparation --}}
             <div class="ig-reel-card">
-                <video class="ig-reel-video" src="{{ asset('assets/media/videos/personal-injury-case-evaluation.mp4') }}" playsinline preload="metadata"></video>
+                <video class="ig-reel-video" src="{{ asset('assets/media/videos/personal-injury-case-evaluation.mp4') }}#t=0.001" poster="{{ asset('assets/media/videos/reel-4-poster.jpg') }}" playsinline preload="metadata" muted></video>
                 <div class="ig-reel-top">
-                    <span class="ig-reel-badge-pill">
-                        <x-icon name="instagram" size="14" />
-                        <span>Trial Advocacy</span>
-                    </span>
+                    <div class="ig-reel-top-left">
+                        <span class="ig-reel-badge-pill">
+                            <x-icon name="instagram" size="14" />
+                            <span>Trial Advocacy</span>
+                        </span>
+                        <div class="ig-reel-brand-badge">
+                            <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro The Hero">
+                        </div>
+                    </div>
                     <button type="button" class="ig-sound-btn" title="Toggle Sound">
                         <x-icon name="volume" size="16" />
                     </button>
@@ -770,12 +793,17 @@
 
             {{-- Reel 5: Official Firm Spotlight Reel --}}
             <div class="ig-reel-card">
-                <video class="ig-reel-video" src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}" playsinline preload="metadata"></video>
+                <video class="ig-reel-video" src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}#t=3.5" poster="{{ asset('assets/media/videos/reel-5-poster.jpg') }}" playsinline preload="metadata" muted data-start="0"></video>
                 <div class="ig-reel-top">
-                    <span class="ig-reel-badge-pill">
-                        <x-icon name="instagram" size="14" />
-                        <span>Firm Spotlight</span>
-                    </span>
+                    <div class="ig-reel-top-left">
+                        <span class="ig-reel-badge-pill">
+                            <x-icon name="instagram" size="14" />
+                            <span>Firm Spotlight</span>
+                        </span>
+                        <div class="ig-reel-brand-badge">
+                            <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="Shapiro The Hero">
+                        </div>
+                    </div>
                     <button type="button" class="ig-sound-btn" title="Toggle Sound">
                         <x-icon name="volume" size="16" />
                     </button>
@@ -822,7 +850,7 @@
         {{-- Section Header with Top Controls --}}
         <div class="client-reviews-header">
             <div class="client-reviews-header-left">
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(214, 40, 40, 0.1); border: 1px solid rgba(214, 40, 40, 0.25); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); margin-bottom: 0.85rem;">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(214, 40, 40, 0.1); border: 1px solid rgba(214, 40, 40, 0.25); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); margin-bottom: 0.85rem; width: fit-content !important; max-width: max-content !important; align-self: flex-start !important;">
                     <img src="{{ asset('assets/media/clients/google-icon.png') }}" alt="Google" style="width: 16px; height: 16px; object-fit: contain;">
                     <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent-red);">Verified Client Reviews</span>
                 </div>
@@ -1306,6 +1334,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
 
+                if (video.dataset.start !== undefined && !video.dataset.hasPlayed) {
+                    video.currentTime = 0;
+                    video.dataset.hasPlayed = 'true';
+                }
+
                 video.play().then(function () {
                     card.classList.add('is-playing');
                 }).catch(function (err) {
@@ -1323,7 +1356,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.stopPropagation();
                 video.muted = !video.muted;
                 soundBtn.setAttribute('title', video.muted ? 'Unmute' : 'Mute');
-                soundBtn.style.color = video.muted ? '#94a3b8' : '#D62828';
+                soundBtn.style.color = video.muted ? '#ffffff' : '#D62828';
                 soundBtn.style.borderColor = video.muted ? 'rgba(255,255,255,0.2)' : '#D62828';
             });
         }
@@ -1331,6 +1364,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Reset state on completion
         video.addEventListener('ended', function () {
             card.classList.remove('is-playing');
+            video.dataset.hasPlayed = '';
         });
     });
 

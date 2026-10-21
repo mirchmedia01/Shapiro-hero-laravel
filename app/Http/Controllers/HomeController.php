@@ -18,8 +18,8 @@ class HomeController extends Controller
         $recentPosts = $this->blogService->getRecentPosts(3);
 
         $seo = $this->seoService->forPage(
-            title: 'New York Personal Injury Lawyer No Fee Unless We Win Shapiro',
-            description: 'Injured in New York? Get compensation for car accidents, slip & falls, construction injuries, and workers’ comp claims. Free consultation today.',
+            title: 'New York Personal Injury Attorney for Accident & Injury Claims | Shapiro',
+            description: 'Injured in New York? Shapiro the Hero helps victims pursue compensation for car accidents, slip and falls, construction injuries, and workers’ compensation claims. Get your free consultation today.',
             canonicalUrl: url('/')
         );
 
