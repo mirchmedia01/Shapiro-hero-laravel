@@ -9,7 +9,7 @@ COPY . .
 RUN npm run build
 
 # --- Stage 2: Application runtime ---
-FROM php:8.4-fpm-alpine
+FROM php:8.4.27-fpm-alpine
 
 # Install system dependencies
 RUN apk add --no-cache \
