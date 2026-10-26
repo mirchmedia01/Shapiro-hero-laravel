@@ -65,7 +65,11 @@
             var accordion = item.closest('.faq-accordion');
             if (accordion) {
                 accordion.querySelectorAll('.faq-item.active').forEach(function(el) {
-                    if (el !== item) el.classList.remove('active');
+                    if (el !== item) {
+                        el.classList.remove('active');
+                        var elBtn = el.querySelector('.faq-question');
+                        if (elBtn) elBtn.setAttribute('aria-expanded', 'false');
+                    }
                 });
             }
 
@@ -74,6 +78,8 @@
             } else {
                 item.classList.add('active');
             }
+
+            btn.setAttribute('aria-expanded', isActive ? 'false' : 'true');
         }
     </script>
 

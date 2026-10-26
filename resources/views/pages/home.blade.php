@@ -1151,55 +1151,70 @@
 {{-- =========================================================================
      12. FREQUENTLY ASKED QUESTIONS (Live Section 19 Match: Exact Live Q&A)
      ========================================================================= --}}
-<section class="section" id="faq" style="background: var(--color-bg);">
+<section class="section home-faq-section" id="faq">
     <div class="container">
-        <div class="section-header" style="text-align: center; max-width: 750px; margin: 0 auto 3rem;">
-            <span class="badge badge-navy" style="margin-bottom: 0.75rem;">Clear Answers</span>
-            <h2 class="heading-lg" style="margin-bottom: 0.5rem;">Frequently Asked Questions</h2>
-            <p style="font-size: 1.05rem; color: var(--color-text-muted);">
-                Everything you need to know about starting your claim with Shapiro Law Office.
-            </p>
-        </div>
-
-        <div style="max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.25rem;">
-            {{-- FAQ 1 --}}
-            <div class="card" style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-                <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">
-                    How much do you charge for a consultation?
-                </h3>
-                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-muted); margin: 0;">
-                    Consultations are 100% free and confidential. We want to hear your story and help you understand your legal options without any upfront cost.
+        <div class="home-faq-layout">
+            {{-- Left Column: Section Intro --}}
+            <div class="home-faq-intro">
+                <span class="badge badge-navy">Clear Answers</span>
+                <h2 class="heading-lg">Frequently Asked Questions</h2>
+                <p>
+                    Everything you need to know about starting your claim with Shapiro Law Office. Straight answers from 30+ years of New York courtroom experience.
                 </p>
+
+                <div class="home-faq-help">
+                    <span class="home-faq-help-icon">
+                        <x-icon name="phone-call" size="20" />
+                    </span>
+                    <div>
+                        <strong>Still have questions?</strong>
+                        <p>Our injury hotline is answered 24/7.</p>
+                        <a href="tel:+19707427476">(970) 742-7476</a>
+                    </div>
+                </div>
             </div>
 
-            {{-- FAQ 2 --}}
-            <div class="card" style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-                <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">
-                    What are your business hours?
-                </h3>
-                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-muted); margin: 0;">
-                    Our main office is open Monday through Friday from 8:00 AM to 7:00 PM. However, our 24/7 Injury Hotline (970-742-7476) is always available for emergencies.
-                </p>
-            </div>
+            {{-- Right Column: Accordion --}}
+            <div class="faq-accordion home-faq-list">
+                <div class="faq-item active">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="true">
+                        <span>How much do you charge for a consultation?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Consultations are 100% free and confidential. We want to hear your story and help you understand your legal options without any upfront cost.</p>
+                    </div>
+                </div>
 
-            {{-- FAQ 3 --}}
-            <div class="card" style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-                <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">
-                    Where is Shapiro Law Office located?
-                </h3>
-                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-muted); margin: 0;">
-                    Our main office is located in the heart of Forest Hills at 70-20 Austin St, Suite 111, Forest Hills, NY 11375.
-                </p>
-            </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                        <span>What are your business hours?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our main office is open Monday through Friday from 8:00 AM to 7:00 PM. However, our 24/7 Injury Hotline (970-742-7476) is always available for emergencies.</p>
+                    </div>
+                </div>
 
-            {{-- FAQ 4 --}}
-            <div class="card" style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-                <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">
-                    How does the "No Win, No Fee" policy work?
-                </h3>
-                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--color-text-muted); margin: 0;">
-                    No Win, No Fee. We fight, you win. We advance all litigation costs, medical expert fees, and filing charges. If we do not recover money for your claim, you owe us nothing.
-                </p>
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                        <span>Where is Shapiro Law Office located?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our main office is located in the heart of Forest Hills at 70-20 Austin St, Suite 111, Forest Hills, NY 11375.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                        <span>How does the "No Win, No Fee" policy work?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No Win, No Fee. We fight, you win. We advance all litigation costs, medical expert fees, and filing charges. If we do not recover money for your claim, you owe us nothing.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1508,4 +1523,107 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 </script>
+@endpush
+
+@push('styles')
+<style>
+    /* Two-column FAQ: intro on the left, accordion on the right */
+    .home-faq-section {
+        background: var(--color-bg);
+    }
+
+    .home-faq-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.5rem;
+        align-items: start;
+    }
+
+    @media (min-width: 992px) {
+        .home-faq-layout {
+            grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+            gap: 4rem;
+        }
+
+        .home-faq-intro {
+            position: sticky;
+            top: 6rem;
+        }
+    }
+
+    .home-faq-intro .badge {
+        margin-bottom: 1rem;
+    }
+
+    .home-faq-intro .heading-lg {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .home-faq-intro > p {
+        color: var(--color-text-muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .home-faq-help {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.35rem 1.5rem;
+        background: var(--color-bg-alt);
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-accent);
+        border-radius: var(--radius-lg);
+    }
+
+    .home-faq-help-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: rgba(214, 40, 40, 0.1);
+        color: var(--color-accent);
+    }
+
+    .home-faq-help strong {
+        display: block;
+        font-family: var(--font-heading);
+        font-size: 1rem;
+        color: var(--color-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .home-faq-help p {
+        margin: 0 0 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--color-text-muted);
+    }
+
+    .home-faq-help a {
+        font-size: 1.05rem;
+        font-weight: 800;
+        color: var(--color-primary-blue);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .home-faq-help a:hover {
+        color: var(--color-accent);
+    }
+
+    .home-faq-list {
+        max-width: none;
+        margin: 0;
+    }
+
+    .home-faq-list .faq-question {
+        font-size: 1.05rem;
+    }
+</style>
 @endpush
