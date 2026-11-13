@@ -45,6 +45,10 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
+# Install PHP dependencies before app code so this layer caches across code changes
+COPY composer.json composer.lock ./
+RUN composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction --no-scripts
+
 # Configure Nginx & Supervisor
 RUN mkdir -p /etc/nginx/http.d /etc/supervisor/conf.d /var/log/supervisor /run/nginx
 COPY docker/nginx.conf /etc/nginx/http.d/default.conf
@@ -59,8 +63,8 @@ COPY . .
 # Copy built frontend assets from Stage 1
 COPY --from=frontend /app/public/build ./public/build
 
-# Install Composer production dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+# Rebuild the optimized autoloader now that app code is present
+RUN composer dump-autoload --no-dev --optimize --no-interaction
 
 # Set permissions for storage and bootstrap cache
 RUN chown -R www-data:www-data /var/www/html \
